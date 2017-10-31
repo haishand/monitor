@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <properties resource="db.properties"/>
+    <environments default="mysql">
+        <!-- mysql -->
+        <environment id="mysql">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.mysql.driver}"/>
+                <property name="url" value="${jdbc.mysql.url}"/>
+                <property name="username" value="${jdbc.mysql.username}"/>
+                <property name="password" value="${jdbc.mysql.password}"/>
+            </dataSource>
+        </environment>
+
+        <!-- oracle -->
+        <environment id="oracle">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.oracle.driver}"/>
+                <property name="url" value="${jdbc.oracle.url}"/>
+                <property name="username" value="${jdbc.oracle.username}"/>
+                <property name="password" value="${jdbc.oracle.password}"/>
+            </dataSource>
+        </environment>
+
+        <!-- sqlserver -->
+        <environment id="sqlserver">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.sqlserver.driver}"/>
+                <property name="url" value="${jdbc.sqlserver.url}"/>
+                <property name="username" value="${jdbc.sqlserver.username}"/>
+                <property name="password" value="${jdbc.sqlserver.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+
+    <mappers>
+        <mapper resource="mapper/device_info.xml"/>
+        <mapper resource="mapper/device.xml"/>
+        <mapper resource="mapper/devicelist.xml"/>
+        <mapper resource="mapper/latest.xml"/>
+    </mappers>
+</configuration>
