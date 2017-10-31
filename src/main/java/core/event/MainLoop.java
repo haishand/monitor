@@ -1,21 +1,23 @@
-package core;
+package core.event;
 
-import gui.MonitorTable;
+import core.Main;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingDeque;
 
 public class MainLoop implements Runnable {
     private boolean isRunning = true;
-    BlockingQueue<Message> mainQueue = new LinkedBlockingDeque<Message>();
+    private BlockingQueue<MEvent> mainQueue = new LinkedBlockingDeque<MEvent>();
 
     @Override
     public void run() {
 
         while(isRunning) {
             try {
-                Message m = mainQueue.take();
+                MEvent m = mainQueue.take();
                 switch(m.getType()) {
+                    case ID_DB_RECORD:
+                        break;
                     case ID_ALARM_TIMER:
                         break;
                     case ID_UPDATE_UI:
@@ -36,5 +38,13 @@ public class MainLoop implements Runnable {
 
         }
 
+    }
+
+    public void stop() {
+        isRunning = false;
+    }
+
+    public BlockingQueue<MEvent> getMainQueue() {
+        return mainQueue;
     }
 }

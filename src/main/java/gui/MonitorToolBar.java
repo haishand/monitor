@@ -19,18 +19,28 @@ public class MonitorToolBar {
         JButton button = null;
 
         btnStart = makeNavigationButton("start", "启动监控服务", "启动");
-        btnStart.addActionListener(new StartActionListener());
+//        btnStart.addActionListener(new StartActionListener());
         toolBar.add(btnStart);
 
         btnStop = makeNavigationButton("stop", "停止监控服务", "停止");
-        btnStop.addActionListener(new StopActionListener());
+//        btnStop.addActionListener(new StopActionListener());
         toolBar.add(btnStop);
 
+        btnStart.setEnabled(true);
+        btnStop.setEnabled(false);
         btnStart.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                btnStart.setEnabled(false);
-                btnStop.setEnabled(true);
+                btnStart.setEnabled(!btnStart.isEnabled());
+                btnStop.setEnabled(!btnStop.isEnabled());
+            }
+        });
+
+        btnStop.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                btnStart.setEnabled(!btnStart.isEnabled());
+                btnStop.setEnabled(!btnStop.isEnabled());
             }
         });
 

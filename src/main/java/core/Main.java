@@ -1,6 +1,7 @@
 package core;
 
 import com.jnrsmcu.sdk.netdevice.RSServer;
+import core.event.MainLoop;
 import gui.MonitorMenu;
 import gui.MonitorTable;
 import gui.MonitorToolBar;
@@ -19,6 +20,7 @@ public class Main {
 
     private static JFrame mainWindow = null;
     private static RSServer rsServer = null;
+    private static MainLoop mainLoop = null;
 
     public static void main(String[] args) {
         init();
@@ -35,8 +37,8 @@ public class Main {
             }
         });
 
-        // main loop
-        new Thread(new MainLoop()).start();
+        // main mainLoop
+        new Thread(mainLoop).start();
 
     }
 
@@ -78,12 +80,17 @@ public class Main {
         getMainWindow().repaint();
     }
 
+
     public static JFrame getMainWindow() {
         return mainWindow;
     }
 
     public static void setMainWindow(JFrame mainWindow) {
         Main.mainWindow = mainWindow;
+    }
+
+    public static MainLoop getMainLoop() {
+        return mainLoop;
     }
 
     public static RSServer getRsServer() {

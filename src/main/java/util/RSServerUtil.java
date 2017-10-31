@@ -13,7 +13,7 @@ public class RSServerUtil {
                 Integer.parseInt(
                         PropertiesUtil.getInstance().getValue(PropertiesUtil.ParamType.PORT.getName()
                         )));
-//        rsServer.addDataListener(MyDataListener);
+        rsServer.addDataListener(MyDataListener);
     }
 
     public RSServerUtil() {
@@ -30,7 +30,11 @@ public class RSServerUtil {
     }
 
     public static void stop() {
-        // TODO
+        try {
+            rsServer.stop();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void timming(int deviceId) {
