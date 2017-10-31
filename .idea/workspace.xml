@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ddb138f-7a7d-4b2c-844b-f527213af6d7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/core/MainLoop$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/core/MainLoop.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/core/Message$Type.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/core/Message.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/action/MyDataListener.class" afterPath="$PROJECT_DIR$/target/classes/action/MyDataListener.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/core/Main$1.class" afterPath="$PROJECT_DIR$/target/classes/core/Main$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/core/Main.class" afterPath="$PROJECT_DIR$/target/classes/core/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/util/RSServerUtil.class" afterPath="$PROJECT_DIR$/target/classes/util/RSServerUtil.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/core/event/MainLoop.java" afterPath="$PROJECT_DIR$/src/main/java/core/event/MainLoop.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/util/RSServerUtil.java" afterPath="$PROJECT_DIR$/src/main/java/util/RSServerUtil.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -621,7 +615,7 @@
       <workItem from="1509087351319" duration="453000" />
       <workItem from="1509327957723" duration="14841000" />
       <workItem from="1509410889271" duration="16214000" />
-      <workItem from="1509436029521" duration="4846000" />
+      <workItem from="1509436029521" duration="4872000" />
     </task>
     <task id="LOCAL-00001" summary="mainloop ready">
       <created>1509439578880</created>
@@ -630,11 +624,18 @@
       <option name="project" value="LOCAL" />
       <updated>1509439578880</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add mydatalistener">
+      <created>1509440902885</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1509440902886</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42814000" />
+    <option name="totallyTimeSpent" value="42840000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -676,7 +677,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="mainloop ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="mainloop ready" />
+    <MESSAGE value="add mydatalistener" />
+    <option name="LAST_COMMIT_MESSAGE" value="add mydatalistener" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
