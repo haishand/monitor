@@ -15,29 +15,32 @@ public class MainLoop implements Runnable {
         while(isRunning) {
             try {
                 MEvent m = mainQueue.take();
-                switch(m.getType()) {
-                    case ID_DB_RECORD:
-                        break;
-                    case ID_ALARM_TIMER:
-                        break;
-                    case ID_UPDATE_UI:
-                        // update device list
-
-                        // update alarm list
-
-                        // repaint ui
-                        Main.getMainWindow().repaint();
-
-                        break;
-                    default:
-
-                }
+                processMEvent(m);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-
         }
 
+    }
+
+    private void processMEvent(MEvent m) {
+        switch(m.getType()) {
+            case ID_DB_RECORD:
+                break;
+            case ID_ALARM_TIMER:
+                break;
+            case ID_UPDATE_UI:
+                // update device list
+
+                // update alarm list
+
+                // repaint ui
+                Main.getMainWindow().repaint();
+
+                break;
+            default:
+
+        }
     }
 
     public void stop() {
