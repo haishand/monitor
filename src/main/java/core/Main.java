@@ -4,15 +4,19 @@ import com.jnrsmcu.sdk.netdevice.RSServer;
 import core.event.MEvent;
 import core.event.MType;
 import core.event.MainLoop;
+import dao.DeviceDao;
+import domain.Device;
 import gui.MonitorMenu;
 import gui.MonitorTable;
 import gui.MonitorToolBar;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
+import util.MyBatisUtils;
 import util.PropertiesUtil;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.List;
 
 /**
  * @author haishand
@@ -73,11 +77,13 @@ public class Main {
         mainLoop.getMainQueue().add(new MEvent(MType.ID_UPDATE_DATA, null, null));
     }
 
-    protected static void updateData() {
+    public static void updateData() {
         new SwingWorker() {
 
             @Override
             protected Object doInBackground() throws Exception {
+                DeviceDao devDao = new DeviceDao(MyBatisUtils.getSqlSessionFactory());
+                List<Device> devList = devDao.select();
                 return null;
             }
         };
