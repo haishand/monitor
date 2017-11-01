@@ -42,9 +42,7 @@
 
 
     <mappers>
-        <mapper resource="mapper/device_info.xml"/>
         <mapper resource="mapper/device.xml"/>
         <mapper resource="mapper/devicelist.xml"/>
-        <mapper resource="mapper/latest.xml"/>
     </mappers>
 </configuration>

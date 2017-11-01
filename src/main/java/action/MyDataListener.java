@@ -30,11 +30,11 @@ public class MyDataListener implements IDataListener {
                     "param1:" + param1 + "," +
                     "param2:" + param2 + "," +
                     "status:" + status);
-            Device dev = new Device(id, status, param1, param2, time);
+/*            Device dev = new Device(id, status, param1, param2, time);
             Object[] argArray = {dev};
-            MEvent msg = new MEvent(MType.ID_DB_RECORD, argArray, null);
+            MEvent e = new MEvent(MType.ID_DB_RECORD, argArray, null);
 
-            Main.getMainLoop().getMainQueue().offer(msg);
+            Main.getMainLoop().getMainQueue().offer(e);*/
 
         }
 

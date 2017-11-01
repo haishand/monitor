@@ -29,8 +29,9 @@ public class MainLoop implements Runnable {
                 break;
             case ID_ALARM_TIMER:
                 break;
-            case ID_UPDATE_UI:
+            case ID_UPDATE_DATA:
                 // update device list
+                Main.getMainWindow().updateData();
 
                 // update alarm list
 

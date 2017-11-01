@@ -1,6 +1,8 @@
 package core;
 
 import com.jnrsmcu.sdk.netdevice.RSServer;
+import core.event.MEvent;
+import core.event.MType;
 import core.event.MainLoop;
 import gui.MonitorMenu;
 import gui.MonitorTable;
@@ -68,7 +70,17 @@ public class Main {
     }
 
     private static void loadData() {
-//        MonitorTable.getInstance().updateData();
+        mainLoop.getMainQueue().add(new MEvent(MType.ID_UPDATE_DATA, null, null));
+    }
+
+    private static void updateData() {
+        new SwingWorker() {
+
+            @Override
+            protected Object doInBackground() throws Exception {
+                return null;
+            }
+        };
     }
 
     private static void initCfg() {

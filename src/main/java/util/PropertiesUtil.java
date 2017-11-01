@@ -9,7 +9,8 @@ public class PropertiesUtil {
     private static PropertiesUtil instance = null;
     private static String PROPERTIES_FILE_NAME = "monitor.cfg";
     public static enum ParamType {
-        IP("IP"), PORT("PORT");
+        IP("IP"),
+        PORT("PORT");
 
         private String name;
 
