@@ -31,7 +31,7 @@ public class MainLoop implements Runnable {
                 break;
             case ID_UPDATE_DATA:
                 // update device list
-                Main.getMainWindow().updateData();
+                Main.updateData();
 
                 // update alarm list
 

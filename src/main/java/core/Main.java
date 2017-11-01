@@ -73,7 +73,7 @@ public class Main {
         mainLoop.getMainQueue().add(new MEvent(MType.ID_UPDATE_DATA, null, null));
     }
 
-    private static void updateData() {
+    protected static void updateData() {
         new SwingWorker() {
 
             @Override
