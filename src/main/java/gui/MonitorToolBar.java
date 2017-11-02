@@ -1,8 +1,6 @@
 package gui;
 
-import action.SettingActionListener;
-import action.StartActionListener;
-import action.StopActionListener;
+import action.*;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -47,6 +45,22 @@ public class MonitorToolBar {
         btnSetting = makeNavigationButton("setting", "设置系统参数", "设置");
         btnSetting.addActionListener(new SettingActionListener());
         toolBar.add(btnSetting);
+
+        button = makeNavigationButton("add", "添加设备", "添加");
+        button.addActionListener(new AddDeviceActionListener());
+        toolBar.add(button);
+
+        button = makeNavigationButton("scan", "扫描设备", "扫描");
+        button.addActionListener(new ScanDeviceActionListener());
+        toolBar.add(button);
+
+        button = makeNavigationButton("delete", "删除设备", "删除");
+        button.addActionListener(new DelDeviceActionListener());
+        toolBar.add(button);
+
+        button = makeNavigationButton("log", "系统日志", "日志");
+        button.addActionListener(new ShowLogActionListener());
+        toolBar.add(button);
 
         return toolBar;
     }

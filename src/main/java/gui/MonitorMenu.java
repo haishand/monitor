@@ -31,6 +31,11 @@ public class MonitorMenu {
         menu.add(menuItem);
         addIcon(menuItem, "m_setting");
 
+        menuItem = new JMenuItem("日志");
+        menuItem.addActionListener(new SettingActionListener());
+        menu.add(menuItem);
+        addIcon(menuItem, "m_log");
+
         // device menu
         menu = new JMenu("设备");
         menuBar.add(menu);
@@ -40,6 +45,9 @@ public class MonitorMenu {
         menuItem = new JMenuItem("扫描");
         menu.add(menuItem);
         addIcon(menuItem, "m_scan");
+        menuItem = new JMenuItem("删除");
+        menu.add(menuItem);
+        addIcon(menuItem, "m_delete");
 
         // help menu
         menu = new JMenu("帮助");
