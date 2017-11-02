@@ -1,7 +1,7 @@
 package domain;
 
 public class Device {
-    private int id;
+    private int code;
     private int deviceId;
     private int nodeId;
     private String deviceName;
@@ -16,7 +16,7 @@ public class Device {
     private float hiAlarmLimit2;
     private int onlineStatus;
 
-    public Device(int id,
+    public Device(int code,
                   int deviceId,
                   int nodeId,
                   String deviceName,
@@ -29,7 +29,7 @@ public class Device {
                   float lowAlarmLimit2,
                   float hiAlarmLimit2,
                   int onlineStatus) {
-        this.id = id;
+        this.code = code;
         this.deviceId = deviceId;
         this.nodeId = nodeId;
         this.deviceName = deviceName;
@@ -47,7 +47,7 @@ public class Device {
     @Override
     public String toString() {
         return "Device{" +
-                "id=" + id +
+                "code=" + code +
                 ", deviceId=" + deviceId +
                 ", nodeId=" + nodeId +
                 ", deviceName='" + deviceName + '\'' +
@@ -63,12 +63,12 @@ public class Device {
                 '}';
     }
 
-    public int getId() {
-        return id;
+    public int getCode() {
+        return code;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setCode(int code) {
+        this.code = code;
     }
 
     public int getDeviceId() {

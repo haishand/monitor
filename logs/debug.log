@@ -26,7 +26,7 @@
 2017-11-02 09:21:19  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:264 ] - [ DEBUG ]  Opening JDBC Connection
 2017-11-02 09:21:19  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:593 ] - [ DEBUG ]  Created connection 27655731.
 2017-11-02 09:21:19  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:594 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a5fe33]
-2017-11-02 09:21:19  [ com.domain.Device.insert:main:596 ] - [ DEBUG ]  ==>  Preparing: insert into device( id, deviceId, nodeId, deviceName, deviceType, param1Name, param2Name, saveInterval, lowAlarmLimit1, hiAlarmLimit1, lowAlarmLimit2, hiAlarmLimit2, alarmStatus, onlineStatus) values( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2017-11-02 09:21:19  [ com.domain.Device.insert:main:596 ] - [ DEBUG ]  ==>  Preparing: insert into device( code, deviceId, nodeId, deviceName, deviceType, param1Name, param2Name, saveInterval, lowAlarmLimit1, hiAlarmLimit1, lowAlarmLimit2, hiAlarmLimit2, alarmStatus, onlineStatus) values( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 2017-11-02 09:21:19  [ com.domain.Device.insert:main:630 ] - [ DEBUG ]  ==> Parameters: 1(Integer), 1(Integer), 1(Integer), test1(String), 10(Integer), 温度(String), 湿度(String), 10(Integer), 10(Integer), 100(Integer), 10(Integer), 100(Integer), 1(Integer), 1(Integer)
 2017-11-02 09:21:19  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:683 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a5fe33]
 2017-11-02 09:21:19  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:692 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a5fe33]
@@ -40,7 +40,7 @@
 2017-11-02 09:23:50  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:237 ] - [ DEBUG ]  Opening JDBC Connection
 2017-11-02 09:23:50  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:488 ] - [ DEBUG ]  Created connection 27655731.
 2017-11-02 09:23:50  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:489 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a5fe33]
-2017-11-02 09:23:50  [ com.domain.Device.insert:main:491 ] - [ DEBUG ]  ==>  Preparing: insert into device( id, deviceId, nodeId, deviceName, deviceType, param1Name, param2Name, saveInterval, lowAlarmLimit1, hiAlarmLimit1, lowAlarmLimit2, hiAlarmLimit2, alarmStatus, onlineStatus) values( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2017-11-02 09:23:50  [ com.domain.Device.insert:main:491 ] - [ DEBUG ]  ==>  Preparing: insert into device( code, deviceId, nodeId, deviceName, deviceType, param1Name, param2Name, saveInterval, lowAlarmLimit1, hiAlarmLimit1, lowAlarmLimit2, hiAlarmLimit2, alarmStatus, onlineStatus) values( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 2017-11-02 09:23:50  [ com.domain.Device.insert:main:526 ] - [ DEBUG ]  ==> Parameters: 1(Integer), 1(Integer), 1(Integer), test1(String), 10(Integer), 温度(String), 湿度(String), 10(Integer), 10(Integer), 100(Integer), 10(Integer), 100(Integer), 1(Integer), 1(Integer)
 2017-11-02 09:23:50  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:536 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a5fe33]
 2017-11-02 09:23:50  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:537 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a5fe33]
@@ -54,7 +54,7 @@
 2017-11-02 09:30:17  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:250 ] - [ DEBUG ]  Opening JDBC Connection
 2017-11-02 09:30:18  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:489 ] - [ DEBUG ]  Created connection 27655731.
 2017-11-02 09:30:18  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:490 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a5fe33]
-2017-11-02 09:30:18  [ com.domain.Device.insert:main:492 ] - [ DEBUG ]  ==>  Preparing: insert into device( id, deviceId, nodeId, deviceName, deviceType, param1Name, param2Name, saveInterval, lowAlarmLimit1, hiAlarmLimit1, lowAlarmLimit2, hiAlarmLimit2, alarmStatus, onlineStatus) values( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2017-11-02 09:30:18  [ com.domain.Device.insert:main:492 ] - [ DEBUG ]  ==>  Preparing: insert into device( code, deviceId, nodeId, deviceName, deviceType, param1Name, param2Name, saveInterval, lowAlarmLimit1, hiAlarmLimit1, lowAlarmLimit2, hiAlarmLimit2, alarmStatus, onlineStatus) values( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 2017-11-02 09:30:18  [ com.domain.Device.insert:main:525 ] - [ DEBUG ]  ==> Parameters: 1(Integer), 1(Integer), 1(Integer), test1(String), 10(Integer), 温度(String), 湿度(String), 10(Integer), 10(Integer), 100(Integer), 10(Integer), 100(Integer), 1(Integer), 1(Integer)
 2017-11-02 09:30:18  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:536 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a5fe33]
 2017-11-02 09:30:18  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:536 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a5fe33]
@@ -68,7 +68,7 @@
 2017-11-02 09:31:56  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:238 ] - [ DEBUG ]  Opening JDBC Connection
 2017-11-02 09:31:56  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:496 ] - [ DEBUG ]  Created connection 27655731.
 2017-11-02 09:31:56  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:497 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a5fe33]
-2017-11-02 09:31:56  [ com.domain.Device.insert:main:499 ] - [ DEBUG ]  ==>  Preparing: insert into device( id, deviceId, nodeId, deviceName, deviceType, param1Name, param2Name, saveInterval, lowAlarmLimit1, hiAlarmLimit1, lowAlarmLimit2, hiAlarmLimit2, alarmStatus, onlineStatus) values( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2017-11-02 09:31:56  [ com.domain.Device.insert:main:499 ] - [ DEBUG ]  ==>  Preparing: insert into device( code, deviceId, nodeId, deviceName, deviceType, param1Name, param2Name, saveInterval, lowAlarmLimit1, hiAlarmLimit1, lowAlarmLimit2, hiAlarmLimit2, alarmStatus, onlineStatus) values( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 2017-11-02 09:31:56  [ com.domain.Device.insert:main:534 ] - [ DEBUG ]  ==> Parameters: 1(Integer), 1(Integer), 1(Integer), test1(String), 10(Integer), 温度(String), 湿度(String), 10(Integer), 10(Integer), 100(Integer), 10(Integer), 100(Integer), 1(Integer), 1(Integer)
 2017-11-02 09:31:56  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:545 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a5fe33]
 2017-11-02 09:31:56  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:546 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a5fe33]
@@ -82,7 +82,7 @@
 2017-11-02 09:37:01  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:233 ] - [ DEBUG ]  Opening JDBC Connection
 2017-11-02 09:37:01  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:475 ] - [ DEBUG ]  Created connection 27655731.
 2017-11-02 09:37:01  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:475 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a5fe33]
-2017-11-02 09:37:01  [ com.domain.Device.insert:main:478 ] - [ DEBUG ]  ==>  Preparing: insert into device( id, deviceId, nodeId, deviceName, deviceType, param1Name, param2Name, saveInterval, lowAlarmLimit1, hiAlarmLimit1, lowAlarmLimit2, hiAlarmLimit2, alarmStatus, onlineStatus) values( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2017-11-02 09:37:01  [ com.domain.Device.insert:main:478 ] - [ DEBUG ]  ==>  Preparing: insert into device( code, deviceId, nodeId, deviceName, deviceType, param1Name, param2Name, saveInterval, lowAlarmLimit1, hiAlarmLimit1, lowAlarmLimit2, hiAlarmLimit2, alarmStatus, onlineStatus) values( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 2017-11-02 09:37:01  [ com.domain.Device.insert:main:509 ] - [ DEBUG ]  ==> Parameters: 1(Integer), 1(Integer), 1(Integer), test1(String), 10(Integer), 温度(String), 湿度(String), 10(Integer), 10(Integer), 100(Integer), 10(Integer), 100(Integer), 1(Integer), 1(Integer)
 2017-11-02 09:37:01  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:517 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a5fe33]
 2017-11-02 09:37:01  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:518 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a5fe33]
@@ -96,7 +96,7 @@
 2017-11-02 09:37:17  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:250 ] - [ DEBUG ]  Opening JDBC Connection
 2017-11-02 09:37:17  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:507 ] - [ DEBUG ]  Created connection 27655731.
 2017-11-02 09:37:17  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:508 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a5fe33]
-2017-11-02 09:37:17  [ com.domain.Device.insert:main:510 ] - [ DEBUG ]  ==>  Preparing: insert into device( id, deviceId, nodeId, deviceName, deviceType, param1Name, param2Name, saveInterval, lowAlarmLimit1, hiAlarmLimit1, lowAlarmLimit2, hiAlarmLimit2, alarmStatus, onlineStatus) values( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2017-11-02 09:37:17  [ com.domain.Device.insert:main:510 ] - [ DEBUG ]  ==>  Preparing: insert into device( code, deviceId, nodeId, deviceName, deviceType, param1Name, param2Name, saveInterval, lowAlarmLimit1, hiAlarmLimit1, lowAlarmLimit2, hiAlarmLimit2, alarmStatus, onlineStatus) values( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 2017-11-02 09:37:17  [ com.domain.Device.insert:main:547 ] - [ DEBUG ]  ==> Parameters: 2(Integer), 1(Integer), 1(Integer), test1(String), 10(Integer), 温度(String), 湿度(String), 10(Integer), 10(Integer), 100(Integer), 10(Integer), 100(Integer), 1(Integer), 1(Integer)
 2017-11-02 09:37:17  [ com.domain.Device.insert:main:548 ] - [ DEBUG ]  <==    Updates: 1
 2017-11-02 09:37:17  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:549 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a5fe33]
@@ -162,7 +162,7 @@
 2017-11-02 09:38:39  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:237 ] - [ DEBUG ]  Opening JDBC Connection
 2017-11-02 09:38:39  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:510 ] - [ DEBUG ]  Created connection 27655731.
 2017-11-02 09:38:39  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:510 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a5fe33]
-2017-11-02 09:38:39  [ com.domain.Device.insert:main:513 ] - [ DEBUG ]  ==>  Preparing: insert into device( id, deviceId, nodeId, deviceName, deviceType, param1Name, param2Name, saveInterval, lowAlarmLimit1, hiAlarmLimit1, lowAlarmLimit2, hiAlarmLimit2, alarmStatus, onlineStatus) values( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2017-11-02 09:38:39  [ com.domain.Device.insert:main:513 ] - [ DEBUG ]  ==>  Preparing: insert into device( code, deviceId, nodeId, deviceName, deviceType, param1Name, param2Name, saveInterval, lowAlarmLimit1, hiAlarmLimit1, lowAlarmLimit2, hiAlarmLimit2, alarmStatus, onlineStatus) values( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 2017-11-02 09:38:39  [ com.domain.Device.insert:main:555 ] - [ DEBUG ]  ==> Parameters: 2(Integer), 1(Integer), 1(Integer), test1(String), 10(Integer), 温度(String), 湿度(String), 10(Integer), 10(Integer), 100(Integer), 10(Integer), 100(Integer), 1(Integer), 1(Integer)
 2017-11-02 09:38:39  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:567 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a5fe33]
 2017-11-02 09:38:39  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:568 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a5fe33]
@@ -190,7 +190,7 @@
 2017-11-02 09:39:36  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:254 ] - [ DEBUG ]  Opening JDBC Connection
 2017-11-02 09:39:36  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:504 ] - [ DEBUG ]  Created connection 27655731.
 2017-11-02 09:39:36  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:504 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a5fe33]
-2017-11-02 09:39:36  [ com.domain.Device.insert:main:506 ] - [ DEBUG ]  ==>  Preparing: insert into device( id, deviceId, nodeId, deviceName, deviceType, param1Name, param2Name, saveInterval, lowAlarmLimit1, hiAlarmLimit1, lowAlarmLimit2, hiAlarmLimit2, alarmStatus, onlineStatus) values( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2017-11-02 09:39:36  [ com.domain.Device.insert:main:506 ] - [ DEBUG ]  ==>  Preparing: insert into device( code, deviceId, nodeId, deviceName, deviceType, param1Name, param2Name, saveInterval, lowAlarmLimit1, hiAlarmLimit1, lowAlarmLimit2, hiAlarmLimit2, alarmStatus, onlineStatus) values( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 2017-11-02 09:39:36  [ com.domain.Device.insert:main:546 ] - [ DEBUG ]  ==> Parameters: 2(Integer), 1(Integer), 1(Integer), test1(String), 10(Integer), 温度(String), 湿度(String), 10(Integer), 10(Integer), 100(Integer), 10(Integer), 100(Integer), 1(Integer), 1(Integer)
 2017-11-02 09:39:36  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:558 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a5fe33]
 2017-11-02 09:39:36  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:558 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a5fe33]
@@ -873,3 +873,45 @@
 2017-11-02 16:01:01  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:997 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@63a3d5]
 2017-11-02 16:01:01  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:998 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@63a3d5]
 2017-11-02 16:01:01  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:998 ] - [ DEBUG ]  Returned connection 6530005 to pool.
+2017-11-02 16:09:38  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-02 16:09:38  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:162 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 16:09:38  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:162 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 16:09:38  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:162 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 16:09:38  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:163 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 16:09:38  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:311 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-02 16:09:38  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:725 ] - [ DEBUG ]  Created connection 10992321.
+2017-11-02 16:09:38  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:726 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@a7bac1]
+2017-11-02 16:09:38  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:729 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
+2017-11-02 16:09:38  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:765 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-02 16:09:38  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:786 ] - [ DEBUG ]  <==      Total: 3
+2017-11-02 16:09:38  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:788 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@a7bac1]
+2017-11-02 16:09:38  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:788 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@a7bac1]
+2017-11-02 16:09:38  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:789 ] - [ DEBUG ]  Returned connection 10992321 to pool.
+2017-11-02 16:10:41  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-02 16:10:41  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:153 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 16:10:41  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:153 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 16:10:41  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:153 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 16:10:41  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:154 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 16:10:41  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:311 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-02 16:10:41  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:726 ] - [ DEBUG ]  Created connection 6530005.
+2017-11-02 16:10:41  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:727 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@63a3d5]
+2017-11-02 16:10:41  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:730 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
+2017-11-02 16:10:41  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:773 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-02 16:10:41  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:796 ] - [ DEBUG ]  <==      Total: 3
+2017-11-02 16:10:41  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:797 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@63a3d5]
+2017-11-02 16:10:41  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:798 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@63a3d5]
+2017-11-02 16:10:41  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:798 ] - [ DEBUG ]  Returned connection 6530005 to pool.
+2017-11-02 16:13:11  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-02 16:13:11  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:156 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 16:13:11  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:157 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 16:13:11  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:157 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 16:13:11  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:157 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 16:13:11  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:324 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-02 16:13:12  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:754 ] - [ DEBUG ]  Created connection 21805517.
+2017-11-02 16:13:12  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:755 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@14cb9cd]
+2017-11-02 16:13:12  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:760 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
+2017-11-02 16:13:12  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:805 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-02 16:13:12  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:878 ] - [ DEBUG ]  <==      Total: 3
+2017-11-02 16:13:12  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:879 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@14cb9cd]
+2017-11-02 16:13:12  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:881 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@14cb9cd]
+2017-11-02 16:13:12  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:881 ] - [ DEBUG ]  Returned connection 21805517 to pool.

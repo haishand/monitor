@@ -5,7 +5,7 @@
 
 <mapper namespace="com.domain.LatestData">
     <resultMap id="result" type="domain.LatestData">
-        <result property="id" column="id" />
+        <result property="code" column="code" />
         <result property="param1" column="param1"/>
         <result property="param2" column="param2"/>
         <result property="recordTime" column="recordTime"/>
@@ -17,12 +17,12 @@
     </select>
     <insert id="addOne" parameterType="domain.LatestData">
         insert into device(
-            id,
+            code,
             param1,
             param2,
             recordTime)
         values(
-            #{id},
+            #{code},
             #{param1},
             #{param2},
             #{recordTime})
