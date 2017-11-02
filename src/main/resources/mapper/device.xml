@@ -17,7 +17,6 @@
         <result property="hiAlarmLimit1" column="hiAlarmLimit1"/>
         <result property="lowAlarmLimit2" column="lowAlarmLimit2"/>
         <result property="hiAlarmLimit2" column="hiAlarmLimit2"/>
-        <result property="alarmStatus" column="alarmStatus"/>
         <result property="onlineStatus" column="onlineStatus"/>
     </resultMap>
 
@@ -29,9 +28,16 @@
         select * from device where id=#{id};
     </select>
 
+    <!--
+    AUTO_INCREMENT for oracle is different.
+    refer http://blog.csdn.net/suwu150/article/details/52895855,
+    http://blog.csdn.net/happylife_haha/article/details/51993350
+    -->
     <insert id="insert" parameterType="domain.Device">
+        <selectKey keyProperty="id" resultType="int" order="BEFORE">
+            select LAST_INSERT_ID();
+        </selectKey>
         insert into device(
-            id,
             deviceId,
             nodeId,
             deviceName,
@@ -43,10 +49,8 @@
             hiAlarmLimit1,
             lowAlarmLimit2,
             hiAlarmLimit2,
-            alarmStatus,
             onlineStatus)
         values(
-            #{id},
             #{deviceId},
             #{nodeId},
             #{deviceName},
@@ -58,7 +62,6 @@
             #{hiAlarmLimit1},
             #{lowAlarmLimit2},
             #{hiAlarmLimit2},
-            #{alarmStatus},
             #{onlineStatus})
     </insert>
 
@@ -76,9 +79,12 @@
             hiAlarmLimit1 = #{hiAlarmLimit1},
             lowAlarmLimit2 = #{lowAlarmLimit2},
             hiAlarmLimit2 = #{hiAlarmLimit2},
-            alarmStatus = #{alarmStatus},
             onlineStatus= #{onlineStatus},
         </set>
         where id=#{id};
     </update>
+
+    <delete id="deleteById" parameterType="int">
+
+    </delete>
 </mapper>

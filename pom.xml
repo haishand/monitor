@@ -42,6 +42,19 @@
             <artifactId>mybatis</artifactId>
             <version>3.4.5</version>
         </dependency>
+
+        <!-- Mybatis Generator-->
+        <dependency>
+            <groupId>org.mybatis.generator</groupId>
+            <artifactId>mybatis-generator</artifactId>
+            <version>1.3.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.generator</groupId>
+            <artifactId>mybatis-generator-maven-plugin</artifactId>
+            <version>1.3.5</version>
+        </dependency>
+
     </dependencies>
 
 </project>

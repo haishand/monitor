@@ -31,7 +31,15 @@ public class MonitorMenu {
         menu.add(menuItem);
         addIcon(menuItem, "m_setting");
 
-        // terminal menu
+        // device menu
+        menu = new JMenu("设备");
+        menuBar.add(menu);
+        menuItem = new JMenuItem("添加");
+        menu.add(menuItem);
+        addIcon(menuItem, "m_add");
+        menuItem = new JMenuItem("扫描");
+        menu.add(menuItem);
+        addIcon(menuItem, "m_scan");
 
         // help menu
         menu = new JMenu("帮助");

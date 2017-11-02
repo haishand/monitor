@@ -1,7 +1,5 @@
 package domain;
 
-import java.util.Date;
-
 public class Device {
     private int id;
     private int deviceId;
@@ -12,32 +10,30 @@ public class Device {
     private String param1Name;
     private String param2Name;
     private int saveInterval;
-    private int lowAlarmLimit1;
-    private int hiAlarmLimit1;
-    private int lowAlarmLimit2;
-    private int hiAlarmLimit2;
-    private int alarmStatus;
+    private float lowAlarmLimit1;
+    private float hiAlarmLimit1;
+    private float lowAlarmLimit2;
+    private float hiAlarmLimit2;
     private int onlineStatus;
 
     public Device(int id,
                   int deviceId,
                   int nodeId,
                   String deviceName,
-                  int deivceType,
+                  int deviceType,
                   String param1Name,
                   String param2Name,
                   int saveInterval,
-                  int lowAlarmLimit1,
-                  int hiAlarmLimit1,
-                  int lowAlarmLimit2,
-                  int hiAlarmLimit2,
-                  int alarmStatus,
+                  float lowAlarmLimit1,
+                  float hiAlarmLimit1,
+                  float lowAlarmLimit2,
+                  float hiAlarmLimit2,
                   int onlineStatus) {
         this.id = id;
         this.deviceId = deviceId;
         this.nodeId = nodeId;
         this.deviceName = deviceName;
-        this.deviceType = deivceType;
+        this.deviceType = deviceType;
         this.param1Name = param1Name;
         this.param2Name = param2Name;
         this.saveInterval = saveInterval;
@@ -45,8 +41,26 @@ public class Device {
         this.hiAlarmLimit1 = hiAlarmLimit1;
         this.lowAlarmLimit2 = lowAlarmLimit2;
         this.hiAlarmLimit2 = hiAlarmLimit2;
-        this.alarmStatus = alarmStatus;
         this.onlineStatus = onlineStatus;
+    }
+
+    @Override
+    public String toString() {
+        return "Device{" +
+                "id=" + id +
+                ", deviceId=" + deviceId +
+                ", nodeId=" + nodeId +
+                ", deviceName='" + deviceName + '\'' +
+                ", deviceType=" + deviceType +
+                ", param1Name='" + param1Name + '\'' +
+                ", param2Name='" + param2Name + '\'' +
+                ", saveInterval=" + saveInterval +
+                ", lowAlarmLimit1=" + lowAlarmLimit1 +
+                ", hiAlarmLimit1=" + hiAlarmLimit1 +
+                ", lowAlarmLimit2=" + lowAlarmLimit2 +
+                ", hiAlarmLimit2=" + hiAlarmLimit2 +
+                ", onlineStatus=" + onlineStatus +
+                '}';
     }
 
     public int getId() {
@@ -113,44 +127,36 @@ public class Device {
         this.saveInterval = saveInterval;
     }
 
-    public int getLowAlarmLimit1() {
+    public float getLowAlarmLimit1() {
         return lowAlarmLimit1;
     }
 
-    public void setLowAlarmLimit1(int lowAlarmLimit1) {
+    public void setLowAlarmLimit1(float lowAlarmLimit1) {
         this.lowAlarmLimit1 = lowAlarmLimit1;
     }
 
-    public int getHiAlarmLimit1() {
+    public float getHiAlarmLimit1() {
         return hiAlarmLimit1;
     }
 
-    public void setHiAlarmLimit1(int hiAlarmLimit1) {
+    public void setHiAlarmLimit1(float hiAlarmLimit1) {
         this.hiAlarmLimit1 = hiAlarmLimit1;
     }
 
-    public int getLowAlarmLimit2() {
+    public float getLowAlarmLimit2() {
         return lowAlarmLimit2;
     }
 
-    public void setLowAlarmLimit2(int lowAlarmLimit2) {
+    public void setLowAlarmLimit2(float lowAlarmLimit2) {
         this.lowAlarmLimit2 = lowAlarmLimit2;
     }
 
-    public int getHiAlarmLimit2() {
+    public float getHiAlarmLimit2() {
         return hiAlarmLimit2;
     }
 
-    public void setHiAlarmLimit2(int hiAlarmLimit2) {
+    public void setHiAlarmLimit2(float hiAlarmLimit2) {
         this.hiAlarmLimit2 = hiAlarmLimit2;
-    }
-
-    public int getAlarmStatus() {
-        return alarmStatus;
-    }
-
-    public void setAlarmStatus(int alarmStatus) {
-        this.alarmStatus = alarmStatus;
     }
 
     public int getOnlineStatus() {
@@ -159,25 +165,5 @@ public class Device {
 
     public void setOnlineStatus(int onlineStatus) {
         this.onlineStatus = onlineStatus;
-    }
-
-    @Override
-    public String toString() {
-        return "Device{" +
-                "id=" + id +
-                ", deviceId=" + deviceId +
-                ", nodeId=" + nodeId +
-                ", deviceName='" + deviceName + '\'' +
-                ", deviceType=" + deviceType +
-                ", param1Name='" + param1Name + '\'' +
-                ", param2Name='" + param2Name + '\'' +
-                ", saveInterval=" + saveInterval +
-                ", lowAlarmLimit1=" + lowAlarmLimit1 +
-                ", hiAlarmLimit1=" + hiAlarmLimit1 +
-                ", lowAlarmLimit2=" + lowAlarmLimit2 +
-                ", hiAlarmLimit2=" + hiAlarmLimit2 +
-                ", alarmStatus=" + alarmStatus +
-                ", onlineStatus=" + onlineStatus +
-                '}';
     }
 }

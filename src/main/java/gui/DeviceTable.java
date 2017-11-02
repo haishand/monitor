@@ -9,13 +9,13 @@ import java.util.Vector;
 /**
  * @author haishand
  */
-public class MonitorTable extends JPanel{
-    private static MonitorTable instance;
+public class DeviceTable extends JPanel{
+    private static DeviceTable instance;
     private JTable table;
 
-    public static MonitorTable getInstance() {
+    public static DeviceTable getInstance() {
         if(instance == null) {
-            instance = new MonitorTable();
+            instance = new DeviceTable();
         }
         return instance;
     }
@@ -36,7 +36,7 @@ public class MonitorTable extends JPanel{
             "设备状态"
     };
 
-    private MonitorTable() {
+    private DeviceTable() {
         super(new BorderLayout());
 
         Object[][] data = {};
@@ -50,7 +50,7 @@ public class MonitorTable extends JPanel{
     }
 
     public static void setModel(Vector<Vector<Object>> rows) {
-        MonitorTable mtable = MonitorTable.getInstance();
+        DeviceTable mtable = DeviceTable.getInstance();
         DefaultTableModel tm = new DefaultTableModel() {
             @Override
             public boolean isCellEditable(int row, int column) {

@@ -43,6 +43,6 @@
 
     <mappers>
         <mapper resource="mapper/device.xml"/>
-        <mapper resource="mapper/devicelist.xml"/>
+        <mapper resource="mapper/devicedata.xml"/>
     </mappers>
 </configuration>

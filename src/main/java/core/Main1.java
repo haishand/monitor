@@ -4,7 +4,6 @@ import com.jnrsmcu.sdk.netdevice.RSServer;
 import core.event.MainLoop;
 import dao.DeviceDao;
 import domain.Device;
-import gui.AlarmTable;
 import gui.MonitorMenu;
 import gui.DeviceTable;
 import gui.MonitorToolBar;
@@ -22,8 +21,8 @@ import java.util.concurrent.ExecutionException;
 /**
  * @author haishand
  */
-public class Main {
-    private static final Logger log = LogManager.getLogger(Main.class);
+public class Main1 {
+    private static final Logger log = LogManager.getLogger(Main1.class);
 
     private static JFrame mainWindow = null;
     private static RSServer rsServer = null;
@@ -54,18 +53,10 @@ public class Main {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setIconImage(Toolkit.getDefaultToolkit().getImage("images/icon.png"));
 
-        JPanel mainPane = new JPanel();
-        mainPane.setLayout(new BorderLayout());
-        mainPane.add(MonitorToolBar.createToolBar(), BorderLayout.NORTH);
-
-        JSplitPane splitPane = new JSplitPane();
-        splitPane.setDividerLocation(Toolkit.getDefaultToolkit().getScreenSize().width);
-        splitPane.setLeftComponent(DeviceTable.getInstance());
-        splitPane.setRightComponent(AlarmTable.getInstance());
-
-        mainPane.add(splitPane, BorderLayout.CENTER);
-
-        frame.setContentPane(mainPane);
+        DeviceTable newContentPane = DeviceTable.getInstance();
+        newContentPane.setOpaque(true);
+        newContentPane.add(MonitorToolBar.createToolBar(), "North");
+        frame.setContentPane(newContentPane);
         frame.setJMenuBar(MonitorMenu.createMenuBar());
 
         frame.pack();
@@ -143,7 +134,7 @@ public class Main {
     }
 
     public static void setMainWindow(JFrame mainWindow) {
-        Main.mainWindow = mainWindow;
+        Main1.mainWindow = mainWindow;
     }
 
     public static MainLoop getMainLoop() {
@@ -155,6 +146,6 @@ public class Main {
     }
 
     public static void setRsServer(RSServer rsServer) {
-        Main.rsServer = rsServer;
+        Main1.rsServer = rsServer;
     }
 }

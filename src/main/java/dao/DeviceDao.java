@@ -38,10 +38,10 @@ public class DeviceDao {
 
     public static void main(String[] args) {
         DeviceDao devDao = new DeviceDao(MyBatisUtil.getSqlSessionFactory());
-        Device dev = new Device(2, 1, 1, "test1", 10,
-                "温度", "湿度", 10,
+        Device dev = new Device(0, 1, 1, "test1", 10,
+                "有功", "无", 10,
                 10, 100, 10, 100,
-                1, 1);
+                1);
 
         devDao.insert(dev);
         List<Device> devices = devDao.select();

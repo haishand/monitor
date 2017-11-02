@@ -476,3 +476,400 @@
 2017-11-02 10:27:03  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:909 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1775320]
 2017-11-02 10:27:03  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:910 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1775320]
 2017-11-02 10:27:03  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:910 ] - [ DEBUG ]  Returned connection 24597280 to pool.
+2017-11-02 10:38:39  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-02 10:38:39  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:156 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:38:39  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:156 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:38:39  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:157 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:38:39  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:157 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:38:39  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:298 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-02 10:38:40  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:552 ] - [ DEBUG ]  Created connection 31253135.
+2017-11-02 10:38:40  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:552 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1dce28f]
+2017-11-02 10:38:40  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:555 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
+2017-11-02 10:38:40  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:588 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-02 10:38:40  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:605 ] - [ DEBUG ]  <==      Total: 2
+2017-11-02 10:38:40  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:606 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1dce28f]
+2017-11-02 10:38:40  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:607 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1dce28f]
+2017-11-02 10:38:40  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:607 ] - [ DEBUG ]  Returned connection 31253135 to pool.
+2017-11-02 10:38:58  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-02 10:38:58  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:159 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:38:58  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:159 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:38:58  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:159 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:38:58  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:160 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:38:59  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:314 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-02 10:38:59  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:717 ] - [ DEBUG ]  Created connection 24597280.
+2017-11-02 10:38:59  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:717 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1775320]
+2017-11-02 10:38:59  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:720 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
+2017-11-02 10:38:59  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:748 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-02 10:38:59  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:764 ] - [ DEBUG ]  <==      Total: 2
+2017-11-02 10:38:59  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:764 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1775320]
+2017-11-02 10:38:59  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:765 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1775320]
+2017-11-02 10:38:59  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:765 ] - [ DEBUG ]  Returned connection 24597280 to pool.
+2017-11-02 10:43:10  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-02 10:43:10  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:157 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:43:10  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:158 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:43:10  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:158 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:43:10  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:158 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:43:10  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:306 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-02 10:43:10  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:715 ] - [ DEBUG ]  Created connection 28501627.
+2017-11-02 10:43:10  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:715 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1b2e67b]
+2017-11-02 10:43:10  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:717 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
+2017-11-02 10:43:11  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:753 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-02 10:43:11  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:769 ] - [ DEBUG ]  <==      Total: 2
+2017-11-02 10:43:11  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:770 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1b2e67b]
+2017-11-02 10:43:11  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:770 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1b2e67b]
+2017-11-02 10:43:11  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:771 ] - [ DEBUG ]  Returned connection 28501627 to pool.
+2017-11-02 10:44:03  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-02 10:44:04  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:161 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:44:04  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:161 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:44:04  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:161 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:44:04  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:162 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:44:04  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:307 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-02 10:44:04  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:732 ] - [ DEBUG ]  Created connection 21589383.
+2017-11-02 10:44:04  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:733 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1496d87]
+2017-11-02 10:44:04  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:735 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
+2017-11-02 10:44:04  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:773 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-02 10:44:04  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:793 ] - [ DEBUG ]  <==      Total: 2
+2017-11-02 10:44:04  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:794 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1496d87]
+2017-11-02 10:44:04  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:796 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1496d87]
+2017-11-02 10:44:04  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:796 ] - [ DEBUG ]  Returned connection 21589383 to pool.
+2017-11-02 10:47:09  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:1 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-02 10:47:09  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:153 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:47:09  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:154 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:47:09  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:154 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:47:09  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:154 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:47:09  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:294 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-02 10:47:10  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:697 ] - [ DEBUG ]  Created connection 7802354.
+2017-11-02 10:47:10  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:697 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@770df2]
+2017-11-02 10:47:10  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:702 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
+2017-11-02 10:47:10  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:742 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-02 10:47:10  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:759 ] - [ DEBUG ]  <==      Total: 2
+2017-11-02 10:47:10  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:760 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@770df2]
+2017-11-02 10:47:10  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:761 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@770df2]
+2017-11-02 10:47:10  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:761 ] - [ DEBUG ]  Returned connection 7802354 to pool.
+2017-11-02 10:52:58  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-02 10:52:58  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:155 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:52:58  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:155 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:52:58  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:155 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:52:58  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:155 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:52:58  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:325 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-02 10:52:59  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:753 ] - [ DEBUG ]  Created connection 14496300.
+2017-11-02 10:52:59  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:753 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@dd322c]
+2017-11-02 10:52:59  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:757 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
+2017-11-02 10:52:59  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:789 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-02 10:52:59  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:807 ] - [ DEBUG ]  <==      Total: 2
+2017-11-02 10:52:59  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:808 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@dd322c]
+2017-11-02 10:52:59  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:809 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@dd322c]
+2017-11-02 10:52:59  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:809 ] - [ DEBUG ]  Returned connection 14496300 to pool.
+2017-11-02 10:53:33  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-02 10:53:33  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:155 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:53:33  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:156 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:53:33  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:156 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:53:33  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:156 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:53:33  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:298 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-02 10:53:34  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:699 ] - [ DEBUG ]  Created connection 12514629.
+2017-11-02 10:53:34  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:699 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@bef545]
+2017-11-02 10:53:34  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:703 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
+2017-11-02 10:53:34  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:741 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-02 10:53:34  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:758 ] - [ DEBUG ]  <==      Total: 2
+2017-11-02 10:53:34  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:759 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@bef545]
+2017-11-02 10:53:34  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:759 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@bef545]
+2017-11-02 10:53:34  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:760 ] - [ DEBUG ]  Returned connection 12514629 to pool.
+2017-11-02 10:53:44  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-02 10:53:44  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:174 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:53:44  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:175 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:53:44  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:175 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:53:44  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:176 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:53:44  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:350 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-02 10:53:45  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:752 ] - [ DEBUG ]  Created connection 6968950.
+2017-11-02 10:53:45  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:752 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6a5676]
+2017-11-02 10:53:45  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:755 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
+2017-11-02 10:53:45  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:793 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-02 10:53:45  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:812 ] - [ DEBUG ]  <==      Total: 2
+2017-11-02 10:53:45  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:813 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6a5676]
+2017-11-02 10:53:45  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:814 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@6a5676]
+2017-11-02 10:53:45  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:814 ] - [ DEBUG ]  Returned connection 6968950 to pool.
+2017-11-02 10:54:07  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-02 10:54:07  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:154 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:54:07  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:155 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:54:07  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:155 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:54:07  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:155 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:54:07  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:304 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-02 10:54:07  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:722 ] - [ DEBUG ]  Created connection 21589383.
+2017-11-02 10:54:07  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:722 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1496d87]
+2017-11-02 10:54:07  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:729 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
+2017-11-02 10:54:07  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:769 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-02 10:54:08  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:786 ] - [ DEBUG ]  <==      Total: 2
+2017-11-02 10:54:08  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:787 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1496d87]
+2017-11-02 10:54:08  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:787 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1496d87]
+2017-11-02 10:54:08  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:788 ] - [ DEBUG ]  Returned connection 21589383 to pool.
+2017-11-02 10:55:03  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-02 10:55:03  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:172 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:55:03  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:172 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:55:03  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:172 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:55:03  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:172 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:55:03  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:324 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-02 10:55:04  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:782 ] - [ DEBUG ]  Created connection 12514629.
+2017-11-02 10:55:04  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:783 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@bef545]
+2017-11-02 10:55:04  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:786 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
+2017-11-02 10:55:04  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:826 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-02 10:55:04  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:843 ] - [ DEBUG ]  <==      Total: 2
+2017-11-02 10:55:04  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:843 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@bef545]
+2017-11-02 10:55:04  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:844 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@bef545]
+2017-11-02 10:55:04  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:844 ] - [ DEBUG ]  Returned connection 12514629 to pool.
+2017-11-02 10:55:10  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:1 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-02 10:55:10  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:152 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:55:10  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:153 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:55:10  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:153 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:55:10  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:153 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:55:10  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:299 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-02 10:55:10  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:726 ] - [ DEBUG ]  Created connection 21589383.
+2017-11-02 10:55:10  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:726 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1496d87]
+2017-11-02 10:55:10  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:729 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
+2017-11-02 10:55:10  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:775 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-02 10:55:10  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:790 ] - [ DEBUG ]  <==      Total: 2
+2017-11-02 10:55:10  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:790 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1496d87]
+2017-11-02 10:55:10  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:791 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1496d87]
+2017-11-02 10:55:10  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:791 ] - [ DEBUG ]  Returned connection 21589383 to pool.
+2017-11-02 10:57:36  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-02 10:57:37  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:158 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:57:37  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:158 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:57:37  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:159 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:57:37  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:159 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:57:37  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:290 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-02 10:57:37  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:539 ] - [ DEBUG ]  Created connection 12234108.
+2017-11-02 10:57:37  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:539 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@baad7c]
+2017-11-02 10:57:37  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:545 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
+2017-11-02 10:57:37  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:580 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-02 10:57:37  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:598 ] - [ DEBUG ]  <==      Total: 2
+2017-11-02 10:57:37  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:599 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@baad7c]
+2017-11-02 10:57:37  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:599 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@baad7c]
+2017-11-02 10:57:37  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:600 ] - [ DEBUG ]  Returned connection 12234108 to pool.
+2017-11-02 10:58:36  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-02 10:58:37  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:161 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:58:37  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:161 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:58:37  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:162 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:58:37  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:162 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:58:37  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:289 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-02 10:58:37  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:554 ] - [ DEBUG ]  Created connection 13442781.
+2017-11-02 10:58:37  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:554 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@cd1edd]
+2017-11-02 10:58:37  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:557 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
+2017-11-02 10:58:37  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:592 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-02 10:58:37  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:610 ] - [ DEBUG ]  <==      Total: 2
+2017-11-02 10:58:37  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:611 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@cd1edd]
+2017-11-02 10:58:37  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:611 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@cd1edd]
+2017-11-02 10:58:37  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:612 ] - [ DEBUG ]  Returned connection 13442781 to pool.
+2017-11-02 10:59:09  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-02 10:59:10  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:156 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:59:10  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:156 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:59:10  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:157 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:59:10  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:157 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:59:10  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:288 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-02 10:59:10  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:538 ] - [ DEBUG ]  Created connection 12234108.
+2017-11-02 10:59:10  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:539 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@baad7c]
+2017-11-02 10:59:10  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:541 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
+2017-11-02 10:59:10  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:581 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-02 10:59:10  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:600 ] - [ DEBUG ]  <==      Total: 2
+2017-11-02 10:59:10  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:601 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@baad7c]
+2017-11-02 10:59:10  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:602 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@baad7c]
+2017-11-02 10:59:10  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:602 ] - [ DEBUG ]  Returned connection 12234108 to pool.
+2017-11-02 10:59:18  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-02 10:59:18  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:154 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:59:18  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:154 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:59:18  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:154 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:59:18  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:155 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 10:59:18  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:299 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-02 10:59:18  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:703 ] - [ DEBUG ]  Created connection 6968950.
+2017-11-02 10:59:18  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:703 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6a5676]
+2017-11-02 10:59:18  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:706 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
+2017-11-02 10:59:18  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:746 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-02 10:59:18  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:766 ] - [ DEBUG ]  <==      Total: 2
+2017-11-02 10:59:18  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:767 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6a5676]
+2017-11-02 10:59:18  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:768 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@6a5676]
+2017-11-02 10:59:18  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:768 ] - [ DEBUG ]  Returned connection 6968950 to pool.
+2017-11-02 11:00:03  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-02 11:00:03  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:153 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 11:00:03  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:153 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 11:00:03  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:153 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 11:00:03  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:154 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 11:00:03  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:301 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-02 11:00:04  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:711 ] - [ DEBUG ]  Created connection 6968950.
+2017-11-02 11:00:04  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:712 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6a5676]
+2017-11-02 11:00:04  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:715 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
+2017-11-02 11:00:04  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:749 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-02 11:00:04  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:774 ] - [ DEBUG ]  <==      Total: 2
+2017-11-02 11:00:04  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:775 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6a5676]
+2017-11-02 11:00:04  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:775 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@6a5676]
+2017-11-02 11:00:04  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:776 ] - [ DEBUG ]  Returned connection 6968950 to pool.
+2017-11-02 11:00:54  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-02 11:00:54  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:152 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 11:00:54  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:153 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 11:00:54  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:153 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 11:00:54  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:153 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 11:00:54  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:298 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-02 11:00:54  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:715 ] - [ DEBUG ]  Created connection 13523782.
+2017-11-02 11:00:54  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:716 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@ce5b46]
+2017-11-02 11:00:54  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:720 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
+2017-11-02 11:00:54  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:768 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-02 11:00:54  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:787 ] - [ DEBUG ]  <==      Total: 2
+2017-11-02 11:00:54  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:788 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@ce5b46]
+2017-11-02 11:00:54  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:789 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@ce5b46]
+2017-11-02 11:00:54  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:789 ] - [ DEBUG ]  Returned connection 13523782 to pool.
+2017-11-02 11:03:04  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-02 11:03:04  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:183 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 11:03:04  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:184 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 11:03:04  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:184 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 11:03:04  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:185 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 11:03:04  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:332 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-02 11:03:04  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:776 ] - [ DEBUG ]  Created connection 21589383.
+2017-11-02 11:03:04  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:777 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1496d87]
+2017-11-02 11:03:04  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:779 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
+2017-11-02 11:03:04  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:816 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-02 11:03:04  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:838 ] - [ DEBUG ]  <==      Total: 2
+2017-11-02 11:03:04  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:839 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1496d87]
+2017-11-02 11:03:04  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:840 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1496d87]
+2017-11-02 11:03:04  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:841 ] - [ DEBUG ]  Returned connection 21589383 to pool.
+2017-11-02 11:03:49  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-02 11:03:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:181 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 11:03:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:181 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 11:03:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:181 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 11:03:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:181 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 11:03:49  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:331 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-02 11:03:50  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:835 ] - [ DEBUG ]  Created connection 24130991.
+2017-11-02 11:03:50  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:835 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@17035af]
+2017-11-02 11:03:50  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:838 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
+2017-11-02 11:03:50  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:874 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-02 11:03:50  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:889 ] - [ DEBUG ]  <==      Total: 2
+2017-11-02 11:03:50  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:890 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@17035af]
+2017-11-02 11:03:50  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:890 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@17035af]
+2017-11-02 11:03:50  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:890 ] - [ DEBUG ]  Returned connection 24130991 to pool.
+2017-11-02 14:03:37  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-02 14:03:38  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:1191 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 14:03:38  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:1192 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 14:03:38  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:1192 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 14:03:38  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:1192 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 14:03:39  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:1603 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-02 14:03:40  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:2533 ] - [ DEBUG ]  Created connection 22559196.
+2017-11-02 14:03:40  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:2533 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@15839dc]
+2017-11-02 14:03:40  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:2535 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
+2017-11-02 14:03:40  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:2565 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-02 14:03:40  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:2584 ] - [ DEBUG ]  <==      Total: 2
+2017-11-02 14:03:40  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:2585 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@15839dc]
+2017-11-02 14:03:40  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:2585 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@15839dc]
+2017-11-02 14:03:40  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:2586 ] - [ DEBUG ]  Returned connection 22559196 to pool.
+2017-11-02 14:08:48  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-02 14:08:48  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:159 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 14:08:48  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:159 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 14:08:48  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:159 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 14:08:48  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:160 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 14:08:48  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:316 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-02 14:08:48  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:811 ] - [ DEBUG ]  Created connection 10992321.
+2017-11-02 14:08:48  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:812 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@a7bac1]
+2017-11-02 14:08:48  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:814 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
+2017-11-02 14:08:49  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:852 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-02 14:08:49  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:871 ] - [ DEBUG ]  <==      Total: 2
+2017-11-02 14:08:49  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:872 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@a7bac1]
+2017-11-02 14:08:49  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:873 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@a7bac1]
+2017-11-02 14:08:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:873 ] - [ DEBUG ]  Returned connection 10992321 to pool.
+2017-11-02 14:09:03  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-02 14:09:03  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:122 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 14:09:03  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:123 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 14:09:03  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:123 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 14:09:03  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:123 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 14:09:03  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:239 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-02 14:09:04  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:500 ] - [ DEBUG ]  Created connection 17250009.
+2017-11-02 14:09:04  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:501 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@10736d9]
+2017-11-02 14:09:04  [ com.domain.Device.insert:main:503 ] - [ DEBUG ]  ==>  Preparing: insert into device( deviceId, nodeId, deviceName, deviceType, param1Name, param2Name, saveInterval, lowAlarmLimit1, hiAlarmLimit1, lowAlarmLimit2, hiAlarmLimit2, alarmStatus, onlineStatus) values( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2017-11-02 14:09:04  [ com.domain.Device.insert:main:538 ] - [ DEBUG ]  ==> Parameters: 1(Integer), 1(Integer), test1(String), 10(Integer), 有功(String), 无(String), 10(Integer), 10(Integer), 100(Integer), 10(Integer), 100(Integer), 1(Integer), 1(Integer)
+2017-11-02 14:09:04  [ com.domain.Device.insert:main:539 ] - [ DEBUG ]  <==    Updates: 1
+2017-11-02 14:09:04  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:540 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@10736d9]
+2017-11-02 14:09:04  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:653 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@10736d9]
+2017-11-02 14:09:04  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:654 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@10736d9]
+2017-11-02 14:09:04  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:655 ] - [ DEBUG ]  Returned connection 17250009 to pool.
+2017-11-02 14:09:04  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:657 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-02 14:09:04  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:659 ] - [ DEBUG ]  Checked out connection 17250009 from pool.
+2017-11-02 14:09:04  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:659 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@10736d9]
+2017-11-02 14:09:04  [ com.domain.Device.select:main:660 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
+2017-11-02 14:09:04  [ com.domain.Device.select:main:660 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-02 14:09:04  [ com.domain.Device.select:main:677 ] - [ DEBUG ]  <==      Total: 3
+2017-11-02 14:09:04  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:678 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@10736d9]
+2017-11-02 14:09:04  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:679 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@10736d9]
+2017-11-02 14:09:04  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:679 ] - [ DEBUG ]  Returned connection 17250009 to pool.
+2017-11-02 14:13:51  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-02 14:13:51  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:167 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 14:13:51  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:167 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 14:13:51  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:167 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 14:13:51  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:168 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 14:13:51  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:321 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-02 14:13:52  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:788 ] - [ DEBUG ]  Created connection 25965240.
+2017-11-02 14:13:52  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:788 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@18c32b8]
+2017-11-02 14:13:52  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:790 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
+2017-11-02 14:13:52  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:832 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-02 14:13:52  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:849 ] - [ DEBUG ]  <==      Total: 2
+2017-11-02 14:13:52  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:850 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@18c32b8]
+2017-11-02 14:13:52  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:851 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@18c32b8]
+2017-11-02 14:13:52  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:852 ] - [ DEBUG ]  Returned connection 25965240 to pool.
+2017-11-02 14:19:59  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-02 14:19:59  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:125 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 14:19:59  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:126 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 14:19:59  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:126 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 14:19:59  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:126 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 14:19:59  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:243 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-02 14:20:00  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:494 ] - [ DEBUG ]  Created connection 3606707.
+2017-11-02 14:20:00  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:494 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3708b3]
+2017-11-02 14:20:00  [ com.domain.Device.insert!selectKey:main:497 ] - [ DEBUG ]  ==>  Preparing: select LAST_INSERT_ID(); 
+2017-11-02 14:20:00  [ com.domain.Device.insert!selectKey:main:528 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-02 14:20:00  [ com.domain.Device.insert!selectKey:main:545 ] - [ DEBUG ]  <==      Total: 1
+2017-11-02 14:20:00  [ com.domain.Device.insert:main:546 ] - [ DEBUG ]  ==>  Preparing: insert into device( deviceId, nodeId, deviceName, deviceType, param1Name, param2Name, saveInterval, lowAlarmLimit1, hiAlarmLimit1, lowAlarmLimit2, hiAlarmLimit2, alarmStatus, onlineStatus) values( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2017-11-02 14:20:00  [ com.domain.Device.insert:main:548 ] - [ DEBUG ]  ==> Parameters: 1(Integer), 1(Integer), test1(String), 10(Integer), 有功(String), 无(String), 10(Integer), 10(Integer), 100(Integer), 10(Integer), 100(Integer), 1(Integer), 1(Integer)
+2017-11-02 14:20:00  [ com.domain.Device.insert:main:593 ] - [ DEBUG ]  <==    Updates: 1
+2017-11-02 14:20:00  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:594 ] - [ DEBUG ]  Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@3708b3]
+2017-11-02 14:20:00  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:643 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3708b3]
+2017-11-02 14:20:00  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:645 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@3708b3]
+2017-11-02 14:20:00  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:645 ] - [ DEBUG ]  Returned connection 3606707 to pool.
+2017-11-02 14:20:00  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:645 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-02 14:20:00  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:645 ] - [ DEBUG ]  Checked out connection 3606707 from pool.
+2017-11-02 14:20:00  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:645 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3708b3]
+2017-11-02 14:20:00  [ com.domain.Device.select:main:646 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
+2017-11-02 14:20:00  [ com.domain.Device.select:main:646 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-02 14:20:00  [ com.domain.Device.select:main:651 ] - [ DEBUG ]  <==      Total: 3
+2017-11-02 14:20:00  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:651 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3708b3]
+2017-11-02 14:20:00  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:652 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@3708b3]
+2017-11-02 14:20:00  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:652 ] - [ DEBUG ]  Returned connection 3606707 to pool.
+2017-11-02 14:20:36  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-02 14:20:36  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:162 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 14:20:36  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:162 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 14:20:36  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:162 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 14:20:36  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:163 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 14:20:36  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:320 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-02 14:20:37  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:750 ] - [ DEBUG ]  Created connection 12515987.
+2017-11-02 14:20:37  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:750 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@befa93]
+2017-11-02 14:20:37  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:753 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
+2017-11-02 14:20:37  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:798 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-02 14:20:37  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:819 ] - [ DEBUG ]  <==      Total: 3
+2017-11-02 14:20:37  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:820 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@befa93]
+2017-11-02 14:20:37  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:821 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@befa93]
+2017-11-02 14:20:37  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:822 ] - [ DEBUG ]  Returned connection 12515987 to pool.
+2017-11-02 15:58:13  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-02 15:58:14  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:996 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 15:58:14  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:996 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 15:58:14  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:996 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 15:58:14  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:996 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 15:58:53  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-02 15:58:54  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:158 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 15:58:54  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:158 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 15:58:54  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:158 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 15:58:54  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:159 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 16:01:00  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-02 16:01:00  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:161 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 16:01:00  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:161 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 16:01:00  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:162 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 16:01:00  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:162 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-02 16:01:00  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:345 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-02 16:01:01  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:926 ] - [ DEBUG ]  Created connection 6530005.
+2017-11-02 16:01:01  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:927 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@63a3d5]
+2017-11-02 16:01:01  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:930 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
+2017-11-02 16:01:01  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:974 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-02 16:01:01  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:996 ] - [ DEBUG ]  <==      Total: 3
+2017-11-02 16:01:01  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:997 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@63a3d5]
+2017-11-02 16:01:01  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:998 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@63a3d5]
+2017-11-02 16:01:01  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:998 ] - [ DEBUG ]  Returned connection 6530005 to pool.
