@@ -16,7 +16,6 @@ public class StartActionListener implements ActionListener {
             System.out.println("ddd");
         }else if(obj instanceof JMenuItem) {
         }
-        Main.repaint();
         RSServerUtil.start();
     }
 }

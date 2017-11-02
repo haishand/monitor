@@ -1,8 +1,6 @@
 package core;
 
 import com.jnrsmcu.sdk.netdevice.RSServer;
-import core.event.MEvent;
-import core.event.MType;
 import core.event.MainLoop;
 import dao.DeviceDao;
 import domain.Device;
@@ -11,12 +9,14 @@ import gui.MonitorTable;
 import gui.MonitorToolBar;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
-import util.MyBatisUtils;
+import util.MyBatisUtil;
 import util.PropertiesUtil;
 
 import javax.swing.*;
 import java.awt.*;
 import java.util.List;
+import java.util.Vector;
+import java.util.concurrent.ExecutionException;
 
 /**
  * @author haishand
@@ -29,8 +29,6 @@ public class Main {
     private static MainLoop mainLoop = null;
 
     public static void main(String[] args) {
-        init();
-
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         } catch (Exception e) {
@@ -43,6 +41,8 @@ public class Main {
             }
         });
 
+        init();
+
         // main mainLoop
         new Thread(mainLoop).start();
 
@@ -53,11 +53,13 @@ public class Main {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setIconImage(Toolkit.getDefaultToolkit().getImage("images/icon.png"));
 
+        JPanel mainPane = new JPanel();
+
+        mainPane.add(MonitorToolBar.createToolBar(), "North");
         MonitorTable newContentPane = MonitorTable.getInstance();
         newContentPane.setOpaque(true);
         newContentPane.add(MonitorToolBar.createToolBar(), "North");
         frame.setContentPane(newContentPane);
-
         frame.setJMenuBar(MonitorMenu.createMenuBar());
 
         frame.pack();
@@ -70,23 +72,55 @@ public class Main {
 
     private static void init() {
         initCfg();
-        loadData();
+        updateData();
     }
 
-    private static void loadData() {
+/*    private static void loadData() {
         mainLoop.getMainQueue().add(new MEvent(MType.ID_UPDATE_DATA, null, null));
-    }
+    }*/
 
     public static void updateData() {
         new SwingWorker() {
 
             @Override
-            protected Object doInBackground() throws Exception {
-                DeviceDao devDao = new DeviceDao(MyBatisUtils.getSqlSessionFactory());
+            protected Vector<Vector<Object>> doInBackground() throws Exception {
+                DeviceDao devDao = new DeviceDao(MyBatisUtil.getSqlSessionFactory());
                 List<Device> devList = devDao.select();
-                return null;
+                Vector<Vector<Object>> rows = new Vector<Vector<Object>>();
+                for(Device dev : devList) {
+                    Vector<Object> row = new Vector<Object>();
+                    row.add(dev.getDeviceId());
+                    row.add(dev.getNodeId());
+                    row.add(dev.getDeviceName());
+                    row.add(dev.getParam1Name());
+                    row.add(dev.getParam2Name());
+                    row.add(dev.getSaveInterval());
+                    row.add(dev.getLowAlarmLimit1());
+                    row.add(dev.getHiAlarmLimit1());
+                    row.add(dev.getLowAlarmLimit2());
+                    row.add(dev.getHiAlarmLimit2());
+                    row.add(dev.getAlarmStatus());
+                    row.add(dev.getOnlineStatus());
+                    rows.add(row);
+                }
+
+                return rows;
             }
-        };
+
+            @Override
+            protected void done() {
+                Vector<Vector<Object>> rows = null;
+                try {
+                    rows = (Vector) get();
+                    MonitorTable.setModel(rows);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                } catch (ExecutionException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        }.execute();
     }
 
     private static void initCfg() {
@@ -94,9 +128,9 @@ public class Main {
 
     }
 
-    public static void repaint() {
+/*    public static void repaint() {
         getMainWindow().repaint();
-    }
+    }*/
 
 
     public static JFrame getMainWindow() {
