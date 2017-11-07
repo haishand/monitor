@@ -1,8 +1,12 @@
 package gui;
 
+import gui.dialog.DeviceDialog;
+
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.Arrays;
 import java.util.Vector;
 
@@ -41,12 +45,38 @@ public class DeviceTable extends JPanel{
 
         Object[][] data = {};
         table = new JTable(data, COLUMN_NAMES);
-        table.setAutoResizeMode(0);
+        table.setAutoResizeMode(JTable.AUTO_RESIZE_NEXT_COLUMN);
         table.setSelectionMode(0);
 
         JScrollPane scrollPane = new JScrollPane(table);
         add(scrollPane, "Center");
 
+        table.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                if(e.getClickCount() == 2) {
+                    int row = table.getSelectedRow();
+                    if(row > -1) {
+                        DeviceDialog dialog = new DeviceDialog();
+                        dialog.fillData(DeviceTable.this.getSelectedRow());
+
+                        dialog.setModal(true);
+                        dialog.pack();
+                        dialog.setLocationRelativeTo(null);
+                        dialog.setVisible(true);
+                    }
+                }
+            }
+        });
+
+    }
+
+    private Vector<Object> getSelectedRow() {
+        if(this.table.getSelectedRow() == -1) {
+            return null;
+        }
+        DefaultTableModel model = (DefaultTableModel)this.table.getModel();
+        return (Vector)model.getDataVector().get(this.table.getSelectedRow());
     }
 
     public static void setModel(Vector<Vector<Object>> rows) {

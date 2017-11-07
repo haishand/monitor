@@ -1,16 +1,12 @@
-package action;
+package action.rsserver;
 
 import com.jnrsmcu.sdk.netdevice.*;
-import core.Main;
-import core.event.MEvent;
-import core.event.MType;
-import domain.Device;
 import org.apache.log4j.Logger;
 
 import java.util.Date;
 
-public class MyDataListener implements IDataListener {
-    private static Logger logger = Logger.getLogger(MyDataListener.class);
+public class RSDataListener implements IDataListener {
+    private static Logger logger = Logger.getLogger(RSDataListener.class);
 
     @Override
     public void receiveRealtimeData(RealTimeData realTimeData) {
@@ -32,9 +28,10 @@ public class MyDataListener implements IDataListener {
                     "status:" + status);
 /*            Device dev = new Device(id, status, param1, param2, time);
             Object[] argArray = {dev};
-            MEvent e = new MEvent(MType.ID_DB_RECORD, argArray, null);
+            MEvent e = new MEvent(MType.ID_DEIVCE_DATA, argArray, null);
 
-            Main.getMainLoop().getMainQueue().offer(e);*/
+            Main.getMainLoop().getMainQueue().offer(e);
+*/
 
         }
 

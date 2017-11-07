@@ -59,7 +59,7 @@ public class MonitorToolBar {
         toolBar.add(button);
 
         button = makeNavigationButton("log", "系统日志", "日志");
-        button.addActionListener(new ShowLogActionListener());
+        button.addActionListener(new LogActionListener());
         toolBar.add(button);
 
         return toolBar;

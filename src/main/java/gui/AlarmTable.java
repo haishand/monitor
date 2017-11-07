@@ -18,11 +18,11 @@ public class AlarmTable extends JPanel {
     }
 
     public static String[] COLUMN_NAMES = {
-            "设备Id",
-            "节点Id",
-            "参数1",
-            "参数2",
-            "报警状态",
+            "设备名称",
+            "报警类型",
+            "报警值",
+            "报警时间",
+            "处理状态",
     };
 
     private AlarmTable() {

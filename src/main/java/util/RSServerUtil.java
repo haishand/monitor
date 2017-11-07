@@ -1,16 +1,14 @@
 package util;
 
-import action.MyDataListener;
+import action.rsserver.RSDataListener;
 import com.jnrsmcu.sdk.netdevice.RSServer;
-import core.Main;
 
-import java.awt.*;
 import java.io.IOException;
 
 public class RSServerUtil {
     private static RSServer rsServer;
     static {
-        MyDataListener listener = new MyDataListener();
+        RSDataListener listener = new RSDataListener();
         rsServer = RSServer.Initiate(
                 Integer.parseInt(
                         PropertiesUtil.getInstance().getValue(PropertiesUtil.ParamType.PORT.getName()

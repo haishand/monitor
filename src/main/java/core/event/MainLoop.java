@@ -25,7 +25,7 @@ public class MainLoop implements Runnable {
 
     private void processMEvent(MEvent m) {
         switch(m.getType()) {
-            case ID_DB_RECORD:
+            case ID_DEIVCE_DATA:
                 break;
             case ID_ALARM_TIMER:
                 break;

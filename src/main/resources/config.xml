@@ -41,8 +41,7 @@
     </environments>
 
 
-    <mappers>
-        <mapper resource="mapper/device.xml"/>
-        <mapper resource="mapper/devicedata.xml"/>
-    </mappers>
+    <!--<mappers>-->
+        <!--<mapper resource="mapper/DeviceMapper.xml"/>-->
+    <!--</mappers>-->
 </configuration>

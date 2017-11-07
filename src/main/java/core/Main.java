@@ -58,6 +58,13 @@ public class Main {
         mainPane.setLayout(new BorderLayout());
         mainPane.add(MonitorToolBar.createToolBar(), BorderLayout.NORTH);
 
+        /*
+        JPanel pane = new JPanel();
+        pane.setLayout(new BorderLayout());
+        pane.add(DeviceTable.getInstance());
+        mainPane.add(pane, BorderLayout.CENTER);
+        */
+
         JSplitPane splitPane = new JSplitPane();
         splitPane.setDividerLocation(Toolkit.getDefaultToolkit().getScreenSize().width);
         splitPane.setLeftComponent(DeviceTable.getInstance());
