@@ -7,7 +7,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import java.io.IOException;
 import java.io.Reader;
 
-public final class MyBatisUtil {
+public final class MyBatisHelper {
     private static SqlSessionFactory sqlSessionFactory;
 
     static {

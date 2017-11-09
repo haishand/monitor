@@ -58,7 +58,8 @@ public class DeviceTable extends JPanel{
                     int row = table.getSelectedRow();
                     if(row > -1) {
                         DeviceDialog dialog = new DeviceDialog();
-                        dialog.fillData(DeviceTable.this.getSelectedRow());
+                        dialog.fillDevPaneData(DeviceTable.this.getSelectedRow());
+                        dialog.freezeDevPaneData();
 
                         dialog.setModal(true);
                         dialog.pack();

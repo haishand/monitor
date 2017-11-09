@@ -9,7 +9,7 @@ import gui.DeviceTable;
 import gui.MonitorToolBar;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
-import util.MyBatisUtil;
+import util.MyBatisHelper;
 import util.PropertiesUtil;
 
 import javax.swing.*;
@@ -81,7 +81,7 @@ public class Main1 {
 
             @Override
             protected Vector<Vector<Object>> doInBackground() throws Exception {
-                DeviceDao devDao = new DeviceDao(MyBatisUtil.getSqlSessionFactory());
+                DeviceDao devDao = new DeviceDao(MyBatisHelper.getSqlSessionFactory());
                 List<Device> devList = devDao.select();
                 Vector<Vector<Object>> rows = new Vector<Vector<Object>>();
                 for(Device dev : devList) {

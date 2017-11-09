@@ -11,7 +11,8 @@ public class DeviceDialog extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
-    private JPanel devPane;
+    private JPanel pane;
+    private DevicePane devPane;
 
     public DeviceDialog() {
         setContentPane(contentPane);
@@ -50,8 +51,9 @@ public class DeviceDialog extends JDialog {
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
 
         // set device pane
-        devPane.setLayout(new BorderLayout());
-        devPane.add(new DevicePane().contentPane);
+        devPane = new DevicePane();
+        pane.setLayout(new BorderLayout());
+        pane.add(devPane.contentPane);
 
     }
 
@@ -72,6 +74,11 @@ public class DeviceDialog extends JDialog {
         System.exit(0);
     }
 
-    public void fillData(Vector<Object> selectedRow) {
+    public void fillDevPaneData(Vector<Object> data) {
+        devPane.populate(data);
+    }
+
+    public void freezeDevPaneData() {
+        devPane.freeze();
     }
 }

@@ -41,7 +41,8 @@
     </environments>
 
 
-    <!--<mappers>-->
-        <!--<mapper resource="mapper/DeviceMapper.xml"/>-->
-    <!--</mappers>-->
+    <mappers>
+        <mapper resource="mybatis/mapper/DeviceMapper.xml"/>
+    </mappers>
+
 </configuration>

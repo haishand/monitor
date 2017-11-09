@@ -10,15 +10,13 @@ import org.mybatis.generator.config.Configuration;
 import org.mybatis.generator.config.xml.ConfigurationParser;
 import org.mybatis.generator.internal.DefaultShellCallback;
 
-import javax.swing.*;
-
 public class MybatisGenerator {
 
 
         public void generator() throws Exception{
             List<String> warnings = new ArrayList<String>();
             boolean overwrite = true;
-            File configFile = Resources.getResourceAsFile("generator/generatorConfig.xml");
+            File configFile = Resources.getResourceAsFile("mybatis/generator/generatorConfig.xml");
             ConfigurationParser cp = new ConfigurationParser(warnings);
             Configuration config = cp.parseConfiguration(configFile);
             DefaultShellCallback callback = new DefaultShellCallback(overwrite);

@@ -2,15 +2,17 @@ package core;
 
 import com.jnrsmcu.sdk.netdevice.RSServer;
 import core.event.MainLoop;
-import dao.DeviceDao;
-import domain.Device;
+import po.Device;
 import gui.AlarmTable;
 import gui.MonitorMenu;
 import gui.DeviceTable;
 import gui.MonitorToolBar;
+import mapper.DeviceMapper;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
-import util.MyBatisUtil;
+import util.MyBatisHelper;
 import util.PropertiesUtil;
 
 import javax.swing.*;
@@ -97,22 +99,24 @@ public class Main {
 
             @Override
             protected Vector<Vector<Object>> doInBackground() throws Exception {
-                DeviceDao devDao = new DeviceDao(MyBatisUtil.getSqlSessionFactory());
-                List<Device> devList = devDao.select();
+                SqlSessionFactory sqlSessionFactory = MyBatisHelper.getSqlSessionFactory();
+                SqlSession session = sqlSessionFactory.openSession();
+                DeviceMapper deviceMapper = session.getMapper(DeviceMapper.class);
+                List<Device> devList = deviceMapper.selectByExample(null);
                 Vector<Vector<Object>> rows = new Vector<Vector<Object>>();
                 for(Device dev : devList) {
                     Vector<Object> row = new Vector<Object>();
-                    row.add(dev.getDeviceId());
-                    row.add(dev.getNodeId());
-                    row.add(dev.getDeviceName());
-                    row.add(dev.getParam1Name());
-                    row.add(dev.getParam2Name());
-                    row.add(dev.getSaveInterval());
-                    row.add(dev.getLowAlarmLimit1());
-                    row.add(dev.getHiAlarmLimit1());
-                    row.add(dev.getLowAlarmLimit2());
-                    row.add(dev.getHiAlarmLimit2());
-                    row.add(dev.getOnlineStatus());
+                    row.add(dev.getDeviceid());
+                    row.add(dev.getNodeid());
+                    row.add(dev.getDevicename());
+                    row.add(dev.getParam1name());
+                    row.add(dev.getParam2name());
+                    row.add(dev.getSaveinterval());
+                    row.add(dev.getLowalarmlimit1());
+                    row.add(dev.getHialarmlimit1());
+                    row.add(dev.getLowalarmlimit2());
+                    row.add(dev.getHialarmlimit2());
+                    row.add(dev.getOnlinestatus());
                     rows.add(row);
                 }
 

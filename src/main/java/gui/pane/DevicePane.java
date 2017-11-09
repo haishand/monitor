@@ -22,8 +22,15 @@ public class DevicePane {
     private JSpinner spWarnFreq;
 
     public void populate(Vector<Object> data) {
-
+        this.txtDevName.setText(data.get(0).toString());
     }
+
+    public void freeze() {
+        // TODO: Yajuan Zhang, Please set all fileds to disabled.
+        // TODO: eg: txtDevName.setEnable(false);
+        txtDevName.setEnabled(false);
+    }
+
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("DevicePane");

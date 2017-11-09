@@ -1,187 +1,115 @@
-2017-11-07 14:57:24  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-11-07 14:57:25  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:555 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 14:57:25  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:556 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 14:57:25  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:556 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 14:57:25  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:557 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 14:57:25  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:969 ] - [ DEBUG ]  Opening JDBC Connection
-2017-11-07 14:58:00  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-11-07 14:58:00  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:158 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 14:58:00  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:158 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 14:58:00  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:158 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 14:58:00  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:159 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 14:58:00  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:366 ] - [ DEBUG ]  Opening JDBC Connection
-2017-11-07 14:58:01  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:754 ] - [ DEBUG ]  Created connection 24885660.
-2017-11-07 14:58:01  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:755 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@17bb99c]
-2017-11-07 14:58:01  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:757 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
-2017-11-07 14:58:01  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:787 ] - [ DEBUG ]  ==> Parameters: 
-2017-11-07 14:58:01  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:852 ] - [ DEBUG ]  <==      Total: 3
-2017-11-07 14:58:01  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:852 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@17bb99c]
-2017-11-07 14:58:01  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:853 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@17bb99c]
-2017-11-07 14:58:01  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:853 ] - [ DEBUG ]  Returned connection 24885660 to pool.
-2017-11-07 14:58:37  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-11-07 14:58:37  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:149 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 14:58:37  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:149 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 14:58:37  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:150 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 14:58:37  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:150 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 14:58:37  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:346 ] - [ DEBUG ]  Opening JDBC Connection
-2017-11-07 14:58:37  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:707 ] - [ DEBUG ]  Created connection 24885660.
-2017-11-07 14:58:37  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:707 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@17bb99c]
-2017-11-07 14:58:37  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:710 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
-2017-11-07 14:58:37  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:747 ] - [ DEBUG ]  ==> Parameters: 
-2017-11-07 14:58:37  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:765 ] - [ DEBUG ]  <==      Total: 3
-2017-11-07 14:58:37  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:766 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@17bb99c]
-2017-11-07 14:58:37  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:767 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@17bb99c]
-2017-11-07 14:58:37  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:767 ] - [ DEBUG ]  Returned connection 24885660 to pool.
-2017-11-07 15:02:11  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-11-07 15:02:11  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:156 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 15:02:11  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:156 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 15:02:11  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:156 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 15:02:11  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:157 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 15:02:11  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:339 ] - [ DEBUG ]  Opening JDBC Connection
-2017-11-07 15:02:12  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:683 ] - [ DEBUG ]  Created connection 24885660.
-2017-11-07 15:02:12  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:683 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@17bb99c]
-2017-11-07 15:02:12  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:686 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
-2017-11-07 15:02:12  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:722 ] - [ DEBUG ]  ==> Parameters: 
-2017-11-07 15:02:12  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:743 ] - [ DEBUG ]  <==      Total: 3
-2017-11-07 15:02:12  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:744 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@17bb99c]
-2017-11-07 15:02:12  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:744 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@17bb99c]
-2017-11-07 15:02:12  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:745 ] - [ DEBUG ]  Returned connection 24885660 to pool.
-2017-11-07 15:07:12  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-11-07 15:07:12  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:155 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 15:07:12  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:156 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 15:07:12  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:156 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 15:07:12  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:156 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 15:07:12  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:340 ] - [ DEBUG ]  Opening JDBC Connection
-2017-11-07 15:07:13  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:733 ] - [ DEBUG ]  Created connection 27500375.
-2017-11-07 15:07:13  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:734 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a39f57]
-2017-11-07 15:07:13  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:741 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
-2017-11-07 15:07:13  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:776 ] - [ DEBUG ]  ==> Parameters: 
-2017-11-07 15:07:13  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:793 ] - [ DEBUG ]  <==      Total: 3
-2017-11-07 15:07:13  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:794 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a39f57]
-2017-11-07 15:07:13  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:795 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a39f57]
-2017-11-07 15:07:13  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:795 ] - [ DEBUG ]  Returned connection 27500375 to pool.
-2017-11-07 16:41:09  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:0 ] - [ DEBUG ]  Retrieving column information for table "device"
-2017-11-07 16:41:09  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:44 ] - [ DEBUG ]  Found column "code", data type 4, in table "test..device"
-2017-11-07 16:41:09  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:47 ] - [ DEBUG ]  Found column "deviceId", data type 4, in table "test..device"
-2017-11-07 16:41:09  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:47 ] - [ DEBUG ]  Found column "nodeId", data type 4, in table "test..device"
-2017-11-07 16:41:09  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:47 ] - [ DEBUG ]  Found column "multiFlag", data type -7, in table "test..device"
-2017-11-07 16:41:09  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:47 ] - [ DEBUG ]  Found column "deviceName", data type 12, in table "test..device"
-2017-11-07 16:41:09  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:48 ] - [ DEBUG ]  Found column "deviceType", data type 4, in table "test..device"
-2017-11-07 16:41:09  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:48 ] - [ DEBUG ]  Found column "param1Name", data type 12, in table "test..device"
-2017-11-07 16:41:09  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:48 ] - [ DEBUG ]  Found column "param2Name", data type 12, in table "test..device"
-2017-11-07 16:41:09  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:48 ] - [ DEBUG ]  Found column "saveInterval", data type 4, in table "test..device"
-2017-11-07 16:41:09  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:49 ] - [ DEBUG ]  Found column "lowAlarmLimit1", data type 7, in table "test..device"
-2017-11-07 16:41:09  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:49 ] - [ DEBUG ]  Found column "hiAlarmLimit1", data type 7, in table "test..device"
-2017-11-07 16:41:09  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:49 ] - [ DEBUG ]  Found column "lowAlarmLimit2", data type 7, in table "test..device"
-2017-11-07 16:41:09  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:49 ] - [ DEBUG ]  Found column "hiAlarmLimit2", data type 7, in table "test..device"
-2017-11-07 16:41:09  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:49 ] - [ DEBUG ]  Found column "onlineStatus", data type 4, in table "test..device"
-2017-11-07 16:41:09  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:55 ] - [ DEBUG ]  Retrieving column information for table "devicedata"
-2017-11-07 16:41:09  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:70 ] - [ DEBUG ]  Found column "code", data type 4, in table "test..devicedata"
-2017-11-07 16:41:09  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:71 ] - [ DEBUG ]  Found column "param1", data type 7, in table "test..devicedata"
-2017-11-07 16:41:09  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:71 ] - [ DEBUG ]  Found column "param2", data type 7, in table "test..devicedata"
-2017-11-07 16:41:09  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:71 ] - [ DEBUG ]  Found column "recordTime", data type 93, in table "test..devicedata"
-2017-11-07 16:42:28  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-11-07 16:42:29  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:388 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:42:29  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:389 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:42:29  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:390 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:42:29  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:390 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:45:35  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-11-07 16:45:35  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:120 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:45:35  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:121 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:45:35  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:121 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:45:35  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:121 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:48:06  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-11-07 16:48:06  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:120 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:48:06  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:121 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:48:06  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:121 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:48:06  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:121 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:51:58  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-11-07 16:51:58  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:127 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:51:58  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:129 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:51:58  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:129 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:51:58  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:129 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:55:02  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-11-07 16:55:02  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:172 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:55:02  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:174 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:55:02  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:174 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:55:02  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:174 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:56:07  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-11-07 16:56:07  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:299 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:56:07  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:301 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:56:07  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:302 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:56:07  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:302 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:57:42  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-11-07 16:57:42  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:151 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:57:42  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:152 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:57:42  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:152 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:57:42  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:152 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:57:50  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:0 ] - [ DEBUG ]  Retrieving column information for table "device"
-2017-11-07 16:57:50  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:67 ] - [ DEBUG ]  Found column "code", data type 4, in table "test..device"
-2017-11-07 16:57:50  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:68 ] - [ DEBUG ]  Found column "deviceId", data type 4, in table "test..device"
-2017-11-07 16:57:50  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:68 ] - [ DEBUG ]  Found column "nodeId", data type 4, in table "test..device"
-2017-11-07 16:57:50  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:69 ] - [ DEBUG ]  Found column "multiFlag", data type -7, in table "test..device"
-2017-11-07 16:57:50  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:69 ] - [ DEBUG ]  Found column "deviceName", data type 12, in table "test..device"
-2017-11-07 16:57:50  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:69 ] - [ DEBUG ]  Found column "deviceType", data type 4, in table "test..device"
-2017-11-07 16:57:50  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:69 ] - [ DEBUG ]  Found column "param1Name", data type 12, in table "test..device"
-2017-11-07 16:57:50  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:70 ] - [ DEBUG ]  Found column "param2Name", data type 12, in table "test..device"
-2017-11-07 16:57:50  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:70 ] - [ DEBUG ]  Found column "saveInterval", data type 4, in table "test..device"
-2017-11-07 16:57:50  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:70 ] - [ DEBUG ]  Found column "lowAlarmLimit1", data type 7, in table "test..device"
-2017-11-07 16:57:50  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:70 ] - [ DEBUG ]  Found column "hiAlarmLimit1", data type 7, in table "test..device"
-2017-11-07 16:57:50  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:70 ] - [ DEBUG ]  Found column "lowAlarmLimit2", data type 7, in table "test..device"
-2017-11-07 16:57:50  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:71 ] - [ DEBUG ]  Found column "hiAlarmLimit2", data type 7, in table "test..device"
-2017-11-07 16:57:50  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:71 ] - [ DEBUG ]  Found column "onlineStatus", data type 4, in table "test..device"
-2017-11-07 16:57:50  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:78 ] - [ DEBUG ]  Retrieving column information for table "devicedata"
-2017-11-07 16:57:50  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:92 ] - [ DEBUG ]  Found column "code", data type 4, in table "test..devicedata"
-2017-11-07 16:57:50  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:92 ] - [ DEBUG ]  Found column "param1", data type 7, in table "test..devicedata"
-2017-11-07 16:57:50  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:93 ] - [ DEBUG ]  Found column "param2", data type 7, in table "test..devicedata"
-2017-11-07 16:57:50  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:93 ] - [ DEBUG ]  Found column "recordTime", data type 93, in table "test..devicedata"
-2017-11-07 16:58:32  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-11-07 16:58:32  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:122 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:58:32  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:123 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:58:32  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:123 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:58:32  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:123 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:59:14  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-11-07 16:59:14  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:133 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:59:14  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:134 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:59:14  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:135 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 16:59:14  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:135 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 17:00:28  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-11-07 17:00:28  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:144 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 17:00:28  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:145 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 17:00:28  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:145 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 17:00:28  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:146 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 17:01:15  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-11-07 17:01:15  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:122 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 17:01:15  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:123 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 17:01:15  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:123 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 17:01:15  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:123 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 17:01:20  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-11-07 17:01:21  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:126 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 17:01:21  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:127 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 17:01:21  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:128 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 17:01:21  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:128 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 17:03:21  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-11-07 17:03:21  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:131 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 17:03:21  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:132 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 17:03:21  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:132 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 17:03:21  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:132 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 17:04:01  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-11-07 17:04:01  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:122 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 17:04:01  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:123 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 17:04:01  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:123 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 17:04:01  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:124 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 17:04:56  [ org.apache.ibatis.logging.LogFactory:main:1 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-11-07 17:04:56  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:155 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 17:04:56  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:157 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 17:04:56  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:157 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 17:04:56  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:157 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 17:05:25  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-11-07 17:05:25  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:126 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 17:05:25  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:128 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 17:05:25  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:128 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 17:05:25  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:128 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 17:05:34  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2017-11-07 17:05:34  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:198 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 17:05:34  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:199 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 17:05:34  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:199 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
-2017-11-07 17:05:34  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:199 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-09 10:53:38  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-09 10:53:38  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:641 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-09 10:53:38  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:641 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-09 10:53:38  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:641 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-09 10:53:38  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:641 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-09 10:53:39  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:1048 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-09 10:53:40  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:2136 ] - [ DEBUG ]  Created connection 31617805.
+2017-11-09 10:53:40  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:2136 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1e2730d]
+2017-11-09 10:53:40  [ mapper.DeviceMapper.selectByExample:SwingWorker-pool-1-thread-1:2136 ] - [ DEBUG ]  ==>  Preparing: select code, deviceId, nodeId, multiFlag, deviceName, deviceType, param1Name, param2Name, saveInterval, lowAlarmLimit1, hiAlarmLimit1, lowAlarmLimit2, hiAlarmLimit2, onlineStatus from device 
+2017-11-09 10:53:40  [ mapper.DeviceMapper.selectByExample:SwingWorker-pool-1-thread-1:2167 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-09 10:53:40  [ mapper.DeviceMapper.selectByExample:SwingWorker-pool-1-thread-1:2370 ] - [ DEBUG ]  <==      Total: 3
+2017-11-09 14:36:32  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:0 ] - [ DEBUG ]  Retrieving column information for table "device"
+2017-11-09 14:36:32  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:73 ] - [ DEBUG ]  Found column "code", data type 4, in table "test..device"
+2017-11-09 14:36:32  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:77 ] - [ DEBUG ]  Found column "deviceId", data type 4, in table "test..device"
+2017-11-09 14:36:32  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:77 ] - [ DEBUG ]  Found column "nodeId", data type 4, in table "test..device"
+2017-11-09 14:36:32  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:78 ] - [ DEBUG ]  Found column "multiFlag", data type -7, in table "test..device"
+2017-11-09 14:36:32  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:78 ] - [ DEBUG ]  Found column "deviceName", data type 12, in table "test..device"
+2017-11-09 14:36:32  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:78 ] - [ DEBUG ]  Found column "deviceType", data type 4, in table "test..device"
+2017-11-09 14:36:32  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:79 ] - [ DEBUG ]  Found column "param1Name", data type 12, in table "test..device"
+2017-11-09 14:36:32  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:79 ] - [ DEBUG ]  Found column "param2Name", data type 12, in table "test..device"
+2017-11-09 14:36:32  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:79 ] - [ DEBUG ]  Found column "saveInterval", data type 4, in table "test..device"
+2017-11-09 14:36:32  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:79 ] - [ DEBUG ]  Found column "lowAlarmLimit1", data type 7, in table "test..device"
+2017-11-09 14:36:32  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:80 ] - [ DEBUG ]  Found column "hiAlarmLimit1", data type 7, in table "test..device"
+2017-11-09 14:36:32  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:80 ] - [ DEBUG ]  Found column "lowAlarmLimit2", data type 7, in table "test..device"
+2017-11-09 14:36:32  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:80 ] - [ DEBUG ]  Found column "hiAlarmLimit2", data type 7, in table "test..device"
+2017-11-09 14:36:32  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:81 ] - [ DEBUG ]  Found column "onlineStatus", data type 4, in table "test..device"
+2017-11-09 14:36:32  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:87 ] - [ DEBUG ]  Retrieving column information for table "devicedata"
+2017-11-09 14:36:32  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:105 ] - [ DEBUG ]  Found column "code", data type 4, in table "test..devicedata"
+2017-11-09 14:36:32  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:106 ] - [ DEBUG ]  Found column "param1", data type 7, in table "test..devicedata"
+2017-11-09 14:36:32  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:106 ] - [ DEBUG ]  Found column "param2", data type 7, in table "test..devicedata"
+2017-11-09 14:36:32  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:107 ] - [ DEBUG ]  Found column "recordTime", data type 93, in table "test..devicedata"
+2017-11-09 14:37:05  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:0 ] - [ DEBUG ]  Retrieving column information for table "device"
+2017-11-09 14:37:05  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:37 ] - [ DEBUG ]  Found column "code", data type 4, in table "test..device"
+2017-11-09 14:37:05  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:38 ] - [ DEBUG ]  Found column "deviceId", data type 4, in table "test..device"
+2017-11-09 14:37:05  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:39 ] - [ DEBUG ]  Found column "nodeId", data type 4, in table "test..device"
+2017-11-09 14:37:05  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:39 ] - [ DEBUG ]  Found column "multiFlag", data type -7, in table "test..device"
+2017-11-09 14:37:05  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:40 ] - [ DEBUG ]  Found column "deviceName", data type 12, in table "test..device"
+2017-11-09 14:37:05  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:40 ] - [ DEBUG ]  Found column "deviceType", data type 4, in table "test..device"
+2017-11-09 14:37:05  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:40 ] - [ DEBUG ]  Found column "param1Name", data type 12, in table "test..device"
+2017-11-09 14:37:05  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:41 ] - [ DEBUG ]  Found column "param2Name", data type 12, in table "test..device"
+2017-11-09 14:37:05  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:41 ] - [ DEBUG ]  Found column "saveInterval", data type 4, in table "test..device"
+2017-11-09 14:37:05  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:41 ] - [ DEBUG ]  Found column "lowAlarmLimit1", data type 7, in table "test..device"
+2017-11-09 14:37:05  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:41 ] - [ DEBUG ]  Found column "hiAlarmLimit1", data type 7, in table "test..device"
+2017-11-09 14:37:05  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:41 ] - [ DEBUG ]  Found column "lowAlarmLimit2", data type 7, in table "test..device"
+2017-11-09 14:37:05  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:42 ] - [ DEBUG ]  Found column "hiAlarmLimit2", data type 7, in table "test..device"
+2017-11-09 14:37:05  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:42 ] - [ DEBUG ]  Found column "onlineStatus", data type 4, in table "test..device"
+2017-11-09 14:37:05  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:51 ] - [ DEBUG ]  Retrieving column information for table "devicedata"
+2017-11-09 14:37:05  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:72 ] - [ DEBUG ]  Found column "code", data type 4, in table "test..devicedata"
+2017-11-09 14:37:05  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:73 ] - [ DEBUG ]  Found column "param1", data type 7, in table "test..devicedata"
+2017-11-09 14:37:05  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:73 ] - [ DEBUG ]  Found column "param2", data type 7, in table "test..devicedata"
+2017-11-09 14:37:05  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:74 ] - [ DEBUG ]  Found column "recordTime", data type 93, in table "test..devicedata"
+2017-11-09 14:44:26  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:0 ] - [ DEBUG ]  Retrieving column information for table "device"
+2017-11-09 14:44:26  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:38 ] - [ DEBUG ]  Found column "code", data type 4, in table "test..device"
+2017-11-09 14:44:26  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:39 ] - [ DEBUG ]  Found column "deviceId", data type 4, in table "test..device"
+2017-11-09 14:44:26  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:40 ] - [ DEBUG ]  Found column "nodeId", data type 4, in table "test..device"
+2017-11-09 14:44:26  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:40 ] - [ DEBUG ]  Found column "multiFlag", data type -7, in table "test..device"
+2017-11-09 14:44:26  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:40 ] - [ DEBUG ]  Found column "deviceName", data type 12, in table "test..device"
+2017-11-09 14:44:26  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:40 ] - [ DEBUG ]  Found column "deviceType", data type 4, in table "test..device"
+2017-11-09 14:44:26  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:41 ] - [ DEBUG ]  Found column "param1Name", data type 12, in table "test..device"
+2017-11-09 14:44:26  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:41 ] - [ DEBUG ]  Found column "param2Name", data type 12, in table "test..device"
+2017-11-09 14:44:26  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:41 ] - [ DEBUG ]  Found column "saveInterval", data type 4, in table "test..device"
+2017-11-09 14:44:26  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:41 ] - [ DEBUG ]  Found column "lowAlarmLimit1", data type 7, in table "test..device"
+2017-11-09 14:44:26  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:43 ] - [ DEBUG ]  Found column "hiAlarmLimit1", data type 7, in table "test..device"
+2017-11-09 14:44:26  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:45 ] - [ DEBUG ]  Found column "lowAlarmLimit2", data type 7, in table "test..device"
+2017-11-09 14:44:26  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:45 ] - [ DEBUG ]  Found column "hiAlarmLimit2", data type 7, in table "test..device"
+2017-11-09 14:44:26  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:46 ] - [ DEBUG ]  Found column "onlineStatus", data type 4, in table "test..device"
+2017-11-09 14:44:26  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:54 ] - [ DEBUG ]  Retrieving column information for table "device_data"
+2017-11-09 14:44:26  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:77 ] - [ DEBUG ]  Found column "code", data type 4, in table "test..device_data"
+2017-11-09 14:44:26  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:78 ] - [ DEBUG ]  Found column "param1", data type 7, in table "test..device_data"
+2017-11-09 14:44:26  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:78 ] - [ DEBUG ]  Found column "param2", data type 7, in table "test..device_data"
+2017-11-09 14:44:26  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:79 ] - [ DEBUG ]  Found column "recordTime", data type 93, in table "test..device_data"
+2017-11-09 15:07:26  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-09 15:07:26  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:534 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-09 15:07:26  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:534 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-09 15:07:26  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:534 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-09 15:07:26  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:534 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-09 15:07:27  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:801 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-09 15:07:27  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:1062 ] - [ DEBUG ]  Created connection 25787506.
+2017-11-09 15:07:27  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:1063 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1897c72]
+2017-11-09 15:07:27  [ mapper.DeviceMapper.selectByExample:SwingWorker-pool-1-thread-1:1065 ] - [ DEBUG ]  ==>  Preparing: select code, deviceId, nodeId, multiFlag, deviceName, deviceType, param1Name, param2Name, saveInterval, lowAlarmLimit1, hiAlarmLimit1, lowAlarmLimit2, hiAlarmLimit2, onlineStatus from device 
+2017-11-09 15:07:27  [ mapper.DeviceMapper.selectByExample:SwingWorker-pool-1-thread-1:1098 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-09 15:07:27  [ mapper.DeviceMapper.selectByExample:SwingWorker-pool-1-thread-1:1129 ] - [ DEBUG ]  <==      Total: 3
+2017-11-09 15:11:57  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-09 15:11:57  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:171 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-09 15:11:57  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:171 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-09 15:11:57  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:171 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-09 15:11:57  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:171 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-09 15:11:57  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:412 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-09 15:11:57  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:832 ] - [ DEBUG ]  Created connection 10085960.
+2017-11-09 15:11:57  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:833 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@99e648]
+2017-11-09 15:11:57  [ mapper.DeviceMapper.selectByExample:SwingWorker-pool-1-thread-1:840 ] - [ DEBUG ]  ==>  Preparing: select code, deviceId, nodeId, multiFlag, deviceName, deviceType, param1Name, param2Name, saveInterval, lowAlarmLimit1, hiAlarmLimit1, lowAlarmLimit2, hiAlarmLimit2, onlineStatus from device 
+2017-11-09 15:11:57  [ mapper.DeviceMapper.selectByExample:SwingWorker-pool-1-thread-1:876 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-09 15:11:57  [ mapper.DeviceMapper.selectByExample:SwingWorker-pool-1-thread-1:894 ] - [ DEBUG ]  <==      Total: 3
+2017-11-09 15:28:32  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-09 15:28:32  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:141 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-09 15:28:32  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:142 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-09 15:28:32  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:142 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-09 15:28:32  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:143 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-09 15:28:33  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:359 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-09 15:28:33  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:654 ] - [ DEBUG ]  Created connection 33316792.
+2017-11-09 15:28:33  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:655 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1fc5fb8]
+2017-11-09 15:28:33  [ mapper.DeviceMapper.countByExample:main:658 ] - [ DEBUG ]  ==>  Preparing: select count(*) from device WHERE ( deviceId = ? ) 
+2017-11-09 15:28:33  [ mapper.DeviceMapper.countByExample:main:698 ] - [ DEBUG ]  ==> Parameters: 1(Integer)
+2017-11-09 15:28:33  [ mapper.DeviceMapper.countByExample:main:788 ] - [ DEBUG ]  <==      Total: 1
+2017-11-09 15:28:46  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-09 15:28:47  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:239 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-09 15:28:47  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:240 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-09 15:28:47  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:240 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-09 15:28:47  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:255 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-09 15:28:47  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:604 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-09 15:28:47  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:1074 ] - [ DEBUG ]  Created connection 27086558.
+2017-11-09 15:28:47  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:1075 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@19d4ede]
+2017-11-09 15:28:47  [ mapper.DeviceMapper.selectByExample:SwingWorker-pool-1-thread-1:1078 ] - [ DEBUG ]  ==>  Preparing: select code, deviceId, nodeId, multiFlag, deviceName, deviceType, param1Name, param2Name, saveInterval, lowAlarmLimit1, hiAlarmLimit1, lowAlarmLimit2, hiAlarmLimit2, onlineStatus from device 
+2017-11-09 15:28:48  [ mapper.DeviceMapper.selectByExample:SwingWorker-pool-1-thread-1:1118 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-09 15:28:48  [ mapper.DeviceMapper.selectByExample:SwingWorker-pool-1-thread-1:1145 ] - [ DEBUG ]  <==      Total: 3

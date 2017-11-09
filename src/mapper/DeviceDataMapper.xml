@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="mapper.DevicedataMapper">
-  <resultMap id="BaseResultMap" type="po.Devicedata">
+<mapper namespace="mapper.DeviceDataMapper">
+  <resultMap id="BaseResultMap" type="po.DeviceData">
     <id column="code" jdbcType="INTEGER" property="code" />
     <result column="param1" jdbcType="REAL" property="param1" />
     <result column="param2" jdbcType="REAL" property="param2" />
@@ -68,13 +68,13 @@
   <sql id="Base_Column_List">
     code, param1, param2, recordTime
   </sql>
-  <select id="selectByExample" parameterType="po.DevicedataExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="po.DeviceDataExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
     </if>
     <include refid="Base_Column_List" />
-    from devicedata
+    from device_data
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
@@ -85,27 +85,27 @@
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
-    from devicedata
+    from device_data
     where code = #{code,jdbcType=INTEGER}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    delete from devicedata
+    delete from device_data
     where code = #{code,jdbcType=INTEGER}
   </delete>
-  <delete id="deleteByExample" parameterType="po.DevicedataExample">
-    delete from devicedata
+  <delete id="deleteByExample" parameterType="po.DeviceDataExample">
+    delete from device_data
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="po.Devicedata">
-    insert into devicedata (code, param1, param2, 
+  <insert id="insert" parameterType="po.DeviceData">
+    insert into device_data (code, param1, param2, 
       recordTime)
     values (#{code,jdbcType=INTEGER}, #{param1,jdbcType=REAL}, #{param2,jdbcType=REAL}, 
       #{recordtime,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="po.Devicedata">
-    insert into devicedata
+  <insert id="insertSelective" parameterType="po.DeviceData">
+    insert into device_data
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="code != null">
         code,
@@ -135,14 +135,14 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="po.DevicedataExample" resultType="java.lang.Long">
-    select count(*) from devicedata
+  <select id="countByExample" parameterType="po.DeviceDataExample" resultType="java.lang.Long">
+    select count(*) from device_data
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </select>
   <update id="updateByExampleSelective" parameterType="map">
-    update devicedata
+    update device_data
     <set>
       <if test="record.code != null">
         code = #{record.code,jdbcType=INTEGER},
@@ -162,7 +162,7 @@
     </if>
   </update>
   <update id="updateByExample" parameterType="map">
-    update devicedata
+    update device_data
     set code = #{record.code,jdbcType=INTEGER},
       param1 = #{record.param1,jdbcType=REAL},
       param2 = #{record.param2,jdbcType=REAL},
@@ -171,8 +171,8 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="po.Devicedata">
-    update devicedata
+  <update id="updateByPrimaryKeySelective" parameterType="po.DeviceData">
+    update device_data
     <set>
       <if test="param1 != null">
         param1 = #{param1,jdbcType=REAL},
@@ -186,8 +186,8 @@
     </set>
     where code = #{code,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="po.Devicedata">
-    update devicedata
+  <update id="updateByPrimaryKey" parameterType="po.DeviceData">
+    update device_data
     set param1 = #{param1,jdbcType=REAL},
       param2 = #{param2,jdbcType=REAL},
       recordTime = #{recordtime,jdbcType=TIMESTAMP}
