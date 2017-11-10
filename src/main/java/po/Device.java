@@ -3,31 +3,31 @@ package po;
 public class Device {
     private Integer code;
 
-    private Integer deviceid;
+    private Integer deviceId;
 
-    private Integer nodeid;
+    private Integer nodeId;
 
-    private Boolean multiflag;
+    private Boolean multiFlag;
 
-    private String devicename;
+    private String deviceName;
 
-    private Integer devicetype;
+    private Integer deviceType;
 
-    private String param1name;
+    private String param1Name;
 
-    private String param2name;
+    private String param2Name;
 
-    private Integer saveinterval;
+    private Integer saveInterval;
 
-    private Float lowalarmlimit1;
+    private Float lowAlarmLimit1;
 
-    private Float hialarmlimit1;
+    private Float hiAlarmLimit1;
 
-    private Float lowalarmlimit2;
+    private Float lowAlarmLimit2;
 
-    private Float hialarmlimit2;
+    private Float hiAlarmLimit2;
 
-    private Integer onlinestatus;
+    private Integer onlineStatus;
 
     public Integer getCode() {
         return code;
@@ -37,107 +37,107 @@ public class Device {
         this.code = code;
     }
 
-    public Integer getDeviceid() {
-        return deviceid;
+    public Integer getDeviceId() {
+        return deviceId;
     }
 
-    public void setDeviceid(Integer deviceid) {
-        this.deviceid = deviceid;
+    public void setDeviceId(Integer deviceId) {
+        this.deviceId = deviceId;
     }
 
-    public Integer getNodeid() {
-        return nodeid;
+    public Integer getNodeId() {
+        return nodeId;
     }
 
-    public void setNodeid(Integer nodeid) {
-        this.nodeid = nodeid;
+    public void setNodeId(Integer nodeId) {
+        this.nodeId = nodeId;
     }
 
-    public Boolean getMultiflag() {
-        return multiflag;
+    public Boolean getMultiFlag() {
+        return multiFlag;
     }
 
-    public void setMultiflag(Boolean multiflag) {
-        this.multiflag = multiflag;
+    public void setMultiFlag(Boolean multiFlag) {
+        this.multiFlag = multiFlag;
     }
 
-    public String getDevicename() {
-        return devicename;
+    public String getDeviceName() {
+        return deviceName;
     }
 
-    public void setDevicename(String devicename) {
-        this.devicename = devicename == null ? null : devicename.trim();
+    public void setDeviceName(String deviceName) {
+        this.deviceName = deviceName == null ? null : deviceName.trim();
     }
 
-    public Integer getDevicetype() {
-        return devicetype;
+    public Integer getDeviceType() {
+        return deviceType;
     }
 
-    public void setDevicetype(Integer devicetype) {
-        this.devicetype = devicetype;
+    public void setDeviceType(Integer deviceType) {
+        this.deviceType = deviceType;
     }
 
-    public String getParam1name() {
-        return param1name;
+    public String getParam1Name() {
+        return param1Name;
     }
 
-    public void setParam1name(String param1name) {
-        this.param1name = param1name == null ? null : param1name.trim();
+    public void setParam1Name(String param1Name) {
+        this.param1Name = param1Name == null ? null : param1Name.trim();
     }
 
-    public String getParam2name() {
-        return param2name;
+    public String getParam2Name() {
+        return param2Name;
     }
 
-    public void setParam2name(String param2name) {
-        this.param2name = param2name == null ? null : param2name.trim();
+    public void setParam2Name(String param2Name) {
+        this.param2Name = param2Name == null ? null : param2Name.trim();
     }
 
-    public Integer getSaveinterval() {
-        return saveinterval;
+    public Integer getSaveInterval() {
+        return saveInterval;
     }
 
-    public void setSaveinterval(Integer saveinterval) {
-        this.saveinterval = saveinterval;
+    public void setSaveInterval(Integer saveInterval) {
+        this.saveInterval = saveInterval;
     }
 
-    public Float getLowalarmlimit1() {
-        return lowalarmlimit1;
+    public Float getLowAlarmLimit1() {
+        return lowAlarmLimit1;
     }
 
-    public void setLowalarmlimit1(Float lowalarmlimit1) {
-        this.lowalarmlimit1 = lowalarmlimit1;
+    public void setLowAlarmLimit1(Float lowAlarmLimit1) {
+        this.lowAlarmLimit1 = lowAlarmLimit1;
     }
 
-    public Float getHialarmlimit1() {
-        return hialarmlimit1;
+    public Float getHiAlarmLimit1() {
+        return hiAlarmLimit1;
     }
 
-    public void setHialarmlimit1(Float hialarmlimit1) {
-        this.hialarmlimit1 = hialarmlimit1;
+    public void setHiAlarmLimit1(Float hiAlarmLimit1) {
+        this.hiAlarmLimit1 = hiAlarmLimit1;
     }
 
-    public Float getLowalarmlimit2() {
-        return lowalarmlimit2;
+    public Float getLowAlarmLimit2() {
+        return lowAlarmLimit2;
     }
 
-    public void setLowalarmlimit2(Float lowalarmlimit2) {
-        this.lowalarmlimit2 = lowalarmlimit2;
+    public void setLowAlarmLimit2(Float lowAlarmLimit2) {
+        this.lowAlarmLimit2 = lowAlarmLimit2;
     }
 
-    public Float getHialarmlimit2() {
-        return hialarmlimit2;
+    public Float getHiAlarmLimit2() {
+        return hiAlarmLimit2;
     }
 
-    public void setHialarmlimit2(Float hialarmlimit2) {
-        this.hialarmlimit2 = hialarmlimit2;
+    public void setHiAlarmLimit2(Float hiAlarmLimit2) {
+        this.hiAlarmLimit2 = hiAlarmLimit2;
     }
 
-    public Integer getOnlinestatus() {
-        return onlinestatus;
+    public Integer getOnlineStatus() {
+        return onlineStatus;
     }
 
-    public void setOnlinestatus(Integer onlinestatus) {
-        this.onlinestatus = onlinestatus;
+    public void setOnlineStatus(Integer onlineStatus) {
+        this.onlineStatus = onlineStatus;
     }
 }

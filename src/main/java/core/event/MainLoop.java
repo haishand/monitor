@@ -25,7 +25,8 @@ public class MainLoop implements Runnable {
 
     private void processMEvent(MEvent m) {
         switch(m.getType()) {
-            case ID_DEIVCE_DATA:
+            case ID_DEVICE_DATA:
+                m.getHandler().handleEvent(m);
                 break;
             case ID_ALARM_TIMER:
                 break;

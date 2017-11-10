@@ -2,7 +2,7 @@ package po;
 
 import java.util.Date;
 
-public class Devicedata {
+public class DeviceData {
     private Integer code;
 
     private Float param1;

@@ -2,29 +2,29 @@ package mapper;
 
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
-import po.Devicedata;
-import po.DevicedataExample;
+import po.DeviceData;
+import po.DeviceDataExample;
 
-public interface DevicedataMapper {
-    long countByExample(DevicedataExample example);
+public interface DeviceDataMapper {
+    long countByExample(DeviceDataExample example);
 
-    int deleteByExample(DevicedataExample example);
+    int deleteByExample(DeviceDataExample example);
 
     int deleteByPrimaryKey(Integer code);
 
-    int insert(Devicedata record);
+    int insert(DeviceData record);
 
-    int insertSelective(Devicedata record);
+    int insertSelective(DeviceData record);
 
-    List<Devicedata> selectByExample(DevicedataExample example);
+    List<DeviceData> selectByExample(DeviceDataExample example);
 
-    Devicedata selectByPrimaryKey(Integer code);
+    DeviceData selectByPrimaryKey(Integer code);
 
-    int updateByExampleSelective(@Param("record") Devicedata record, @Param("example") DevicedataExample example);
+    int updateByExampleSelective(@Param("record") DeviceData record, @Param("example") DeviceDataExample example);
 
-    int updateByExample(@Param("record") Devicedata record, @Param("example") DevicedataExample example);
+    int updateByExample(@Param("record") DeviceData record, @Param("example") DeviceDataExample example);
 
-    int updateByPrimaryKeySelective(Devicedata record);
+    int updateByPrimaryKeySelective(DeviceData record);
 
-    int updateByPrimaryKey(Devicedata record);
+    int updateByPrimaryKey(DeviceData record);
 }

@@ -43,6 +43,7 @@
 
     <mappers>
         <mapper resource="mybatis/mapper/DeviceMapper.xml"/>
+        <mapper resource="mybatis/mapper/DeviceDataMapper.xml"/>
     </mappers>
 
 </configuration>

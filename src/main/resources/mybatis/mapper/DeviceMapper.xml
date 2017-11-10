@@ -3,19 +3,19 @@
 <mapper namespace="mapper.DeviceMapper">
   <resultMap id="BaseResultMap" type="po.Device">
     <id column="code" jdbcType="INTEGER" property="code" />
-    <result column="deviceId" jdbcType="INTEGER" property="deviceid" />
-    <result column="nodeId" jdbcType="INTEGER" property="nodeid" />
-    <result column="multiFlag" jdbcType="BIT" property="multiflag" />
-    <result column="deviceName" jdbcType="VARCHAR" property="devicename" />
-    <result column="deviceType" jdbcType="INTEGER" property="devicetype" />
-    <result column="param1Name" jdbcType="VARCHAR" property="param1name" />
-    <result column="param2Name" jdbcType="VARCHAR" property="param2name" />
-    <result column="saveInterval" jdbcType="INTEGER" property="saveinterval" />
-    <result column="lowAlarmLimit1" jdbcType="REAL" property="lowalarmlimit1" />
-    <result column="hiAlarmLimit1" jdbcType="REAL" property="hialarmlimit1" />
-    <result column="lowAlarmLimit2" jdbcType="REAL" property="lowalarmlimit2" />
-    <result column="hiAlarmLimit2" jdbcType="REAL" property="hialarmlimit2" />
-    <result column="onlineStatus" jdbcType="INTEGER" property="onlinestatus" />
+    <result column="deviceId" jdbcType="INTEGER" property="deviceId" />
+    <result column="nodeId" jdbcType="INTEGER" property="nodeId" />
+    <result column="multiFlag" jdbcType="BIT" property="multiFlag" />
+    <result column="deviceName" jdbcType="VARCHAR" property="deviceName" />
+    <result column="deviceType" jdbcType="INTEGER" property="deviceType" />
+    <result column="param1Name" jdbcType="VARCHAR" property="param1Name" />
+    <result column="param2Name" jdbcType="VARCHAR" property="param2Name" />
+    <result column="saveInterval" jdbcType="INTEGER" property="saveInterval" />
+    <result column="lowAlarmLimit1" jdbcType="REAL" property="lowAlarmLimit1" />
+    <result column="hiAlarmLimit1" jdbcType="REAL" property="hiAlarmLimit1" />
+    <result column="lowAlarmLimit2" jdbcType="REAL" property="lowAlarmLimit2" />
+    <result column="hiAlarmLimit2" jdbcType="REAL" property="hiAlarmLimit2" />
+    <result column="onlineStatus" jdbcType="INTEGER" property="onlineStatus" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -115,11 +115,11 @@
       param1Name, param2Name, saveInterval, 
       lowAlarmLimit1, hiAlarmLimit1, lowAlarmLimit2, 
       hiAlarmLimit2, onlineStatus)
-    values (#{code,jdbcType=INTEGER}, #{deviceid,jdbcType=INTEGER}, #{nodeid,jdbcType=INTEGER}, 
-      #{multiflag,jdbcType=BIT}, #{devicename,jdbcType=VARCHAR}, #{devicetype,jdbcType=INTEGER}, 
-      #{param1name,jdbcType=VARCHAR}, #{param2name,jdbcType=VARCHAR}, #{saveinterval,jdbcType=INTEGER}, 
-      #{lowalarmlimit1,jdbcType=REAL}, #{hialarmlimit1,jdbcType=REAL}, #{lowalarmlimit2,jdbcType=REAL}, 
-      #{hialarmlimit2,jdbcType=REAL}, #{onlinestatus,jdbcType=INTEGER})
+    values (#{code,jdbcType=INTEGER}, #{deviceId,jdbcType=INTEGER}, #{nodeId,jdbcType=INTEGER}, 
+      #{multiFlag,jdbcType=BIT}, #{deviceName,jdbcType=VARCHAR}, #{deviceType,jdbcType=INTEGER}, 
+      #{param1Name,jdbcType=VARCHAR}, #{param2Name,jdbcType=VARCHAR}, #{saveInterval,jdbcType=INTEGER}, 
+      #{lowAlarmLimit1,jdbcType=REAL}, #{hiAlarmLimit1,jdbcType=REAL}, #{lowAlarmLimit2,jdbcType=REAL}, 
+      #{hiAlarmLimit2,jdbcType=REAL}, #{onlineStatus,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="po.Device">
     insert into device
@@ -127,43 +127,43 @@
       <if test="code != null">
         code,
       </if>
-      <if test="deviceid != null">
+      <if test="deviceId != null">
         deviceId,
       </if>
-      <if test="nodeid != null">
+      <if test="nodeId != null">
         nodeId,
       </if>
-      <if test="multiflag != null">
+      <if test="multiFlag != null">
         multiFlag,
       </if>
-      <if test="devicename != null">
+      <if test="deviceName != null">
         deviceName,
       </if>
-      <if test="devicetype != null">
+      <if test="deviceType != null">
         deviceType,
       </if>
-      <if test="param1name != null">
+      <if test="param1Name != null">
         param1Name,
       </if>
-      <if test="param2name != null">
+      <if test="param2Name != null">
         param2Name,
       </if>
-      <if test="saveinterval != null">
+      <if test="saveInterval != null">
         saveInterval,
       </if>
-      <if test="lowalarmlimit1 != null">
+      <if test="lowAlarmLimit1 != null">
         lowAlarmLimit1,
       </if>
-      <if test="hialarmlimit1 != null">
+      <if test="hiAlarmLimit1 != null">
         hiAlarmLimit1,
       </if>
-      <if test="lowalarmlimit2 != null">
+      <if test="lowAlarmLimit2 != null">
         lowAlarmLimit2,
       </if>
-      <if test="hialarmlimit2 != null">
+      <if test="hiAlarmLimit2 != null">
         hiAlarmLimit2,
       </if>
-      <if test="onlinestatus != null">
+      <if test="onlineStatus != null">
         onlineStatus,
       </if>
     </trim>
@@ -171,44 +171,44 @@
       <if test="code != null">
         #{code,jdbcType=INTEGER},
       </if>
-      <if test="deviceid != null">
-        #{deviceid,jdbcType=INTEGER},
+      <if test="deviceId != null">
+        #{deviceId,jdbcType=INTEGER},
       </if>
-      <if test="nodeid != null">
-        #{nodeid,jdbcType=INTEGER},
+      <if test="nodeId != null">
+        #{nodeId,jdbcType=INTEGER},
       </if>
-      <if test="multiflag != null">
-        #{multiflag,jdbcType=BIT},
+      <if test="multiFlag != null">
+        #{multiFlag,jdbcType=BIT},
       </if>
-      <if test="devicename != null">
-        #{devicename,jdbcType=VARCHAR},
+      <if test="deviceName != null">
+        #{deviceName,jdbcType=VARCHAR},
       </if>
-      <if test="devicetype != null">
-        #{devicetype,jdbcType=INTEGER},
+      <if test="deviceType != null">
+        #{deviceType,jdbcType=INTEGER},
       </if>
-      <if test="param1name != null">
-        #{param1name,jdbcType=VARCHAR},
+      <if test="param1Name != null">
+        #{param1Name,jdbcType=VARCHAR},
       </if>
-      <if test="param2name != null">
-        #{param2name,jdbcType=VARCHAR},
+      <if test="param2Name != null">
+        #{param2Name,jdbcType=VARCHAR},
       </if>
-      <if test="saveinterval != null">
-        #{saveinterval,jdbcType=INTEGER},
+      <if test="saveInterval != null">
+        #{saveInterval,jdbcType=INTEGER},
       </if>
-      <if test="lowalarmlimit1 != null">
-        #{lowalarmlimit1,jdbcType=REAL},
+      <if test="lowAlarmLimit1 != null">
+        #{lowAlarmLimit1,jdbcType=REAL},
       </if>
-      <if test="hialarmlimit1 != null">
-        #{hialarmlimit1,jdbcType=REAL},
+      <if test="hiAlarmLimit1 != null">
+        #{hiAlarmLimit1,jdbcType=REAL},
       </if>
-      <if test="lowalarmlimit2 != null">
-        #{lowalarmlimit2,jdbcType=REAL},
+      <if test="lowAlarmLimit2 != null">
+        #{lowAlarmLimit2,jdbcType=REAL},
       </if>
-      <if test="hialarmlimit2 != null">
-        #{hialarmlimit2,jdbcType=REAL},
+      <if test="hiAlarmLimit2 != null">
+        #{hiAlarmLimit2,jdbcType=REAL},
       </if>
-      <if test="onlinestatus != null">
-        #{onlinestatus,jdbcType=INTEGER},
+      <if test="onlineStatus != null">
+        #{onlineStatus,jdbcType=INTEGER},
       </if>
     </trim>
   </insert>
@@ -224,44 +224,44 @@
       <if test="record.code != null">
         code = #{record.code,jdbcType=INTEGER},
       </if>
-      <if test="record.deviceid != null">
-        deviceId = #{record.deviceid,jdbcType=INTEGER},
+      <if test="record.deviceId != null">
+        deviceId = #{record.deviceId,jdbcType=INTEGER},
       </if>
-      <if test="record.nodeid != null">
-        nodeId = #{record.nodeid,jdbcType=INTEGER},
+      <if test="record.nodeId != null">
+        nodeId = #{record.nodeId,jdbcType=INTEGER},
       </if>
-      <if test="record.multiflag != null">
-        multiFlag = #{record.multiflag,jdbcType=BIT},
+      <if test="record.multiFlag != null">
+        multiFlag = #{record.multiFlag,jdbcType=BIT},
       </if>
-      <if test="record.devicename != null">
-        deviceName = #{record.devicename,jdbcType=VARCHAR},
+      <if test="record.deviceName != null">
+        deviceName = #{record.deviceName,jdbcType=VARCHAR},
       </if>
-      <if test="record.devicetype != null">
-        deviceType = #{record.devicetype,jdbcType=INTEGER},
+      <if test="record.deviceType != null">
+        deviceType = #{record.deviceType,jdbcType=INTEGER},
       </if>
-      <if test="record.param1name != null">
-        param1Name = #{record.param1name,jdbcType=VARCHAR},
+      <if test="record.param1Name != null">
+        param1Name = #{record.param1Name,jdbcType=VARCHAR},
       </if>
-      <if test="record.param2name != null">
-        param2Name = #{record.param2name,jdbcType=VARCHAR},
+      <if test="record.param2Name != null">
+        param2Name = #{record.param2Name,jdbcType=VARCHAR},
       </if>
-      <if test="record.saveinterval != null">
-        saveInterval = #{record.saveinterval,jdbcType=INTEGER},
+      <if test="record.saveInterval != null">
+        saveInterval = #{record.saveInterval,jdbcType=INTEGER},
       </if>
-      <if test="record.lowalarmlimit1 != null">
-        lowAlarmLimit1 = #{record.lowalarmlimit1,jdbcType=REAL},
+      <if test="record.lowAlarmLimit1 != null">
+        lowAlarmLimit1 = #{record.lowAlarmLimit1,jdbcType=REAL},
       </if>
-      <if test="record.hialarmlimit1 != null">
-        hiAlarmLimit1 = #{record.hialarmlimit1,jdbcType=REAL},
+      <if test="record.hiAlarmLimit1 != null">
+        hiAlarmLimit1 = #{record.hiAlarmLimit1,jdbcType=REAL},
       </if>
-      <if test="record.lowalarmlimit2 != null">
-        lowAlarmLimit2 = #{record.lowalarmlimit2,jdbcType=REAL},
+      <if test="record.lowAlarmLimit2 != null">
+        lowAlarmLimit2 = #{record.lowAlarmLimit2,jdbcType=REAL},
       </if>
-      <if test="record.hialarmlimit2 != null">
-        hiAlarmLimit2 = #{record.hialarmlimit2,jdbcType=REAL},
+      <if test="record.hiAlarmLimit2 != null">
+        hiAlarmLimit2 = #{record.hiAlarmLimit2,jdbcType=REAL},
       </if>
-      <if test="record.onlinestatus != null">
-        onlineStatus = #{record.onlinestatus,jdbcType=INTEGER},
+      <if test="record.onlineStatus != null">
+        onlineStatus = #{record.onlineStatus,jdbcType=INTEGER},
       </if>
     </set>
     <if test="_parameter != null">
@@ -271,19 +271,19 @@
   <update id="updateByExample" parameterType="map">
     update device
     set code = #{record.code,jdbcType=INTEGER},
-      deviceId = #{record.deviceid,jdbcType=INTEGER},
-      nodeId = #{record.nodeid,jdbcType=INTEGER},
-      multiFlag = #{record.multiflag,jdbcType=BIT},
-      deviceName = #{record.devicename,jdbcType=VARCHAR},
-      deviceType = #{record.devicetype,jdbcType=INTEGER},
-      param1Name = #{record.param1name,jdbcType=VARCHAR},
-      param2Name = #{record.param2name,jdbcType=VARCHAR},
-      saveInterval = #{record.saveinterval,jdbcType=INTEGER},
-      lowAlarmLimit1 = #{record.lowalarmlimit1,jdbcType=REAL},
-      hiAlarmLimit1 = #{record.hialarmlimit1,jdbcType=REAL},
-      lowAlarmLimit2 = #{record.lowalarmlimit2,jdbcType=REAL},
-      hiAlarmLimit2 = #{record.hialarmlimit2,jdbcType=REAL},
-      onlineStatus = #{record.onlinestatus,jdbcType=INTEGER}
+      deviceId = #{record.deviceId,jdbcType=INTEGER},
+      nodeId = #{record.nodeId,jdbcType=INTEGER},
+      multiFlag = #{record.multiFlag,jdbcType=BIT},
+      deviceName = #{record.deviceName,jdbcType=VARCHAR},
+      deviceType = #{record.deviceType,jdbcType=INTEGER},
+      param1Name = #{record.param1Name,jdbcType=VARCHAR},
+      param2Name = #{record.param2Name,jdbcType=VARCHAR},
+      saveInterval = #{record.saveInterval,jdbcType=INTEGER},
+      lowAlarmLimit1 = #{record.lowAlarmLimit1,jdbcType=REAL},
+      hiAlarmLimit1 = #{record.hiAlarmLimit1,jdbcType=REAL},
+      lowAlarmLimit2 = #{record.lowAlarmLimit2,jdbcType=REAL},
+      hiAlarmLimit2 = #{record.hiAlarmLimit2,jdbcType=REAL},
+      onlineStatus = #{record.onlineStatus,jdbcType=INTEGER}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -291,63 +291,63 @@
   <update id="updateByPrimaryKeySelective" parameterType="po.Device">
     update device
     <set>
-      <if test="deviceid != null">
-        deviceId = #{deviceid,jdbcType=INTEGER},
+      <if test="deviceId != null">
+        deviceId = #{deviceId,jdbcType=INTEGER},
       </if>
-      <if test="nodeid != null">
-        nodeId = #{nodeid,jdbcType=INTEGER},
+      <if test="nodeId != null">
+        nodeId = #{nodeId,jdbcType=INTEGER},
       </if>
-      <if test="multiflag != null">
-        multiFlag = #{multiflag,jdbcType=BIT},
+      <if test="multiFlag != null">
+        multiFlag = #{multiFlag,jdbcType=BIT},
       </if>
-      <if test="devicename != null">
-        deviceName = #{devicename,jdbcType=VARCHAR},
+      <if test="deviceName != null">
+        deviceName = #{deviceName,jdbcType=VARCHAR},
       </if>
-      <if test="devicetype != null">
-        deviceType = #{devicetype,jdbcType=INTEGER},
+      <if test="deviceType != null">
+        deviceType = #{deviceType,jdbcType=INTEGER},
       </if>
-      <if test="param1name != null">
-        param1Name = #{param1name,jdbcType=VARCHAR},
+      <if test="param1Name != null">
+        param1Name = #{param1Name,jdbcType=VARCHAR},
       </if>
-      <if test="param2name != null">
-        param2Name = #{param2name,jdbcType=VARCHAR},
+      <if test="param2Name != null">
+        param2Name = #{param2Name,jdbcType=VARCHAR},
       </if>
-      <if test="saveinterval != null">
-        saveInterval = #{saveinterval,jdbcType=INTEGER},
+      <if test="saveInterval != null">
+        saveInterval = #{saveInterval,jdbcType=INTEGER},
       </if>
-      <if test="lowalarmlimit1 != null">
-        lowAlarmLimit1 = #{lowalarmlimit1,jdbcType=REAL},
+      <if test="lowAlarmLimit1 != null">
+        lowAlarmLimit1 = #{lowAlarmLimit1,jdbcType=REAL},
       </if>
-      <if test="hialarmlimit1 != null">
-        hiAlarmLimit1 = #{hialarmlimit1,jdbcType=REAL},
+      <if test="hiAlarmLimit1 != null">
+        hiAlarmLimit1 = #{hiAlarmLimit1,jdbcType=REAL},
       </if>
-      <if test="lowalarmlimit2 != null">
-        lowAlarmLimit2 = #{lowalarmlimit2,jdbcType=REAL},
+      <if test="lowAlarmLimit2 != null">
+        lowAlarmLimit2 = #{lowAlarmLimit2,jdbcType=REAL},
       </if>
-      <if test="hialarmlimit2 != null">
-        hiAlarmLimit2 = #{hialarmlimit2,jdbcType=REAL},
+      <if test="hiAlarmLimit2 != null">
+        hiAlarmLimit2 = #{hiAlarmLimit2,jdbcType=REAL},
       </if>
-      <if test="onlinestatus != null">
-        onlineStatus = #{onlinestatus,jdbcType=INTEGER},
+      <if test="onlineStatus != null">
+        onlineStatus = #{onlineStatus,jdbcType=INTEGER},
       </if>
     </set>
     where code = #{code,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="po.Device">
     update device
-    set deviceId = #{deviceid,jdbcType=INTEGER},
-      nodeId = #{nodeid,jdbcType=INTEGER},
-      multiFlag = #{multiflag,jdbcType=BIT},
-      deviceName = #{devicename,jdbcType=VARCHAR},
-      deviceType = #{devicetype,jdbcType=INTEGER},
-      param1Name = #{param1name,jdbcType=VARCHAR},
-      param2Name = #{param2name,jdbcType=VARCHAR},
-      saveInterval = #{saveinterval,jdbcType=INTEGER},
-      lowAlarmLimit1 = #{lowalarmlimit1,jdbcType=REAL},
-      hiAlarmLimit1 = #{hialarmlimit1,jdbcType=REAL},
-      lowAlarmLimit2 = #{lowalarmlimit2,jdbcType=REAL},
-      hiAlarmLimit2 = #{hialarmlimit2,jdbcType=REAL},
-      onlineStatus = #{onlinestatus,jdbcType=INTEGER}
+    set deviceId = #{deviceId,jdbcType=INTEGER},
+      nodeId = #{nodeId,jdbcType=INTEGER},
+      multiFlag = #{multiFlag,jdbcType=BIT},
+      deviceName = #{deviceName,jdbcType=VARCHAR},
+      deviceType = #{deviceType,jdbcType=INTEGER},
+      param1Name = #{param1Name,jdbcType=VARCHAR},
+      param2Name = #{param2Name,jdbcType=VARCHAR},
+      saveInterval = #{saveInterval,jdbcType=INTEGER},
+      lowAlarmLimit1 = #{lowAlarmLimit1,jdbcType=REAL},
+      hiAlarmLimit1 = #{hiAlarmLimit1,jdbcType=REAL},
+      lowAlarmLimit2 = #{lowAlarmLimit2,jdbcType=REAL},
+      hiAlarmLimit2 = #{hiAlarmLimit2,jdbcType=REAL},
+      onlineStatus = #{onlineStatus,jdbcType=INTEGER}
     where code = #{code,jdbcType=INTEGER}
   </update>
 </mapper>

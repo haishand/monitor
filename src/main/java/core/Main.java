@@ -2,6 +2,7 @@ package core;
 
 import com.jnrsmcu.sdk.netdevice.RSServer;
 import core.event.MainLoop;
+import core.handler.AlarmHandler;
 import po.Device;
 import gui.AlarmTable;
 import gui.MonitorMenu;
@@ -17,9 +18,10 @@ import util.PropertiesUtil;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.Collection;
 import java.util.List;
 import java.util.Vector;
-import java.util.concurrent.ExecutionException;
+import java.util.concurrent.*;
 
 /**
  * @author haishand
@@ -30,6 +32,7 @@ public class Main {
     private static JFrame mainWindow = null;
     private static RSServer rsServer = null;
     private static MainLoop mainLoop = null;
+    private static ScheduledExecutorService scheduledThreadPool = new ScheduledThreadPoolExecutor(10);
 
     public static void main(String[] args) {
         try {
@@ -87,7 +90,16 @@ public class Main {
 
     private static void init() {
         initCfg();
+
+        // start timers
+        startTimers();
+
         updateData();
+    }
+
+    private static void startTimers() {
+//        scheduledThreadPool.scheduleAtFixedRate(new AlarmHandler(), 0, 5, TimeUnit.MINUTES);
+
     }
 
 /*    private static void loadData() {
@@ -106,17 +118,17 @@ public class Main {
                 Vector<Vector<Object>> rows = new Vector<Vector<Object>>();
                 for(Device dev : devList) {
                     Vector<Object> row = new Vector<Object>();
-                    row.add(dev.getDeviceid());
-                    row.add(dev.getNodeid());
-                    row.add(dev.getDevicename());
-                    row.add(dev.getParam1name());
-                    row.add(dev.getParam2name());
-                    row.add(dev.getSaveinterval());
-                    row.add(dev.getLowalarmlimit1());
-                    row.add(dev.getHialarmlimit1());
-                    row.add(dev.getLowalarmlimit2());
-                    row.add(dev.getHialarmlimit2());
-                    row.add(dev.getOnlinestatus());
+                    row.add(dev.getDeviceId());
+                    row.add(dev.getNodeId());
+                    row.add(dev.getDeviceName());
+                    row.add(dev.getParam1Name());
+                    row.add(dev.getParam2Name());
+                    row.add(dev.getSaveInterval());
+                    row.add(dev.getLowAlarmLimit1());
+                    row.add(dev.getHiAlarmLimit1());
+                    row.add(dev.getLowAlarmLimit2());
+                    row.add(dev.getHiAlarmLimit2());
+                    row.add(dev.getOnlineStatus());
                     rows.add(row);
                 }
 

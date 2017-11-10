@@ -7,6 +7,8 @@ import java.io.IOException;
 
 public class RSServerUtil {
     private static RSServer rsServer;
+    private static boolean isRunning = false;
+
     static {
         RSDataListener listener = new RSDataListener();
         rsServer = RSServer.Initiate(
@@ -22,6 +24,7 @@ public class RSServerUtil {
     public static void start() {
         try {
             rsServer.start();
+            isRunning = true;
         } catch (IOException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {
@@ -32,6 +35,7 @@ public class RSServerUtil {
     public static void stop() {
         try {
             rsServer.stop();
+            isRunning = false;
         } catch (IOException e) {
             e.printStackTrace();
         }
