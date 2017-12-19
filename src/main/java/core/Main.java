@@ -1,8 +1,9 @@
 package core;
 
 import com.jnrsmcu.sdk.netdevice.RSServer;
+import core.event.MEvent;
+import core.event.MType;
 import core.event.MainLoop;
-import core.handler.AlarmHandler;
 import po.Device;
 import gui.AlarmTable;
 import gui.MonitorMenu;
@@ -18,7 +19,6 @@ import util.PropertiesUtil;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.Collection;
 import java.util.List;
 import java.util.Vector;
 import java.util.concurrent.*;
@@ -32,7 +32,6 @@ public class Main {
     private static JFrame mainWindow = null;
     private static RSServer rsServer = null;
     private static MainLoop mainLoop = null;
-    private static ScheduledExecutorService scheduledThreadPool = new ScheduledThreadPoolExecutor(10);
 
     public static void main(String[] args) {
         try {
@@ -47,15 +46,13 @@ public class Main {
             }
         });
 
+        // initialize app
         init();
-
-        // main mainLoop
-        new Thread(mainLoop).start();
 
     }
 
     private static void createAndShowGUI() {
-        JFrame frame = new JFrame("监控服务器");
+        JFrame frame = new JFrame("智能制造感知数据采集平台");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setIconImage(Toolkit.getDefaultToolkit().getImage("images/icon.png"));
 
@@ -89,6 +86,11 @@ public class Main {
     }
 
     private static void init() {
+        // mainloop
+        mainLoop = new MainLoop();
+        new Thread(mainLoop).start();
+
+        // init configuration
         initCfg();
 
         // start timers
@@ -98,8 +100,7 @@ public class Main {
     }
 
     private static void startTimers() {
-//        scheduledThreadPool.scheduleAtFixedRate(new AlarmHandler(), 0, 5, TimeUnit.MINUTES);
-
+        mainLoop.getMainQueue().add(new MEvent(MType.ID_ALARM_CHECK_TIMER_START, null, null));
     }
 
 /*    private static void loadData() {

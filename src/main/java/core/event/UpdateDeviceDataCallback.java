@@ -3,6 +3,7 @@ package core.event;
 import core.event.MCallback;
 import mapper.DeviceDataMapper;
 import org.apache.ibatis.session.SqlSession;
+import org.aspectj.lang.annotation.Before;
 import po.DeviceData;
 import util.MyBatisHelper;
 
@@ -17,4 +18,5 @@ public class UpdateDeviceDataCallback implements MCallback {
         dataMapper.updateByPrimaryKey(data);
         sqlSession.commit();
     }
+
 }

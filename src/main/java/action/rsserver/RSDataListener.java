@@ -65,7 +65,11 @@ public class RSDataListener implements IDataListener {
         }
     }
 
-    // handle temperature device
+    /**
+     * handle temperature device
+     * @param devId
+     * @param nd
+     */
     private void handleTDevice(int devId, NodeData nd) {
         int nodeId = nd.getNodeId();
         float param1 = nd.getTem();
@@ -104,7 +108,11 @@ public class RSDataListener implements IDataListener {
 
     }
 
-    // handle electricity device
+    /**
+     * handle electricity device
+     * @param devId
+     * @param nd
+     */
     private void handleEDevice(int devId, NodeData nd) {
         int nodeId = nd.getNodeId();
         float param1 = nd.getTem();
@@ -131,7 +139,7 @@ public class RSDataListener implements IDataListener {
             data.setParam2(param2);
             data.setRecordtime(time);
 
-            Object[] args = {DeviceType.DEVICE_HUMITURE, data};
+            Object[] args = {DeviceType.DEVICE_EMETER, data};
 
             Main.getMainLoop().getMainQueue().offer(new MEvent(
                     MType.ID_UPDATE_DATA,

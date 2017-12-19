@@ -1,6 +1,6 @@
 package core.handler;
 
-public class AlarmHandler extends Handler {
+public class AlarmChecker extends DataChecker {
     @Override
     public void run() {
 

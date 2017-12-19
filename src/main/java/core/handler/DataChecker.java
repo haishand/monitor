@@ -28,7 +28,8 @@ public class DataChecker implements Runnable {
 
             DeviceMapper mapper = sqlSession.getMapper(DeviceMapper.class);
             Device dev = mapper.selectByPrimaryKey(code);
-            if(dev.getDeviceType() == DeviceType.DEVICE_HUMITURE.getValue()) {  // 温湿度设备
+            if(dev.getDeviceType() == DeviceType.DEVICE_HUMITURE.getValue()) {
+                // 温湿度设备
                 float lowAlarmLimit1 = dev.getLowAlarmLimit1();
                 float lowAlarmLimit2 = dev.getLowAlarmLimit2();
                 float hiAlarmLimit1 = dev.getHiAlarmLimit1();
@@ -40,10 +41,10 @@ public class DataChecker implements Runnable {
                     alarm1.setValue(param1);
 
                     if(param1<lowAlarmLimit1) {
-                        alarm1.setType(AlarmType.TEMP_EXCEED_LOWER_BOUND.getMessage());
+                        alarm1.setType(AlarmType.TEMP_BELOW_LOWER_BOUND.getMessage());
                     }
                     else {
-                        alarm1.setType(AlarmType.TEMP_EXCEED_UPPER_BOUND.getMessage());
+                        alarm1.setType(AlarmType.TEMP_ABOVE_UPPER_BOUND.getMessage());
                     }
                     alarm1.setRecordtime(data.getRecordtime());
                     alarm1.setCode(code);
@@ -56,15 +57,15 @@ public class DataChecker implements Runnable {
 
 
                 // check param2
-                if((param2 < lowAlarmLimit1)||(param2 > hiAlarmLimit1)) {
+                if((param2 < lowAlarmLimit2)||(param2 > hiAlarmLimit2)) {
                     AlarmData alarm2 = new AlarmData();
                     alarm2.setValue(param2);
 
-                    if(param2<lowAlarmLimit1) {
-                        alarm2.setType(AlarmType.HUM_EXCEED_LOWER_BOUND.getMessage());
+                    if(param2<lowAlarmLimit2) {
+                        alarm2.setType(AlarmType.HUM_BELOW_LOWER_BOUND.getMessage());
                     }
                     else {
-                        alarm2.setType(AlarmType.HUM_EXCEED_UPPER_BOUND.getMessage());
+                        alarm2.setType(AlarmType.HUM_ABOVE_UPPER_BOUND.getMessage());
                     }
                     alarm2.setRecordtime(data.getRecordtime());
                     alarm2.setCode(code);
@@ -75,7 +76,8 @@ public class DataChecker implements Runnable {
                     almMapper.insert(alarm2);
                 }
 
-            }else if(dev.getDeviceType() == DeviceType.DEVICE_EMETER.getValue()){   // 电流设备
+            }else if(dev.getDeviceType() == DeviceType.DEVICE_EMETER.getValue()){
+                // 电流设备
                 // TODO
             }
 

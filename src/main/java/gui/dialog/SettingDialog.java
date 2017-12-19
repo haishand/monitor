@@ -13,6 +13,8 @@ public class SettingDialog extends JDialog {
     private JTabbedPane tabbedPane1;
     private JTextField txtIp;
     private JTextField txtPort;
+    private JSpinner spinner1;
+    private JSpinner spinner2;
 
     public SettingDialog() {
         super(Main.getMainWindow(), true);
@@ -56,11 +58,14 @@ public class SettingDialog extends JDialog {
     }
 
     private void onOK() {
-        // add your code here
         String ip = txtIp.getText().trim();
         String port = txtPort.getText().trim();
         PropertiesUtil.getInstance().store("IP", ip);
         PropertiesUtil.getInstance().store("PORT", port);
+
+        // TODO: yajuan Zhang, add code here
+        // TODO: get all configuration changes and store them into properties,
+        // TODO: you can refer code below
 
         dispose();
     }

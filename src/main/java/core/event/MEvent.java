@@ -3,12 +3,12 @@ package core.event;
 public class MEvent {
     private MType type;
     private Object[] argArray;
-    private MCallback handler;
+    private MCallback callback;
 
-    public MEvent(MType type, Object[] argArray, MCallback handler) {
+    public MEvent(MType type, Object[] argArray, MCallback callback) {
         this.type = type;
         this.argArray = argArray;
-        this.handler = handler;
+        this.callback = callback;
     }
 
     public MType getType() {
@@ -19,7 +19,7 @@ public class MEvent {
         return argArray;
     }
 
-    public MCallback getHandler() {
-        return handler;
+    public MCallback getCallback() {
+        return callback;
     }
 }

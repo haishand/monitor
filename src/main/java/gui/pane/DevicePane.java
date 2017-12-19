@@ -3,7 +3,12 @@ package gui.pane;
 import javax.swing.*;
 import java.util.Vector;
 
+/**
+ * @author haishand
+ */
 public class DevicePane {
+    public static final String[] DEV_TYPES = {"温湿度", "电能"};
+
     private JTabbedPane tabbedPane1;
     private JComboBox cbDevType;
     private JTextField txtDevName;
@@ -12,14 +17,15 @@ public class DevicePane {
     private JTextField txtParam1Name;
     private JTextField txtParam2Name;
     public JPanel contentPane;
-    private JLabel cbSaveFreq;
     private JTextField txtP1HighLimit;
     private JTextField txtP1LowLimit;
     private JTextField txtP2HighLimit;
     private JTextField txtP2LowLimit;
     private JSpinner spNodeId;
-    private JSpinner spSaveFreq;
-    private JSpinner spWarnFreq;
+
+
+    public DevicePane() {
+    }
 
     public void populate(Vector<Object> data) {
         this.txtDevName.setText(data.get(0).toString());
@@ -39,4 +45,5 @@ public class DevicePane {
         frame.pack();
         frame.setVisible(true);
     }
+
 }

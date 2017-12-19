@@ -2,7 +2,7 @@
 -- 主机:                           127.0.0.1
 -- 服务器版本:                        10.1.21-MariaDB - mariadb.org binary distribution
 -- 服务器操作系统:                      Win32
--- HeidiSQL 版本:                  9.4.0.5125
+-- HeidiSQL 版本:                  9.4.0.5185
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -33,6 +33,7 @@ CREATE TABLE IF NOT EXISTS `device` (
   `code` int(11) NOT NULL AUTO_INCREMENT,
   `deviceId` int(11) DEFAULT NULL,
   `nodeId` int(11) DEFAULT NULL,
+  `multiFlag` bit(1) DEFAULT NULL,
   `deviceName` varchar(50) DEFAULT NULL,
   `deviceType` int(11) DEFAULT NULL,
   `param1Name` varchar(50) DEFAULT NULL,
@@ -47,17 +48,6 @@ CREATE TABLE IF NOT EXISTS `device` (
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 -- 数据导出被取消选择。
--- 导出  表 test.devicedata 结构
-CREATE TABLE IF NOT EXISTS `devicedata` (
-  `code` int(11) NOT NULL AUTO_INCREMENT,
-  `param1` float DEFAULT NULL,
-  `param2` float DEFAULT NULL,
-  `recordTime` datetime DEFAULT NULL,
-  PRIMARY KEY (`code`),
-  CONSTRAINT `FK_devicedata_device` FOREIGN KEY (`code`) REFERENCES `device` (`code`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- 数据导出被取消选择。
 -- 导出  表 test.deviceinfo 结构
 CREATE TABLE IF NOT EXISTS `deviceinfo` (
   `device_id` int(11) NOT NULL,
@@ -70,6 +60,17 @@ CREATE TABLE IF NOT EXISTS `deviceinfo` (
   `lat` float DEFAULT NULL,
   `lng` float DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 数据导出被取消选择。
+-- 导出  表 test.device_data 结构
+CREATE TABLE IF NOT EXISTS `device_data` (
+  `code` int(11) NOT NULL AUTO_INCREMENT,
+  `param1` float DEFAULT NULL,
+  `param2` float DEFAULT NULL,
+  `recordTime` datetime DEFAULT NULL,
+  PRIMARY KEY (`code`),
+  CONSTRAINT `FK_devicedata_device` FOREIGN KEY (`code`) REFERENCES `device` (`code`) ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- 数据导出被取消选择。
 -- 导出  表 test.device_info 结构
