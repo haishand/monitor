@@ -13,8 +13,8 @@ public class SettingDialog extends JDialog {
     private JTabbedPane tabbedPane1;
     private JTextField txtIp;
     private JTextField txtPort;
-    private JSpinner spinner1;
-    private JSpinner spinner2;
+    private JSpinner spDataCheckTimer;
+    private JSpinner spAlarmCheckTimer;
 
     public SettingDialog() {
         super(Main.getMainWindow(), true);
@@ -51,6 +51,11 @@ public class SettingDialog extends JDialog {
 
 
         // load config data
+        populateData();
+    }
+
+    private void populateData() {
+        // TODO: yajuan change here to load data on the gui
         String ip = PropertiesUtil.getInstance().getValue("IP");
         String port = PropertiesUtil.getInstance().getValue("PORT");
         txtIp.setText(ip);
@@ -60,12 +65,13 @@ public class SettingDialog extends JDialog {
     private void onOK() {
         String ip = txtIp.getText().trim();
         String port = txtPort.getText().trim();
+        String dataTimer = String.valueOf(spDataCheckTimer.getValue());
+        String alarmTimer = String.valueOf(spAlarmCheckTimer.getValue());
+
         PropertiesUtil.getInstance().store("IP", ip);
         PropertiesUtil.getInstance().store("PORT", port);
-
-        // TODO: yajuan Zhang, add code here
-        // TODO: get all configuration changes and store them into properties,
-        // TODO: you can refer code below
+        PropertiesUtil.getInstance().store("ALARM_CHECK_TIMER", dataTimer);
+        PropertiesUtil.getInstance().store("DATA_CHECK_TIMER", alarmTimer);
 
         dispose();
     }

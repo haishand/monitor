@@ -19,6 +19,9 @@ import util.MyBatisHelper;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * @author haishand
+ */
 public class RSDataListener implements IDataListener {
     private static Logger logger = Logger.getLogger(RSDataListener.class);
 
@@ -167,7 +170,6 @@ public class RSDataListener implements IDataListener {
 
     @Override
     public void receiveTimmingAck(TimmingAck timmingAck) {
-        // TODO
         // TODO: update device status
     }
 }

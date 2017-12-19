@@ -39,15 +39,15 @@ public class Main {
         } catch (Exception e) {
         }
 
+        // initialize app
+        init();
+
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
                 createAndShowGUI();
             }
         });
-
-        // initialize app
-        init();
 
     }
 
