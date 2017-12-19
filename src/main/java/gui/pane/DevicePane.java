@@ -1,5 +1,11 @@
 package gui.pane;
 
+import mapper.DeviceMapper;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import po.Device;
+import util.MyBatisHelper;
+
 import javax.swing.*;
 import java.util.Vector;
 
@@ -22,6 +28,7 @@ public class DevicePane {
     private JTextField txtP2HighLimit;
     private JTextField txtP2LowLimit;
     private JSpinner spNodeId;
+    private JTextField txtDevId;
 
 
     public DevicePane() {
@@ -46,4 +53,18 @@ public class DevicePane {
         frame.setVisible(true);
     }
 
+    public void saveToDB() {
+        Device device = new Device();
+
+        // Populate data
+        // TODO: xiang Wang, populate device object with values like below
+        device.setDeviceId(Integer.parseInt(txtDevId.getText().trim()));
+
+        // Insert to DB
+        SqlSession sqlSession = MyBatisHelper.getSqlSessionFactory().openSession();
+        DeviceMapper mapper = sqlSession.getMapper(DeviceMapper.class);
+        mapper.insert(device);
+        sqlSession.commit();
+
+    }
 }

@@ -1,56 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ddb138f-7a7d-4b2c-844b-f527213af6d7" name="Default" comment="add data checker, check data and update alarm data into db">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_8_10.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjtools_1_8_10.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_10.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/core/defs/AlarmStatus.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/core/defs/AlarmType.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/mapper/AlarmDataMapper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/po/AlarmData.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/po/AlarmDataExample.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/test/Aop.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/test/Test.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/test/TestMain.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AlarmDataMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+    <list default="true" id="3ddb138f-7a7d-4b2c-844b-f527213af6d7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/images/m_remove.png" afterPath="" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" afterPath="$PROJECT_DIR$/logs/debug.log" />
-      <change beforePath="$PROJECT_DIR$/monitor.cfg" afterPath="$PROJECT_DIR$/monitor.cfg" />
-      <change beforePath="$PROJECT_DIR$/monitor.iml" afterPath="$PROJECT_DIR$/monitor.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/action/rsserver/RSDataListener.java" afterPath="$PROJECT_DIR$/src/main/java/action/rsserver/RSDataListener.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/Main.java" afterPath="$PROJECT_DIR$/src/main/java/core/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/defs/DeviceType.java" afterPath="$PROJECT_DIR$/src/main/java/core/defs/DeviceType.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/event/MEvent.java" afterPath="$PROJECT_DIR$/src/main/java/core/event/MEvent.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/event/MType.java" afterPath="$PROJECT_DIR$/src/main/java/core/event/MType.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/event/MainLoop.java" afterPath="$PROJECT_DIR$/src/main/java/core/event/MainLoop.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/event/UpdateDeviceDataCallback.java" afterPath="$PROJECT_DIR$/src/main/java/core/event/UpdateDeviceDataCallback.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/handler/AlarmHandler.java" afterPath="$PROJECT_DIR$/src/main/java/core/handler/AlarmChecker.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/handler/DataChecker.java" afterPath="$PROJECT_DIR$/src/main/java/core/handler/DataChecker.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/handler/Handler.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/dialog/SettingDialog.form" afterPath="$PROJECT_DIR$/src/main/java/gui/dialog/SettingDialog.form" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/dialog/SettingDialog.java" afterPath="$PROJECT_DIR$/src/main/java/gui/dialog/SettingDialog.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/dialog/DeviceDialog.java" afterPath="$PROJECT_DIR$/src/main/java/gui/dialog/DeviceDialog.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gui/pane/DevicePane.form" afterPath="$PROJECT_DIR$/src/main/java/gui/pane/DevicePane.form" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gui/pane/DevicePane.java" afterPath="$PROJECT_DIR$/src/main/java/gui/pane/DevicePane.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/MyBatisHelper.java" afterPath="$PROJECT_DIR$/src/main/java/util/MyBatisHelper.java" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/generator/generatorConfig.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/generator/generatorConfig.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/action/InfoActionListener.class" afterPath="$PROJECT_DIR$/target/classes/action/InfoActionListener.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/action/SettingActionListener.class" afterPath="$PROJECT_DIR$/target/classes/action/SettingActionListener.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/action/StartActionListener.class" afterPath="$PROJECT_DIR$/target/classes/action/StartActionListener.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/action/StopActionListener.class" afterPath="$PROJECT_DIR$/target/classes/action/StopActionListener.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/core/Main$1.class" afterPath="$PROJECT_DIR$/target/classes/core/Main$1.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/core/Main.class" afterPath="$PROJECT_DIR$/target/classes/core/Main.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/MonitorMenu.class" afterPath="$PROJECT_DIR$/target/classes/gui/MonitorMenu.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/MonitorToolBar$1.class" afterPath="$PROJECT_DIR$/target/classes/gui/MonitorToolBar$1.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/MonitorToolBar.class" afterPath="$PROJECT_DIR$/target/classes/gui/MonitorToolBar.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/util/PropertiesUtil$ParamType.class" afterPath="$PROJECT_DIR$/target/classes/util/PropertiesUtil$ParamType.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/util/PropertiesUtil.class" afterPath="$PROJECT_DIR$/target/classes/util/PropertiesUtil.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/util/RSServerUtil.class" afterPath="$PROJECT_DIR$/target/classes/util/RSServerUtil.class" />
-      <change beforePath="$PROJECT_DIR$/test.sql" afterPath="$PROJECT_DIR$/test.sql" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -63,6 +20,7 @@
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
     <option name="GROUP_SCHEMA" value="true" />
     <option name="GROUP_CONTENTS" value="false" />
     <option name="SORT_POSITIONED" value="false" />
@@ -74,43 +32,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DataChecker.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/core/handler/DataChecker.java">
+      <file leaf-file-name="DevicePane.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gui/pane/DevicePane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="884">
-              <caret line="64" column="58" lean-forward="false" selection-start-line="64" selection-start-column="58" selection-end-line="64" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AlarmType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/core/defs/AlarmType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+            <state relative-caret-position="524">
+              <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RSDataListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/action/rsserver/RSDataListener.java">
+      <file leaf-file-name="MainLoop.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/core/event/MainLoop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="72" column="15" lean-forward="false" selection-start-line="72" selection-start-column="15" selection-end-line="72" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddDeviceActionListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/action/AddDeviceActionListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            <state relative-caret-position="-289">
+              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -123,52 +59,90 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeviceTable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gui/DeviceTable.java">
+      <file leaf-file-name="device.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/device.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="59" column="55" lean-forward="true" selection-start-line="59" selection-start-column="55" selection-end-line="59" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeviceDialog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gui/dialog/DeviceDialog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-408">
-              <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="30" />
+            <state relative-caret-position="-510">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="e#2164#2165#0" expanded="true" />
-                <element signature="e#2196#2197#0" expanded="true" />
+                <marker date="1509609820381" expanded="true" signature="1115:1135" ph="select * fro... device" />
+                <marker date="1509609820381" expanded="true" signature="1236:1275" ph="select * fro... device" />
+                <marker date="1509609820381" expanded="true" signature="1621:1644" ph="select LAST_... " />
+                <marker date="1509609820381" expanded="true" signature="1675:2346" ph="insert into device... " />
+                <marker date="1509609820381" expanded="true" signature="2429:3011" ph="update device... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DevicePane.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gui/pane/DevicePane.java">
+      <file leaf-file-name="RSDataListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/action/rsserver/RSDataListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="40" column="44" lean-forward="true" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+            <state relative-caret-position="152">
+              <caret line="146" column="39" lean-forward="false" selection-start-line="146" selection-start-column="39" selection-end-line="146" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SettingDialog.form" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gui/dialog/SettingDialog.form">
-          <provider selected="true" editor-type-id="ui-designer">
-            <state />
+      <file leaf-file-name="UpdateDeviceDataCallback.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/core/event/UpdateDeviceDataCallback.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="18" selection-end-column="28" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SettingDialog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gui/dialog/SettingDialog.java">
+      <file leaf-file-name="Device.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/po/Device.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="65" column="39" lean-forward="false" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="39" />
+            <state relative-caret-position="34">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeviceMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/DeviceMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1513666223731" expanded="true" signature="4315:4421" ph="select from device" />
+                <marker date="1513666223731" expanded="true" signature="4507:4567" ph="delete from device... " />
+                <marker date="1513666223731" expanded="true" signature="4649:4667" ph="delete from device... " />
+                <marker date="1513666223731" expanded="true" signature="4825:5522" ph="insert into device... " />
+                <marker date="1513666223731" expanded="true" signature="8077:8104" ph="select count... device" />
+                <marker date="1513666223731" expanded="true" signature="10102:10922" ph="update device... " />
+                <marker date="1513666223731" expanded="true" signature="11111:12530" ph="update device... " />
+                <marker date="1513666223731" expanded="true" signature="12608:13333" ph="update device... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeviceMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/mapper/DeviceMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/core/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="118">
+              <caret line="89" column="28" lean-forward="false" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="28" />
+              <folding>
+                <element signature="e#5178#5179#0" expanded="true" />
+                <element signature="e#5209#5210#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -220,8 +194,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/action/DelDeviceActionListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/util/RSServerUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/util/MyBatisHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/event/UpdateDeviceDataCallback.java" />
@@ -267,10 +239,12 @@
         <option value="$PROJECT_DIR$/src/main/java/core/defs/AlarmStatus.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/handler/DataChecker.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/defs/AlarmType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/action/rsserver/RSDataListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/pane/DevicePane.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/dialog/SettingDialog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/dialog/DeviceDialog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/action/rsserver/RSDataListener.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/generator/generatorConfig.xml" />
         <option value="$PROJECT_DIR$/src/main/java/gui/pane/DevicePane.form" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/pane/DevicePane.java" />
       </list>
     </option>
   </component>
@@ -500,26 +474,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gui" type="462c0819:PsiDirectoryNode" />
-              <item name="dialog" type="462c0819:PsiDirectoryNode" />
-              <item name="DeviceDialog" type="e9f4de52:FormNode" />
-            </path>
-            <path>
-              <item name="monitor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="monitor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
-              <item name="dialog" type="462c0819:PsiDirectoryNode" />
-              <item name="SettingDialog" type="e9f4de52:FormNode" />
-            </path>
-            <path>
-              <item name="monitor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="monitor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
               <item name="pane" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -586,6 +540,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="generator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="monitor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="monitor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -611,13 +574,14 @@
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="242" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Projects\IdeaProjects\monitor\src\main\resources\mybatis\mapper" />
-      <recent name="D:\Projects\IdeaProjects\monitor" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="core.handler" />
+      <recent name="action" />
+      <recent name="gui" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Projects\IdeaProjects\monitor\src\main\resources\mybatis\mapper" />
       <recent name="D:\Projects\IdeaProjects\monitor\src\main\java\mapper" />
+      <recent name="D:\Projects\IdeaProjects\monitor\src\main\resources\mybatis\mapper" />
       <recent name="D:\Projects\IdeaProjects\monitor\src\main\java\po" />
       <recent name="D:\Projects\IdeaProjects\monitor\src\main\java\domain" />
       <recent name="D:\Projects\IdeaProjects\monitor\target\classes\mapper" />
@@ -629,10 +593,9 @@
       <recent name="action" />
       <recent name="pojo" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="core.handler" />
-      <recent name="action" />
-      <recent name="gui" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\IdeaProjects\monitor\src\main\resources\mybatis\mapper" />
+      <recent name="D:\Projects\IdeaProjects\monitor" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -647,7 +610,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DevicePane">
+  <component name="RunManager" selected="Application.MybatisGenerator">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -731,7 +694,7 @@
       <module name="monitor" />
       <envs />
     </configuration>
-    <configuration name="MybatisGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="MybatisGenerator" type="Application" factoryName="Application" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="gen.*" />
@@ -825,19 +788,18 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Aop" />
-      <item index="2" class="java.lang.String" itemvalue="Application.DataChecker" />
-      <item index="3" class="java.lang.String" itemvalue="Application.MybatisGenerator" />
-      <item index="4" class="java.lang.String" itemvalue="Application.DevicePane" />
+      <item index="0" class="java.lang.String" itemvalue="Application.MybatisGenerator" />
+      <item index="1" class="java.lang.String" itemvalue="Application.DevicePane" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Aop" />
+      <item index="4" class="java.lang.String" itemvalue="Application.DataChecker" />
     </list>
     <recent_temporary>
-      <list size="5">
+      <list size="4">
         <item index="0" class="java.lang.String" itemvalue="Application.DevicePane" />
         <item index="1" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="2" class="java.lang.String" itemvalue="Application.MybatisGenerator" />
-        <item index="3" class="java.lang.String" itemvalue="Application.DataChecker" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Aop" />
+        <item index="2" class="java.lang.String" itemvalue="Application.DataChecker" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Aop" />
       </list>
     </recent_temporary>
   </component>
@@ -895,7 +857,7 @@
       <workItem from="1513217745029" duration="5768000" />
       <workItem from="1513299729649" duration="9307000" />
       <workItem from="1513558811540" duration="9947000" />
-      <workItem from="1513644028959" duration="4985000" />
+      <workItem from="1513644028959" duration="8301000" />
     </task>
     <task id="LOCAL-00001" summary="mainloop ready">
       <created>1509439578880</created>
@@ -995,11 +957,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513566855977</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="add params for device types">
+      <created>1513659443612</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1513659443613</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="248398000" />
+    <option name="totallyTimeSpent" value="251714000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1077,7 +1046,8 @@
     <MESSAGE value="update some changes, be careful about mybatis generator to generate code append to old files" />
     <MESSAGE value="prototype is done." />
     <MESSAGE value="add data checker, check data and update alarm data into db" />
-    <option name="LAST_COMMIT_MESSAGE" value="add data checker, check data and update alarm data into db" />
+    <MESSAGE value="add params for device types" />
+    <option name="LAST_COMMIT_MESSAGE" value="add params for device types" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1098,27 +1068,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/TestMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="5" lean-forward="false" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/MonitorMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/action/LogActionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/action/MActionListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1150,20 +1099,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/defs/DeviceType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="44" column="49" lean-forward="false" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1485">
@@ -1172,22 +1107,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/dialog/DeviceDialog.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/po/DeviceData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/po/Device.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1198,26 +1121,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/MyBatisHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/util/RSServerUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/event/UpdateDeviceDataCallback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -1238,14 +1145,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mapper/DeviceMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/core/handler/AlarmChecker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1258,6 +1157,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="698" column="29" lean-forward="false" selection-start-line="698" selection-start-column="29" selection-end-line="698" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1285,21 +1185,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="102" column="79" lean-forward="false" selection-start-line="102" selection-start-column="79" selection-end-line="102" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/generator/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="42" column="34" lean-forward="true" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/core/defs/AlarmStatus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1313,26 +1198,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gen/MybatisGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/po/AlarmData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="344">
           <caret line="51" column="16" lean-forward="false" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mapper/AlarmDataMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1366,14 +1235,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/event/MainLoop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/core/event/MCallback.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1403,7 +1264,7 @@
         <state relative-caret-position="884">
           <caret line="64" column="58" lean-forward="false" selection-start-line="64" selection-start-column="58" selection-end-line="64" selection-end-column="58" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1412,14 +1273,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/action/rsserver/RSDataListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="72" column="15" lean-forward="false" selection-start-line="72" selection-start-column="15" selection-end-line="72" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -1447,19 +1300,132 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/dialog/SettingDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="65" column="39" lean-forward="false" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="39" />
+        <state relative-caret-position="174">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/dialog/DeviceDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/dialog/DeviceDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-408">
-          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="30" />
+        <state relative-caret-position="221">
+          <caret line="64" column="18" lean-forward="false" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
           <folding>
-            <element signature="e#2164#2165#0" expanded="true" />
-            <element signature="e#2196#2197#0" expanded="true" />
+            <element signature="e#2194#2195#0" expanded="false" />
+            <element signature="e#2226#2227#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="44" column="49" lean-forward="false" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/MyBatisHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" column="60" lean-forward="false" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gen/MybatisGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/defs/DeviceType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding>
+            <element signature="e#226#227#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mapper/AlarmDataMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/po/DeviceExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="e#235#236#0" expanded="false" />
+            <element signature="e#291#292#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/generator/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="53" column="16" lean-forward="false" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/po/Device.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/DeviceMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1513666223731" expanded="true" signature="4315:4421" ph="select from device" />
+            <marker date="1513666223731" expanded="true" signature="4507:4567" ph="delete from device... " />
+            <marker date="1513666223731" expanded="true" signature="4649:4667" ph="delete from device... " />
+            <marker date="1513666223731" expanded="true" signature="4825:5522" ph="insert into device... " />
+            <marker date="1513666223731" expanded="true" signature="8077:8104" ph="select count... device" />
+            <marker date="1513666223731" expanded="true" signature="10102:10922" ph="update device... " />
+            <marker date="1513666223731" expanded="true" signature="11111:12530" ph="update device... " />
+            <marker date="1513666223731" expanded="true" signature="12608:13333" ph="update device... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mapper/DeviceMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/device.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1509609820381" expanded="true" signature="1115:1135" ph="select * fro... device" />
+            <marker date="1509609820381" expanded="true" signature="1236:1275" ph="select * fro... device" />
+            <marker date="1509609820381" expanded="true" signature="1621:1644" ph="select LAST_... " />
+            <marker date="1509609820381" expanded="true" signature="1675:2346" ph="insert into device... " />
+            <marker date="1509609820381" expanded="true" signature="2429:3011" ph="update device... " />
           </folding>
         </state>
       </provider>
@@ -1469,10 +1435,45 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="89" column="28" lean-forward="false" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="28" />
+          <folding>
+            <element signature="e#5178#5179#0" expanded="true" />
+            <element signature="e#5209#5210#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/event/MainLoop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-289">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/action/rsserver/RSDataListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="146" column="39" lean-forward="false" selection-start-line="146" selection-start-column="39" selection-end-line="146" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/event/UpdateDeviceDataCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="18" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/pane/DevicePane.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="40" column="44" lean-forward="true" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+        <state relative-caret-position="524">
+          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding />
         </state>
       </provider>

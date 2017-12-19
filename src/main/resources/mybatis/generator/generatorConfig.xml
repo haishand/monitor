@@ -49,13 +49,13 @@
         </javaClientGenerator>
         <!-- 指定数据库表 -->
         <!-- <table tableName="items"></table> -->
-<!--        <table tableName="device">
+        <table tableName="device">
             <property name="useActualColumnNames" value="true"/>
-        </table>-->
+        </table>
 
         <!--    <table tableName="orderdetail"></table> -->
         <!--<table tableName="device_data"></table>-->
-        <table tableName="alarm_data"></table>
+        <!--<table tableName="alarm_data"></table>-->
         <!-- <table schema="" tableName="sys_user"></table>
         <table schema="" tableName="sys_role"></table>
         <table schema="" tableName="sys_permission"></table>

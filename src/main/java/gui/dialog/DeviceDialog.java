@@ -61,6 +61,9 @@ public class DeviceDialog extends JDialog {
 
     private void onOK() {
         // add your code here
+
+        devPane.saveToDB();
+
         dispose();
     }
 
