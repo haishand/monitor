@@ -83,3 +83,36 @@
 2017-12-19 15:06:35  [ mapper.DeviceMapper.selectByExample:SwingWorker-pool-2-thread-1:1004 ] - [ DEBUG ]  ==>  Preparing: select code, deviceId, nodeId, multiFlag, deviceName, deviceType, param1Name, param2Name, saveInterval, lowAlarmLimit1, hiAlarmLimit1, lowAlarmLimit2, hiAlarmLimit2, onlineStatus from device 
 2017-12-19 15:06:35  [ mapper.DeviceMapper.selectByExample:SwingWorker-pool-2-thread-1:1040 ] - [ DEBUG ]  ==> Parameters: 
 2017-12-19 15:06:35  [ mapper.DeviceMapper.selectByExample:SwingWorker-pool-2-thread-1:1081 ] - [ DEBUG ]  <==      Total: 0
+2017-12-19 15:22:33  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-2-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-12-19 15:22:34  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-2-thread-1:170 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-12-19 15:22:34  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-2-thread-1:170 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-12-19 15:22:34  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-2-thread-1:171 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-12-19 15:22:34  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-2-thread-1:171 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-12-19 15:22:34  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-2-thread-1:418 ] - [ DEBUG ]  Opening JDBC Connection
+2017-12-19 15:22:34  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-2-thread-1:828 ] - [ DEBUG ]  Created connection 8742007.
+2017-12-19 15:22:34  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-2-thread-1:829 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@856477]
+2017-12-19 15:22:34  [ mapper.DeviceMapper.selectByExample:SwingWorker-pool-2-thread-1:833 ] - [ DEBUG ]  ==>  Preparing: select code, deviceId, nodeId, multiFlag, deviceName, deviceType, param1Name, param2Name, saveInterval, lowAlarmLimit1, hiAlarmLimit1, lowAlarmLimit2, hiAlarmLimit2, onlineStatus from device 
+2017-12-19 15:22:34  [ mapper.DeviceMapper.selectByExample:SwingWorker-pool-2-thread-1:895 ] - [ DEBUG ]  ==> Parameters: 
+2017-12-19 15:22:34  [ mapper.DeviceMapper.selectByExample:SwingWorker-pool-2-thread-1:905 ] - [ DEBUG ]  <==      Total: 0
+2017-12-19 15:33:43  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-2-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-12-19 15:33:43  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-2-thread-1:149 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-12-19 15:33:43  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-2-thread-1:149 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-12-19 15:33:43  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-2-thread-1:149 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-12-19 15:33:43  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-2-thread-1:149 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-12-19 15:33:43  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-2-thread-1:384 ] - [ DEBUG ]  Opening JDBC Connection
+2017-12-19 15:33:44  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-2-thread-1:795 ] - [ DEBUG ]  Created connection 23474109.
+2017-12-19 15:33:44  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-2-thread-1:795 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1662fbd]
+2017-12-19 15:33:44  [ mapper.DeviceMapper.selectByExample:SwingWorker-pool-2-thread-1:802 ] - [ DEBUG ]  ==>  Preparing: select code, deviceId, nodeId, multiFlag, deviceName, deviceType, param1Name, param2Name, saveInterval, lowAlarmLimit1, hiAlarmLimit1, lowAlarmLimit2, hiAlarmLimit2, onlineStatus from device 
+2017-12-19 15:33:44  [ mapper.DeviceMapper.selectByExample:SwingWorker-pool-2-thread-1:841 ] - [ DEBUG ]  ==> Parameters: 
+2017-12-19 15:33:44  [ mapper.DeviceMapper.selectByExample:SwingWorker-pool-2-thread-1:856 ] - [ DEBUG ]  <==      Total: 0
+2017-12-19 15:35:47  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-2-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-12-19 15:35:47  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-2-thread-1:155 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-12-19 15:35:47  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-2-thread-1:156 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-12-19 15:35:47  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-2-thread-1:156 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-12-19 15:35:47  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-2-thread-1:156 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-12-19 15:35:48  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-2-thread-1:423 ] - [ DEBUG ]  Opening JDBC Connection
+2017-12-19 15:35:48  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-2-thread-1:815 ] - [ DEBUG ]  Created connection 16310099.
+2017-12-19 15:35:48  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-2-thread-1:816 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@f8df53]
+2017-12-19 15:35:48  [ mapper.DeviceMapper.selectByExample:SwingWorker-pool-2-thread-1:818 ] - [ DEBUG ]  ==>  Preparing: select code, deviceId, nodeId, multiFlag, deviceName, deviceType, param1Name, param2Name, saveInterval, lowAlarmLimit1, hiAlarmLimit1, lowAlarmLimit2, hiAlarmLimit2, onlineStatus from device 
+2017-12-19 15:35:48  [ mapper.DeviceMapper.selectByExample:SwingWorker-pool-2-thread-1:857 ] - [ DEBUG ]  ==> Parameters: 
+2017-12-19 15:35:48  [ mapper.DeviceMapper.selectByExample:SwingWorker-pool-2-thread-1:870 ] - [ DEBUG ]  <==      Total: 0

@@ -54,21 +54,40 @@ public class DeviceTable extends JPanel{
         table.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                if(e.getClickCount() == 2) {
+                if(e.getButton() == MouseEvent.BUTTON2) {
+                    // right-click to modify
+                    int row = table.getSelectedRow();
+                    if(row > -1) {
+                        DeviceDialog dialog = new DeviceDialog();
+                        dialog.fillDevPaneData(DeviceTable.this.getSelectedRow());
+
+                        // show dialog
+                        dialog.setModal(true);
+                        dialog.pack();
+                        dialog.setLocationRelativeTo(null);
+                        dialog.setVisible(true);
+                    }
+
+                }else if(e.getClickCount() == 2) {
+                    // double-click to view
+
                     int row = table.getSelectedRow();
                     if(row > -1) {
                         DeviceDialog dialog = new DeviceDialog();
                         dialog.fillDevPaneData(DeviceTable.this.getSelectedRow());
                         dialog.freezeDevPaneData();
 
+                        // show dialog
                         dialog.setModal(true);
                         dialog.pack();
                         dialog.setLocationRelativeTo(null);
                         dialog.setVisible(true);
                     }
                 }
+
             }
         });
+
 
     }
 
