@@ -56,8 +56,8 @@ public class DevicePane {
     public void saveToDB() {
         Device device = new Device();
 
-        // Populate data
         // TODO: xiang Wang, populate device object with values like below
+        // Populate data
         device.setDeviceId(Integer.parseInt(txtDevId.getText().trim()));
 
         // Insert to DB

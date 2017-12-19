@@ -3,11 +3,10 @@ package action.rsserver;
 import com.jnrsmcu.sdk.netdevice.*;
 import core.Main;
 import core.defs.DeviceType;
-import core.defs.ErrorMsg;
+import core.defs.LogMessage;
 import core.event.MEvent;
 import core.event.MType;
 import core.event.UpdateDeviceDataCallback;
-import mapper.DeviceDataMapper;
 import po.DeviceData;
 import mapper.DeviceMapper;
 import org.apache.ibatis.session.SqlSession;
@@ -53,20 +52,22 @@ public class RSDataListener implements IDataListener {
 
                 switch (type) {
                     case 10:
+                        logger.debug(String.format(LogMessage.NEW_TDEVICE_RECORD, nd.toString()));
                         handleTDevice(devId, nd);
                         break;
                     case 20:
+                        logger.debug(String.format(LogMessage.NEW_EDEVICE_RECORD, nd.toString()));
                         handleEDevice(devId, nd);
                         break;
                     default:
-                        logger.error(String.format(ErrorMsg.UNKNOWN_DEVICE_TYPE, type));
+                        logger.debug(String.format(LogMessage.UNKNOWN_DEVICE_TYPE, type));
                 }
             }
         }
     }
 
     /**
-     * handle temperature device
+     * Handle temperature device
      * @param devId
      * @param nd
      */
@@ -109,7 +110,7 @@ public class RSDataListener implements IDataListener {
     }
 
     /**
-     * handle electricity device
+     * Handle electricity device
      * @param devId
      * @param nd
      */
