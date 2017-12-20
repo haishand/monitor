@@ -67,7 +67,7 @@ public class RSDataListener implements IDataListener {
                     }
                 }
             }
-        }finally {
+        } finally {
             sqlSession.close();
         }
 
@@ -75,6 +75,7 @@ public class RSDataListener implements IDataListener {
 
     /**
      * Handle temperature device
+     *
      * @param devId
      * @param nd
      */
@@ -114,8 +115,7 @@ public class RSDataListener implements IDataListener {
 
             }
             sqlSession.commit();
-        }
-        finally{
+        } finally {
             sqlSession.close();
         }
 
@@ -123,6 +123,7 @@ public class RSDataListener implements IDataListener {
 
     /**
      * Handle electricity device
+     *
      * @param devId
      * @param nd
      */
@@ -161,8 +162,7 @@ public class RSDataListener implements IDataListener {
                         new UpdateDeviceDataCallback()));
             }
             sqlSession.commit();
-        }
-        finally {
+        } finally {
             sqlSession.close();
         }
     }
@@ -201,7 +201,7 @@ public class RSDataListener implements IDataListener {
             deviceMapper.updateByExample(dev, example);
 
             sqlSession.commit();
-        }finally {
+        } finally {
             sqlSession.close();
         }
     }
