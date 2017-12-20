@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ddb138f-7a7d-4b2c-844b-f527213af6d7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/core/handler/DeviceStatusChecker.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/logs/debug.log" afterPath="$PROJECT_DIR$/logs/debug.log" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/action/rsserver/RSDataListener.java" afterPath="$PROJECT_DIR$/src/main/java/action/rsserver/RSDataListener.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/Main.java" afterPath="$PROJECT_DIR$/src/main/java/core/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/event/MainLoop.java" afterPath="$PROJECT_DIR$/src/main/java/core/event/MainLoop.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/handler/DataChecker.java" afterPath="$PROJECT_DIR$/src/main/java/core/handler/DataChecker.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gui/pane/DevicePane.java" afterPath="$PROJECT_DIR$/src/main/java/gui/pane/DevicePane.java" />
       <change beforePath="$PROJECT_DIR$/target/classes/core/Main$1.class" afterPath="$PROJECT_DIR$/target/classes/core/Main$1.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/core/Main.class" afterPath="$PROJECT_DIR$/target/classes/core/Main.class" />
@@ -125,8 +118,8 @@
       <file leaf-file-name="DevicePane.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/gui/pane/DevicePane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="58" column="27" lean-forward="false" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="27" />
+            <state relative-caret-position="159">
+              <caret line="63" column="26" lean-forward="false" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -854,7 +847,7 @@
       <workItem from="1513299729649" duration="9307000" />
       <workItem from="1513558811540" duration="9947000" />
       <workItem from="1513644028959" duration="15149000" />
-      <workItem from="1513749664512" duration="4982000" />
+      <workItem from="1513749664512" duration="5063000" />
     </task>
     <task id="LOCAL-00001" summary="mainloop ready">
       <created>1509439578880</created>
@@ -989,11 +982,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513672757871</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="add thread to update device status and add try-finally to safeguard db code">
+      <created>1513756112923</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1513756112923</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="263544000" />
+    <option name="totallyTimeSpent" value="263625000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1028,7 +1028,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2915952" sideWeight="0.48215643" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288364" sideWeight="0.49735048" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27933383" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27933383" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="SPOJ Submitter" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953683" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32752612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1075,7 +1075,8 @@
     <MESSAGE value="add todos for others modify" />
     <MESSAGE value="add logs" />
     <MESSAGE value="write data to properties in setting configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="write data to properties in setting configuration" />
+    <MESSAGE value="add thread to update device status and add try-finally to safeguard db code" />
+    <option name="LAST_COMMIT_MESSAGE" value="add thread to update device status and add try-finally to safeguard db code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1511,8 +1512,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/pane/DevicePane.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="58" column="27" lean-forward="false" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="27" />
+        <state relative-caret-position="159">
+          <caret line="63" column="26" lean-forward="false" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
           <folding />
         </state>
       </provider>
