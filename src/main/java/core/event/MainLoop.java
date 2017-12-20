@@ -3,10 +3,14 @@ package core.event;
 import core.Main;
 import core.handler.AlarmChecker;
 import core.handler.DataChecker;
+import core.handler.DeviceStatusChecker;
 import util.PropertiesUtil;
 
 import java.util.concurrent.*;
 
+/**
+ * @author haishand
+ */
 public class MainLoop implements Runnable {
     private boolean isRunning = true;
     private BlockingQueue<MEvent> mainQueue = new LinkedBlockingDeque<MEvent>();
@@ -45,8 +49,12 @@ public class MainLoop implements Runnable {
             case ID_UPDATE_DATA:
                 // update device list
                 // update alarm list
-                Main.updateData();
-
+                Main.updateDeviceData();
+                Main.updateAlarmData();
+                break;
+            case ID_CHECK_DEVICE_STATUS:
+                // check all devices status every 1 minute
+                scheduledThreadPool.schedule(new DeviceStatusChecker(), 1, TimeUnit.MINUTES);
                 break;
             default:
 

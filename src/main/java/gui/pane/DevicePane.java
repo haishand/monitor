@@ -62,9 +62,14 @@ public class DevicePane {
 
         // Insert to DB
         SqlSession sqlSession = MyBatisHelper.getSqlSessionFactory().openSession();
-        DeviceMapper mapper = sqlSession.getMapper(DeviceMapper.class);
-        mapper.insert(device);
-        sqlSession.commit();
+        try {
+            DeviceMapper mapper = sqlSession.getMapper(DeviceMapper.class);
+            mapper.insert(device);
+
+            sqlSession.commit();
+        }finally {
+            sqlSession.close();
+        }
 
     }
 }

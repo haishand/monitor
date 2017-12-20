@@ -32,41 +32,45 @@ public class RSDataListener implements IDataListener {
         // query type from DB
         SqlSessionFactory sqlSessionFactory = MyBatisHelper.getSqlSessionFactory();
         SqlSession sqlSession = sqlSessionFactory.openSession();
-        DeviceMapper deviceMapper = sqlSession.getMapper(DeviceMapper.class);
-        DeviceExample eg = new DeviceExample();
-        eg.createCriteria().andDeviceIdEqualTo(devId);
-        List<Device> devices = deviceMapper.selectByExample(eg);
-        sqlSession.close();
+        try {
+            DeviceMapper deviceMapper = sqlSession.getMapper(DeviceMapper.class);
+            DeviceExample example = new DeviceExample();
+            example.createCriteria().andDeviceIdEqualTo(devId);
+            List<Device> devices = deviceMapper.selectByExample(example);
 
-        // update device status
+            // update device status
 
-        // update data record
-        if (!devices.isEmpty()) {
-            Device dev = devices.get(0);
-            int type = dev.getDeviceType();
-            for (NodeData nd : realTimeData.getNodeList()) {
-                float param1 = nd.getTem();
-                float param2 = nd.getHum();
+            // update data record
+            if (!devices.isEmpty()) {
+                Device dev = devices.get(0);
+                int type = dev.getDeviceType();
+                for (NodeData nd : realTimeData.getNodeList()) {
+                    float param1 = nd.getTem();
+                    float param2 = nd.getHum();
 
-                // skip 2 empty records
-                if (param1 == 0 && param2 == 0) {
-                    continue;
-                }
+                    // skip 2 empty records
+                    if (param1 == 0 && param2 == 0) {
+                        continue;
+                    }
 
-                switch (type) {
-                    case 10:
-                        logger.debug(String.format(LogMessage.NEW_TDEVICE_RECORD, nd.toString()));
-                        handleTDevice(devId, nd);
-                        break;
-                    case 20:
-                        logger.debug(String.format(LogMessage.NEW_EDEVICE_RECORD, nd.toString()));
-                        handleEDevice(devId, nd);
-                        break;
-                    default:
-                        logger.debug(String.format(LogMessage.UNKNOWN_DEVICE_TYPE, type));
+                    switch (type) {
+                        case 10:
+                            logger.debug(String.format(LogMessage.NEW_TDEVICE_RECORD, nd.toString()));
+                            handleTDevice(devId, nd);
+                            break;
+                        case 20:
+                            logger.debug(String.format(LogMessage.NEW_EDEVICE_RECORD, nd.toString()));
+                            handleEDevice(devId, nd);
+                            break;
+                        default:
+                            logger.debug(String.format(LogMessage.UNKNOWN_DEVICE_TYPE, type));
+                    }
                 }
             }
+        }finally {
+            sqlSession.close();
         }
+
     }
 
     /**
@@ -83,32 +87,37 @@ public class RSDataListener implements IDataListener {
         SqlSessionFactory sqlSessionFactory = MyBatisHelper.getSqlSessionFactory();
         final SqlSession sqlSession = sqlSessionFactory.openSession();
 
-        //
-        DeviceMapper deviceMapper = sqlSession.getMapper(DeviceMapper.class);
-        DeviceExample eg = new DeviceExample();
-        eg.createCriteria().andDeviceIdEqualTo(devId);
-        List<Device> devices = deviceMapper.selectByExample(eg);
-        int code = -1;
-        if(!devices.isEmpty()) {
-            Device dev = devices.get(0);
-            code = dev.getCode();
+        try {
+            //
+            DeviceMapper deviceMapper = sqlSession.getMapper(DeviceMapper.class);
+            DeviceExample eg = new DeviceExample();
+            eg.createCriteria().andDeviceIdEqualTo(devId);
+            List<Device> devices = deviceMapper.selectByExample(eg);
+            int code = -1;
+            if (!devices.isEmpty()) {
+                Device dev = devices.get(0);
+                code = dev.getCode();
 
-            Date time = nd.getRecordTime();
-            DeviceData data = new DeviceData();
-            data.setCode(code);
-            data.setParam1(param1);
-            data.setParam2(param2);
-            data.setRecordtime(time);
+                Date time = nd.getRecordTime();
+                DeviceData data = new DeviceData();
+                data.setCode(code);
+                data.setParam1(param1);
+                data.setParam2(param2);
+                data.setRecordtime(time);
 
-            Object[] args = {DeviceType.DEVICE_HUMITURE, data};
+                Object[] args = {DeviceType.DEVICE_HUMITURE, data};
 
-            Main.getMainLoop().getMainQueue().offer(new MEvent(
-                    MType.ID_UPDATE_DATA,
-                    args,
-                    new UpdateDeviceDataCallback()));
+                Main.getMainLoop().getMainQueue().offer(new MEvent(
+                        MType.ID_UPDATE_DATA,
+                        args,
+                        new UpdateDeviceDataCallback()));
 
+            }
+            sqlSession.commit();
         }
-        sqlSession.close();
+        finally{
+            sqlSession.close();
+        }
 
     }
 
@@ -126,31 +135,36 @@ public class RSDataListener implements IDataListener {
         SqlSessionFactory sqlSessionFactory = MyBatisHelper.getSqlSessionFactory();
         SqlSession sqlSession = sqlSessionFactory.openSession();
 
-        //
-        DeviceMapper deviceMapper = sqlSession.getMapper(DeviceMapper.class);
-        DeviceExample eg = new DeviceExample();
-        eg.createCriteria().andDeviceIdEqualTo(devId).andNodeIdEqualTo(nodeId);
-        List<Device> devices = deviceMapper.selectByExample(eg);
-        int code = -1;
-        if(!devices.isEmpty()) {
-            Device dev = devices.get(0);
-            code = dev.getCode();
+        try {
+            //
+            DeviceMapper deviceMapper = sqlSession.getMapper(DeviceMapper.class);
+            DeviceExample eg = new DeviceExample();
+            eg.createCriteria().andDeviceIdEqualTo(devId).andNodeIdEqualTo(nodeId);
+            List<Device> devices = deviceMapper.selectByExample(eg);
+            int code = -1;
+            if (!devices.isEmpty()) {
+                Device dev = devices.get(0);
+                code = dev.getCode();
 
-            Date time = nd.getRecordTime();
-            DeviceData data = new DeviceData();
-            data.setCode(code);
-            data.setParam1(param1);
-            data.setParam2(param2);
-            data.setRecordtime(time);
+                Date time = nd.getRecordTime();
+                DeviceData data = new DeviceData();
+                data.setCode(code);
+                data.setParam1(param1);
+                data.setParam2(param2);
+                data.setRecordtime(time);
 
-            Object[] args = {DeviceType.DEVICE_EMETER, data};
+                Object[] args = {DeviceType.DEVICE_EMETER, data};
 
-            Main.getMainLoop().getMainQueue().offer(new MEvent(
-                    MType.ID_UPDATE_DATA,
-                    args,
-                    new UpdateDeviceDataCallback()));
+                Main.getMainLoop().getMainQueue().offer(new MEvent(
+                        MType.ID_UPDATE_DATA,
+                        args,
+                        new UpdateDeviceDataCallback()));
+            }
+            sqlSession.commit();
         }
-        sqlSession.close();
+        finally {
+            sqlSession.close();
+        }
     }
 
     @Override
@@ -170,6 +184,25 @@ public class RSDataListener implements IDataListener {
 
     @Override
     public void receiveTimmingAck(TimmingAck timmingAck) {
-        // TODO: update device status
+        // update device online-status
+        int devId = timmingAck.getDeviceId();
+        int status = timmingAck.getStatus();
+
+        SqlSessionFactory sqlSessionFactory = MyBatisHelper.getSqlSessionFactory();
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        try {
+            DeviceMapper deviceMapper = sqlSession.getMapper(DeviceMapper.class);
+            DeviceExample example = new DeviceExample();
+            example.createCriteria().andDeviceIdEqualTo(devId);
+
+            Device dev = new Device();
+            dev.setOnlineStatus(status);
+            deviceMapper.updateByExample(dev, example);
+
+            sqlSession.commit();
+        }finally {
+            sqlSession.close();
+        }
     }
 }
