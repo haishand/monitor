@@ -37,6 +37,7 @@ public class Main {
     private static JFrame mainWindow = null;
     private static RSServer rsServer = null;
     private static MainLoop mainLoop = null;
+    public static JLabel statusBar;
 
     public static void main(String[] args) {
         try {
@@ -57,7 +58,7 @@ public class Main {
     }
 
     private static void createAndShowGUI() {
-        JFrame frame = new JFrame("智能制造感知数据采集平台");
+        JFrame frame = new JFrame("智能制造感知数据采集平台v0.1");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setIconImage(Toolkit.getDefaultToolkit().getImage("images/icon.png"));
 
@@ -79,8 +80,9 @@ public class Main {
 
         mainPane.add(splitPane, BorderLayout.CENTER);
 
-        JLabel statusBar = new JLabel("状态栏");
+        statusBar = new JLabel("青岛职业技术学院信息学院版权所有");
         statusBar.setBorder(BorderFactory.createEtchedBorder(EtchedBorder.RAISED));
+        statusBar.setHorizontalAlignment(SwingConstants.RIGHT);
         mainPane.add(statusBar, BorderLayout.SOUTH);
 
         frame.setContentPane(mainPane);
@@ -156,6 +158,5 @@ public class Main {
     public static void setRsServer(RSServer rsServer) {
         Main.rsServer = rsServer;
     }
-
 
 }

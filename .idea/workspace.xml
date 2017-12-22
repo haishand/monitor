@@ -2,107 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ddb138f-7a7d-4b2c-844b-f527213af6d7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_2_2_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_commons_2_2_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_tree_2_2_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_intellij_forms_rt_6_0_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jgoodies_forms_1_0_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jnrsmcu_RSNetDevice_1_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jdom_jdom_1_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/log.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/m_delete.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/m_log.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/停止.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/删除.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/启动.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Demo.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/action/ModifyDeviceActionListener.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/core/defs/DeviceStatus.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/core/handler/GUIUpdater.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/gui/dialog/LogDialog.form" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/gui/dialog/LogDialog.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/observer/CallBack.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_jsr250_api_1_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_enterprise_cdi_api_1_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_artifact_3_3_9.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_model_3_3_9.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_plugin_api_3_3_9.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_8_10.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjtools_1_8_10.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_10.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_classworlds_2_5_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_component_annotations_1_5_5.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_utils_3_0_22.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_sisu_org_eclipse_sisu_inject_0_3_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_sisu_org_eclipse_sisu_plexus_0_3_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_generator_mybatis_generator_1_3_5.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_generator_mybatis_generator_core_1_3_5.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_generator_mybatis_generator_maven_plugin_1_3_5.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test2.sql" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/lib/RSNetDevice.jar" afterPath="$PROJECT_DIR$/lib/RSNetDevice-1.0.jar" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" afterPath="$PROJECT_DIR$/logs/debug.log" />
-      <change beforePath="$PROJECT_DIR$/logs/debug.log.2017-11-01" afterPath="$PROJECT_DIR$/logs/debug.log.2017-11-01" />
-      <change beforePath="$PROJECT_DIR$/logs/debug.log.2017-11-02" afterPath="$PROJECT_DIR$/logs/debug.log.2017-11-02" />
-      <change beforePath="$PROJECT_DIR$/logs/debug.log.2017-11-03" afterPath="$PROJECT_DIR$/logs/debug.log.2017-11-03" />
-      <change beforePath="$PROJECT_DIR$/logs/debug.log.2017-11-06" afterPath="$PROJECT_DIR$/logs/debug.log.2017-11-06" />
-      <change beforePath="$PROJECT_DIR$/logs/debug.log.2017-11-07" afterPath="$PROJECT_DIR$/logs/debug.log.2017-11-07" />
-      <change beforePath="$PROJECT_DIR$/logs/debug.log.2017-11-08" afterPath="$PROJECT_DIR$/logs/debug.log.2017-11-08" />
-      <change beforePath="$PROJECT_DIR$/logs/error.log" afterPath="$PROJECT_DIR$/logs/error.log" />
-      <change beforePath="$PROJECT_DIR$/monitor.cfg" afterPath="$PROJECT_DIR$/monitor.cfg" />
-      <change beforePath="$PROJECT_DIR$/monitor.iml" afterPath="$PROJECT_DIR$/monitor.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/action/AddDeviceActionListener.java" afterPath="$PROJECT_DIR$/src/main/java/action/AddDeviceActionListener.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/action/DelDeviceActionListener.java" afterPath="$PROJECT_DIR$/src/main/java/action/DelDeviceActionListener.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/action/LogActionListener.java" afterPath="$PROJECT_DIR$/src/main/java/action/LogActionListener.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/action/SettingActionListener.java" afterPath="$PROJECT_DIR$/src/main/java/action/SettingActionListener.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/action/rsserver/RSDataListener.java" afterPath="$PROJECT_DIR$/src/main/java/action/rsserver/RSDataListener.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/core/Main.java" afterPath="$PROJECT_DIR$/src/main/java/core/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/defs/AlarmStatus.java" afterPath="$PROJECT_DIR$/src/main/java/core/defs/AlarmStatus.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/defs/DeviceType.java" afterPath="$PROJECT_DIR$/src/main/java/core/defs/DeviceType.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/event/MType.java" afterPath="$PROJECT_DIR$/src/main/java/core/event/MType.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/event/MainLoop.java" afterPath="$PROJECT_DIR$/src/main/java/core/event/MainLoop.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/event/UpdateDeviceDataCallback.java" afterPath="$PROJECT_DIR$/src/main/java/core/event/UpdateDeviceDataCallback.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/handler/DataChecker.java" afterPath="$PROJECT_DIR$/src/main/java/core/handler/DataChecker.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/AlarmTable.java" afterPath="$PROJECT_DIR$/src/main/java/gui/AlarmTable.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/DeviceTable.java" afterPath="$PROJECT_DIR$/src/main/java/gui/DeviceTable.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/MonitorMenu.java" afterPath="$PROJECT_DIR$/src/main/java/gui/MonitorMenu.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/MonitorToolBar.java" afterPath="$PROJECT_DIR$/src/main/java/gui/MonitorToolBar.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/dialog/DeviceDialog.java" afterPath="$PROJECT_DIR$/src/main/java/gui/dialog/DeviceDialog.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/dialog/SettingDialog.java" afterPath="$PROJECT_DIR$/src/main/java/gui/dialog/SettingDialog.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/pane/DevicePane.form" afterPath="$PROJECT_DIR$/src/main/java/gui/pane/DevicePane.form" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/pane/DevicePane.java" afterPath="$PROJECT_DIR$/src/main/java/gui/pane/DevicePane.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mapper/AlarmDataMapper.java" afterPath="$PROJECT_DIR$/src/main/java/mapper/AlarmDataMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/observer/Clown.java" afterPath="$PROJECT_DIR$/src/main/java/observer/Clown.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/observer/Viewer.java" afterPath="$PROJECT_DIR$/src/main/java/observer/Viewer.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/po/AlarmData.java" afterPath="$PROJECT_DIR$/src/main/java/po/AlarmData.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/po/AlarmDataExample.java" afterPath="$PROJECT_DIR$/src/main/java/po/AlarmDataExample.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/RSServerUtil.java" afterPath="$PROJECT_DIR$/src/main/java/util/RSServerUtil.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.xml" afterPath="$PROJECT_DIR$/src/main/resources/config.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/generator/generatorConfig.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/generator/generatorConfig.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AlarmDataMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AlarmDataMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/DeviceMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/DeviceMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/device.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/device.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/devicedata.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/devicedata.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/latestdata.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/latestdata.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/action/InfoActionListener.class" afterPath="$PROJECT_DIR$/target/classes/action/InfoActionListener.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/action/SettingActionListener.class" afterPath="$PROJECT_DIR$/target/classes/action/SettingActionListener.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/action/StartActionListener.class" afterPath="$PROJECT_DIR$/target/classes/action/StartActionListener.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/action/StopActionListener.class" afterPath="$PROJECT_DIR$/target/classes/action/StopActionListener.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config.xml" afterPath="$PROJECT_DIR$/target/classes/config.xml" />
       <change beforePath="$PROJECT_DIR$/target/classes/core/Main$1.class" afterPath="$PROJECT_DIR$/target/classes/core/Main$1.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/core/Main.class" afterPath="$PROJECT_DIR$/target/classes/core/Main.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/MonitorMenu.class" afterPath="$PROJECT_DIR$/target/classes/gui/MonitorMenu.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/MonitorToolBar$1.class" afterPath="$PROJECT_DIR$/target/classes/gui/MonitorToolBar$1.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/MonitorToolBar.class" afterPath="$PROJECT_DIR$/target/classes/gui/MonitorToolBar.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/util/PropertiesUtil$ParamType.class" afterPath="$PROJECT_DIR$/target/classes/util/PropertiesUtil$ParamType.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/util/PropertiesUtil.class" afterPath="$PROJECT_DIR$/target/classes/util/PropertiesUtil.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/util/RSServerUtil.class" afterPath="$PROJECT_DIR$/target/classes/util/RSServerUtil.class" />
-      <change beforePath="$PROJECT_DIR$/test.sql" afterPath="$PROJECT_DIR$/test.sql" />
+      <change beforePath="$PROJECT_DIR$/test.sql" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -135,11 +41,11 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/core/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1264">
-              <caret line="110" column="37" lean-forward="false" selection-start-line="110" selection-start-column="37" selection-end-line="110" selection-end-column="37" />
+            <state relative-caret-position="414">
+              <caret line="161" column="1" lean-forward="true" selection-start-line="161" selection-start-column="1" selection-end-line="161" selection-end-column="1" />
               <folding>
-                <element signature="e#3076#3077#0" expanded="true" />
-                <element signature="e#3128#3129#0" expanded="true" />
+                <element signature="e#3186#3187#0" expanded="true" />
+                <element signature="e#3238#3239#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -329,13 +235,13 @@
         <option value="$PROJECT_DIR$/src/main/java/gui/AlarmTable.java" />
         <option value="$PROJECT_DIR$/src/mapper/DeviceMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis/generator/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/core/Main.java" />
         <option value="$PROJECT_DIR$/monitor.cfg" />
         <option value="$PROJECT_DIR$/src/main/java/core/handler/DataChecker.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/defs/AlarmStatus.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/defs/DeviceStatus.java" />
         <option value="$PROJECT_DIR$/src/main/java/action/rsserver/RSDataListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/DeviceTable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/core/Main.java" />
       </list>
     </option>
   </component>
@@ -953,7 +859,7 @@
       <workItem from="1513782888482" duration="2459000" />
       <workItem from="1513816503077" duration="23449000" />
       <workItem from="1513856386558" duration="5957000" />
-      <workItem from="1513902683762" duration="6877000" />
+      <workItem from="1513902683762" duration="7925000" />
     </task>
     <task id="LOCAL-00001" summary="mainloop ready">
       <created>1509439578880</created>
@@ -1123,11 +1029,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513838088188</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="full features demo done">
+      <created>1513910713957</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1513910713957</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="314729000" />
+    <option name="totallyTimeSpent" value="315777000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1159,7 +1072,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32761577" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5574614" sideWeight="0.47918245" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.75128645" sideWeight="0.49735048" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25132474" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1212,7 +1125,8 @@
     <MESSAGE value="write data to properties in setting configuration" />
     <MESSAGE value="add thread to update device status and add try-finally to safeguard db code" />
     <MESSAGE value="rename sqlSession to session" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename sqlSession to session" />
+    <MESSAGE value="full features demo done" />
+    <option name="LAST_COMMIT_MESSAGE" value="full features demo done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1702,11 +1616,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/core/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1264">
-          <caret line="110" column="37" lean-forward="false" selection-start-line="110" selection-start-column="37" selection-end-line="110" selection-end-column="37" />
+        <state relative-caret-position="414">
+          <caret line="161" column="1" lean-forward="true" selection-start-line="161" selection-start-column="1" selection-end-line="161" selection-end-column="1" />
           <folding>
-            <element signature="e#3076#3077#0" expanded="true" />
-            <element signature="e#3128#3129#0" expanded="true" />
+            <element signature="e#3186#3187#0" expanded="true" />
+            <element signature="e#3238#3239#0" expanded="true" />
           </folding>
         </state>
       </provider>
