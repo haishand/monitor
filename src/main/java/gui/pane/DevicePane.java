@@ -54,7 +54,7 @@ public class DevicePane {
             "设备状态"
          */
         this.txtDevId.setText(data.get(0).toString());
-        this.spNodeId.setValue(data.get(1).toString());
+        this.spNodeId.setValue(Integer.parseInt(data.get(1).toString()));
         this.txtDevName.setText(data.get(2).toString());
         this.txtParam1Name.setText(data.get(3).toString());
         this.txtParam2Name.setText(data.get(4).toString());
@@ -66,6 +66,7 @@ public class DevicePane {
     }
 
     public void freeze() {
+        this.cbDevType.setEnabled(false);
         this.txtDevId.setEnabled(false);
         this.spNodeId.setEnabled(false);
         this.txtDevName.setEnabled(false);

@@ -53,12 +53,16 @@ public class MonitorToolBar {
         button.addActionListener(new AddDeviceActionListener());
         toolBar.add(button);
 
-        button = makeNavigationButton("scan", "扫描设备", "扫描");
-        button.addActionListener(new ScanDeviceActionListener());
+        button = makeNavigationButton("modify", "修改设备", "修改");
+        button.addActionListener(new ModifyDeviceActionListener());
         toolBar.add(button);
 
         button = makeNavigationButton("delete", "删除设备", "删除");
         button.addActionListener(new DelDeviceActionListener());
+        toolBar.add(button);
+
+        button = makeNavigationButton("scan", "扫描设备", "扫描");
+        button.addActionListener(new ScanDeviceActionListener());
         toolBar.add(button);
 
         button = makeNavigationButton("log", "系统日志", "日志");

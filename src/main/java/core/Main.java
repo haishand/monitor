@@ -1,32 +1,20 @@
 package core;
 
 import com.jnrsmcu.sdk.netdevice.RSServer;
-import core.defs.DeviceType;
 import core.event.MEvent;
 import core.event.MType;
 import core.event.MainLoop;
-import core.handler.GUIUpdater;
-import mapper.AlarmDataMapper;
-import po.AlarmData;
-import po.Device;
 import gui.AlarmTable;
 import gui.MonitorMenu;
 import gui.DeviceTable;
 import gui.MonitorToolBar;
-import mapper.DeviceMapper;
-import org.apache.ibatis.session.SqlSession;
-import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
-import util.MyBatisHelper;
 import util.PropertiesUtil;
 
 import javax.swing.*;
 import javax.swing.border.EtchedBorder;
 import java.awt.*;
-import java.util.List;
-import java.util.Vector;
-import java.util.concurrent.*;
 
 /**
  * @author haishand
@@ -97,16 +85,19 @@ public class Main {
     }
 
     private static void init() {
-        // mainloop
-        mainLoop = new MainLoop();
-        new Thread(mainLoop).start();
+        startMainLoop();
 
-        // init configuration
         initCfg();
 
-        // start timers
         startTimers();
 
+        registerShutdownHook();
+
+    }
+
+    private static void startMainLoop() {
+        mainLoop = new MainLoop();
+        new Thread(mainLoop).start();
     }
 
     public static void sendEvent(MEvent event) {
@@ -124,20 +115,10 @@ public class Main {
         AlarmTable.updateAlarmData();
     }
 
-/*    private static void loadData() {
-        mainLoop.getMainQueue().add(new MEvent(MType.ID_UPDATE_GUI, null, null));
-    }*/
-
-
     private static void initCfg() {
         PropertiesUtil.getInstance().load();
 
     }
-
-/*    public static void repaint() {
-        getMainWindow().repaint();
-    }*/
-
 
     public static JFrame getMainWindow() {
         return mainWindow;
@@ -159,4 +140,12 @@ public class Main {
         Main.rsServer = rsServer;
     }
 
+    private static void registerShutdownHook() {
+        Runtime.getRuntime().addShutdownHook(new Thread() {
+            @Override
+            public void run() {
+                // TODO
+            }
+        });
+    }
 }

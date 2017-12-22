@@ -1,5 +1,6 @@
 package gui;
 
+import core.Main;
 import core.defs.AlarmStatus;
 import mapper.AlarmDataMapper;
 import mapper.DeviceDataMapper;
@@ -71,6 +72,10 @@ public class AlarmTable extends JPanel {
 
     }
 
+    public JTable getTable() {
+        return table;
+    }
+
     public static void setModel(Vector<Vector<Object>> rows) {
         AlarmTable mtable = AlarmTable.getInstance();
         DefaultTableModel tm = new DefaultTableModel() {
@@ -116,6 +121,7 @@ public class AlarmTable extends JPanel {
                     ex.printStackTrace();
                 }finally {
                     session.close();
+                    Main.updateGUI();
                 }
 
             }
@@ -139,6 +145,7 @@ public class AlarmTable extends JPanel {
                     ex.printStackTrace();
                 }finally {
                     session.close();
+                    Main.updateGUI();
                 }
             }
         });

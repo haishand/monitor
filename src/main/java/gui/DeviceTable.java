@@ -22,12 +22,12 @@ import java.util.concurrent.ExecutionException;
 /**
  * @author haishand
  */
-public class DeviceTable extends JPanel{
+public class DeviceTable extends JPanel {
     private static DeviceTable instance;
     private JTable table;
 
     public static DeviceTable getInstance() {
-        if(instance == null) {
+        if (instance == null) {
             instance = new DeviceTable();
         }
         return instance;
@@ -61,25 +61,10 @@ public class DeviceTable extends JPanel{
         table.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                if(e.getButton() == MouseEvent.BUTTON2) {
-                    // right-click to modify
-                    int row = table.getSelectedRow();
-                    if(row > -1) {
-                        DeviceDialog dialog = new DeviceDialog();
-                        dialog.fillDevPaneData(DeviceTable.this.getSelectedRow());
-
-                        // show dialog
-                        dialog.setModal(true);
-                        dialog.pack();
-                        dialog.setLocationRelativeTo(null);
-                        dialog.setVisible(true);
-                    }
-
-                }else if(e.getClickCount() == 2) {
+                if (e.getClickCount() == 2) {
                     // double-click to view
-
                     int row = table.getSelectedRow();
-                    if(row > -1) {
+                    if (row > -1) {
                         DeviceDialog dialog = new DeviceDialog();
                         dialog.fillDevPaneData(DeviceTable.this.getSelectedRow());
                         dialog.freezeDevPaneData();
@@ -97,12 +82,16 @@ public class DeviceTable extends JPanel{
 
     }
 
+    public JTable getTable() {
+        return table;
+    }
+
     public Vector<Object> getSelectedRow() {
-        if(this.table.getSelectedRow() == -1) {
+        if (this.table.getSelectedRow() == -1) {
             return null;
         }
-        DefaultTableModel model = (DefaultTableModel)this.table.getModel();
-        return (Vector)model.getDataVector().get(this.table.getSelectedRow());
+        DefaultTableModel model = (DefaultTableModel) this.table.getModel();
+        return (Vector) model.getDataVector().get(this.table.getSelectedRow());
     }
 
     public static void setModel(Vector<Vector<Object>> rows) {
@@ -145,9 +134,9 @@ public class DeviceTable extends JPanel{
                         row.add(DeviceStatus.valueToDesc(dev.getOnlineStatus()));
                         rows.add(row);
                     }
-                } catch(Exception e) {
+                } catch (Exception e) {
                     e.printStackTrace();
-                }finally {
+                } finally {
                     session.close();
                 }
 
