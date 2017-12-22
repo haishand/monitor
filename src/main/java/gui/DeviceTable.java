@@ -33,9 +33,19 @@ public class DeviceTable extends JPanel {
         return instance;
     }
 
+    /**
+     * NOTE: change here MUST change below codes:
+     * DeviceTable.updateDeviceData();
+     * DevicePane.populate();
+     * DevicePane.freeze();
+     * DevicePane.saveToDB();
+     *
+     */
+
     public static String[] COLUMN_NAMES = {
-            "设备Id",
-            "节点Id",
+            "设备号",
+            "设备ID",
+            "节点ID",
             "设备名",
             "设备类型",
             "参数1名字",
@@ -121,6 +131,7 @@ public class DeviceTable extends JPanel {
                     rows = new Vector<Vector<Object>>();
                     for (Device dev : devList) {
                         Vector<Object> row = new Vector<Object>();
+                        row.add(dev.getCode());
                         row.add(dev.getDeviceId());
                         row.add(dev.getNodeId());
                         row.add(dev.getDeviceName());
