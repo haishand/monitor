@@ -1,6 +1,7 @@
 package gui;
 
 import action.*;
+import util.RSServerUtil;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -29,6 +30,7 @@ public class MonitorToolBar {
         btnStart.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                RSServerUtil.start();
                 btnStart.setEnabled(!btnStart.isEnabled());
                 btnStop.setEnabled(!btnStop.isEnabled());
             }
@@ -37,6 +39,7 @@ public class MonitorToolBar {
         btnStop.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                RSServerUtil.stop();
                 btnStart.setEnabled(!btnStart.isEnabled());
                 btnStop.setEnabled(!btnStop.isEnabled());
             }
@@ -61,6 +64,7 @@ public class MonitorToolBar {
         button = makeNavigationButton("log", "系统日志", "日志");
         button.addActionListener(new LogActionListener());
         toolBar.add(button);
+
 
         return toolBar;
     }

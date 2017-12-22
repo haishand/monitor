@@ -1,6 +1,13 @@
 package gui;
 
+import core.defs.DeviceStatus;
+import core.defs.DeviceType;
 import gui.dialog.DeviceDialog;
+import mapper.DeviceMapper;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import po.Device;
+import util.MyBatisHelper;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -8,7 +15,9 @@ import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Vector;
+import java.util.concurrent.ExecutionException;
 
 /**
  * @author haishand
@@ -31,12 +40,10 @@ public class DeviceTable extends JPanel{
             "设备类型",
             "参数1名字",
             "参数2名字",
-            "保存间隔",
             "参数1报警下限",
             "参数1报警上限",
             "参数2报警下限",
             "参数2报警上限",
-            "报警状态",
             "设备状态"
     };
 
@@ -88,10 +95,9 @@ public class DeviceTable extends JPanel{
             }
         });
 
-
     }
 
-    private Vector<Object> getSelectedRow() {
+    public Vector<Object> getSelectedRow() {
         if(this.table.getSelectedRow() == -1) {
             return null;
         }
@@ -110,5 +116,59 @@ public class DeviceTable extends JPanel{
 
         tm.setDataVector(rows, new Vector(Arrays.asList(COLUMN_NAMES)));
         mtable.table.setModel(tm);
+    }
+
+    public static void updateDeviceData() {
+        new SwingWorker() {
+
+            @Override
+            protected Vector<Vector<Object>> doInBackground() throws Exception {
+                SqlSessionFactory sqlSessionFactory = MyBatisHelper.getSqlSessionFactory();
+                SqlSession session = sqlSessionFactory.openSession();
+                Vector<Vector<Object>> rows = null;
+                try {
+                    DeviceMapper deviceMapper = session.getMapper(DeviceMapper.class);
+                    List<Device> devList = deviceMapper.selectByExample(null);
+                    rows = new Vector<Vector<Object>>();
+                    for (Device dev : devList) {
+                        Vector<Object> row = new Vector<Object>();
+                        row.add(dev.getDeviceId());
+                        row.add(dev.getNodeId());
+                        row.add(dev.getDeviceName());
+                        row.add(DeviceType.valueToDesc(dev.getDeviceType()));
+                        row.add(dev.getParam1Name());
+                        row.add(dev.getParam2Name());
+                        row.add(dev.getLowAlarmLimit1());
+                        row.add(dev.getHiAlarmLimit1());
+                        row.add(dev.getLowAlarmLimit2());
+                        row.add(dev.getHiAlarmLimit2());
+                        row.add(DeviceStatus.valueToDesc(dev.getOnlineStatus()));
+                        rows.add(row);
+                    }
+                } catch(Exception e) {
+                    e.printStackTrace();
+                }finally {
+                    session.close();
+                }
+
+                return rows;
+            }
+
+            @Override
+            protected void done() {
+                Vector<Vector<Object>> rows = null;
+                try {
+                    rows = (Vector) get();
+                    if (rows != null) {
+                        DeviceTable.setModel(rows);
+                    }
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                } catch (ExecutionException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        }.execute();
     }
 }

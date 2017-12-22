@@ -18,19 +18,19 @@ USE `test`;
 
 -- 导出  表 test.alarm 结构
 CREATE TABLE IF NOT EXISTS `alarm` (
-  `code` int(11) DEFAULT NULL,
+  `value` int(11) DEFAULT NULL,
   `param1` float DEFAULT NULL,
   `param2` float DEFAULT NULL,
   `recordTime` datetime DEFAULT NULL,
   `alarmStatus` int(11) DEFAULT NULL,
-  KEY `FK_alarm_device` (`code`),
-  CONSTRAINT `FK_alarm_device` FOREIGN KEY (`code`) REFERENCES `device` (`code`) ON DELETE CASCADE
+  KEY `FK_alarm_device` (`value`),
+  CONSTRAINT `FK_alarm_device` FOREIGN KEY (`value`) REFERENCES `device` (`value`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- 数据导出被取消选择。
 -- 导出  表 test.device 结构
 CREATE TABLE IF NOT EXISTS `device` (
-  `code` int(11) NOT NULL AUTO_INCREMENT,
+  `value` int(11) NOT NULL AUTO_INCREMENT,
   `deviceId` int(11) DEFAULT NULL,
   `nodeId` int(11) DEFAULT NULL,
   `multiFlag` bit(1) DEFAULT NULL,
@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS `device` (
   `lowAlarmLimit2` float DEFAULT NULL,
   `hiAlarmLimit2` float DEFAULT NULL,
   `onlineStatus` int(11) DEFAULT NULL,
-  PRIMARY KEY (`code`)
+  PRIMARY KEY (`value`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 -- 数据导出被取消选择。
@@ -64,12 +64,12 @@ CREATE TABLE IF NOT EXISTS `deviceinfo` (
 -- 数据导出被取消选择。
 -- 导出  表 test.device_data 结构
 CREATE TABLE IF NOT EXISTS `device_data` (
-  `code` int(11) NOT NULL AUTO_INCREMENT,
+  `value` int(11) NOT NULL AUTO_INCREMENT,
   `param1` float DEFAULT NULL,
   `param2` float DEFAULT NULL,
   `recordTime` datetime DEFAULT NULL,
-  PRIMARY KEY (`code`),
-  CONSTRAINT `FK_devicedata_device` FOREIGN KEY (`code`) REFERENCES `device` (`code`) ON DELETE CASCADE
+  PRIMARY KEY (`value`),
+  CONSTRAINT `FK_devicedata_device` FOREIGN KEY (`value`) REFERENCES `device` (`value`) ON DELETE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- 数据导出被取消选择。

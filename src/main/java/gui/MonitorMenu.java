@@ -4,7 +4,6 @@ import action.InfoActionListener;
 import action.SettingActionListener;
 import action.StartActionListener;
 import action.StopActionListener;
-import javafx.beans.Observable;
 
 import javax.swing.*;
 

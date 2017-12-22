@@ -1,9 +1,11 @@
 package core;
 
 import com.jnrsmcu.sdk.netdevice.RSServer;
+import core.defs.DeviceType;
 import core.event.MEvent;
 import core.event.MType;
 import core.event.MainLoop;
+import core.handler.GUIUpdater;
 import mapper.AlarmDataMapper;
 import po.AlarmData;
 import po.Device;
@@ -20,6 +22,7 @@ import util.MyBatisHelper;
 import util.PropertiesUtil;
 
 import javax.swing.*;
+import javax.swing.border.EtchedBorder;
 import java.awt.*;
 import java.util.List;
 import java.util.Vector;
@@ -76,6 +79,10 @@ public class Main {
 
         mainPane.add(splitPane, BorderLayout.CENTER);
 
+        JLabel statusBar = new JLabel("状态栏");
+        statusBar.setBorder(BorderFactory.createEtchedBorder(EtchedBorder.RAISED));
+        mainPane.add(statusBar, BorderLayout.SOUTH);
+
         frame.setContentPane(mainPane);
         frame.setJMenuBar(MonitorMenu.createMenuBar());
 
@@ -98,68 +105,27 @@ public class Main {
         // start timers
         startTimers();
 
-        updateDeviceData();
+    }
+
+    public static void sendEvent(MEvent event) {
+        mainLoop.getMainQueue().offer(event);
     }
 
     private static void startTimers() {
-        mainLoop.getMainQueue().add(new MEvent(MType.ID_ALARM_CHECK_TIMER_START, null, null));
+        sendEvent(new MEvent(MType.ID_START_DATA_CHECK_TIMER, null, null));
+        sendEvent(new MEvent(MType.ID_START_ALARM_CHECK_TIMER, null, null));
+        sendEvent(new MEvent(MType.ID_START_UPDATE_GUI_TIMER, null, null));
+    }
+
+    public static void updateGUI() {
+        DeviceTable.updateDeviceData();
+        AlarmTable.updateAlarmData();
     }
 
 /*    private static void loadData() {
-        mainLoop.getMainQueue().add(new MEvent(MType.ID_UPDATE_DATA, null, null));
+        mainLoop.getMainQueue().add(new MEvent(MType.ID_UPDATE_GUI, null, null));
     }*/
 
-    public static void updateDeviceData() {
-        new SwingWorker() {
-
-            @Override
-            protected Vector<Vector<Object>> doInBackground() throws Exception {
-                SqlSessionFactory sqlSessionFactory = MyBatisHelper.getSqlSessionFactory();
-                SqlSession session = sqlSessionFactory.openSession();
-                Vector<Vector<Object>> rows = null;
-                try {
-                    DeviceMapper deviceMapper = session.getMapper(DeviceMapper.class);
-                    List<Device> devList = deviceMapper.selectByExample(null);
-                    rows = new Vector<Vector<Object>>();
-                    for (Device dev : devList) {
-                        Vector<Object> row = new Vector<Object>();
-                        row.add(dev.getDeviceId());
-                        row.add(dev.getNodeId());
-                        row.add(dev.getDeviceName());
-                        row.add(dev.getParam1Name());
-                        row.add(dev.getParam2Name());
-                        row.add(dev.getSaveInterval());
-                        row.add(dev.getLowAlarmLimit1());
-                        row.add(dev.getHiAlarmLimit1());
-                        row.add(dev.getLowAlarmLimit2());
-                        row.add(dev.getHiAlarmLimit2());
-                        row.add(dev.getOnlineStatus());
-                        rows.add(row);
-                    }
-                } finally {
-                    session.close();
-                }
-
-                return rows;
-            }
-
-            @Override
-            protected void done() {
-                Vector<Vector<Object>> rows = null;
-                try {
-                    rows = (Vector) get();
-                    if (rows != null) {
-                        DeviceTable.setModel(rows);
-                    }
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                } catch (ExecutionException e) {
-                    e.printStackTrace();
-                }
-
-            }
-        }.execute();
-    }
 
     private static void initCfg() {
         PropertiesUtil.getInstance().load();
@@ -191,50 +157,5 @@ public class Main {
         Main.rsServer = rsServer;
     }
 
-    public static void updateAlarmData() {
-        new SwingWorker() {
 
-            @Override
-            protected Vector<Vector<Object>> doInBackground() throws Exception {
-                SqlSessionFactory sqlSessionFactory = MyBatisHelper.getSqlSessionFactory();
-                SqlSession session = sqlSessionFactory.openSession();
-                Vector<Vector<Object>> rows = null;
-
-                try {
-                    AlarmDataMapper mapper = session.getMapper(AlarmDataMapper.class);
-                    List<AlarmData> alarmDataList = mapper.selectByExample(null);
-                    rows = new Vector<Vector<Object>>();
-                    for (AlarmData data : alarmDataList) {
-                        Vector<Object> row = new Vector<Object>();
-                        row.add(data.getCode());
-                        row.add(data.getType());
-                        row.add(data.getValue());
-                        row.add(data.getRecordtime());
-                        row.add(data.getStatus());
-
-                        rows.add(row);
-                    }
-                } finally {
-                    session.close();
-                }
-                return rows;
-            }
-
-            @Override
-            protected void done() {
-                Vector<Vector<Object>> rows = null;
-                try {
-                    rows = (Vector) get();
-                    if (rows != null) {
-                        AlarmTable.setModel(rows);
-                    }
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                } catch (ExecutionException e) {
-                    e.printStackTrace();
-                }
-
-            }
-        }.execute();
-    }
 }

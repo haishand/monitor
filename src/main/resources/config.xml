@@ -44,6 +44,7 @@
     <mappers>
         <mapper resource="mybatis/mapper/DeviceMapper.xml"/>
         <mapper resource="mybatis/mapper/DeviceDataMapper.xml"/>
+        <mapper resource="mybatis/mapper/AlarmDataMapper.xml"/>
     </mappers>
 
 </configuration>

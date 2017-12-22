@@ -1,5 +1,6 @@
 package core.handler;
 
+import core.Main;
 import core.defs.AlarmStatus;
 import core.defs.AlarmType;
 import core.defs.DeviceType;
@@ -8,6 +9,7 @@ import mapper.DeviceDataMapper;
 import mapper.DeviceMapper;
 import org.apache.ibatis.session.SqlSession;
 import po.AlarmData;
+import po.AlarmDataExample;
 import po.Device;
 import po.DeviceData;
 import util.MyBatisHelper;
@@ -30,7 +32,7 @@ public class DataChecker implements Runnable {
 
                 DeviceMapper mapper = sqlSession.getMapper(DeviceMapper.class);
                 Device dev = mapper.selectByPrimaryKey(code);
-                if (dev.getDeviceType() == DeviceType.DEVICE_HUMITURE.getValue()) {
+                if (dev.getDeviceType() == DeviceType.HUMITURE_DEVICE.getValue()) {
                     // 温湿度设备
                     float lowAlarmLimit1 = dev.getLowAlarmLimit1();
                     float lowAlarmLimit2 = dev.getLowAlarmLimit2();
@@ -49,11 +51,13 @@ public class DataChecker implements Runnable {
                         }
                         alarm1.setRecordtime(data.getRecordtime());
                         alarm1.setCode(code);
-                        alarm1.setStatus(AlarmStatus.UNTREATED.getCode());
+                        alarm1.setStatus(AlarmStatus.UNTREATED.getValue());
 
                         AlarmDataMapper almMapper = sqlSession
                                 .getMapper(AlarmDataMapper.class);
-                        almMapper.insert(alarm1);
+                        AlarmDataExample example = new AlarmDataExample();
+                        example.createCriteria().andCodeEqualTo(code);
+                        almMapper.insertSelective(alarm1);
                     }
 
 
@@ -69,23 +73,28 @@ public class DataChecker implements Runnable {
                         }
                         alarm2.setRecordtime(data.getRecordtime());
                         alarm2.setCode(code);
-                        alarm2.setStatus(AlarmStatus.UNTREATED.getCode());
+                        alarm2.setStatus(AlarmStatus.UNTREATED.getValue());
 
                         AlarmDataMapper almMapper = sqlSession
                                 .getMapper(AlarmDataMapper.class);
-                        almMapper.insert(alarm2);
+                        almMapper.insertSelective(alarm2);
                     }
 
-                } else if (dev.getDeviceType() == DeviceType.DEVICE_EMETER.getValue()) {
+                    sqlSession.commit();
+
+                } else if (dev.getDeviceType() == DeviceType.EMETER_DEVICE.getValue()) {
                     // 电流设备
                     // TODO
+                    sqlSession.commit();
                 }
 
             }
-            sqlSession.commit();
-        }
-        finally {
+
+        }catch(Exception ex) {
+            ex.printStackTrace();
+        }finally {
             sqlSession.close();
+            Main.updateGUI();
         }
 
     }

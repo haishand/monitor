@@ -29,6 +29,8 @@ public class RSDataListener implements IDataListener {
     public void receiveRealtimeData(RealTimeData realTimeData) {
         int devId = realTimeData.getDeviceId();
 
+//        logger.debug(realTimeData.getDeviceId());
+
         // query type from DB
         SqlSessionFactory sqlSessionFactory = MyBatisHelper.getSqlSessionFactory();
         SqlSession sqlSession = sqlSessionFactory.openSession();
@@ -67,7 +69,10 @@ public class RSDataListener implements IDataListener {
                     }
                 }
             }
-        } finally {
+        } catch(Exception e) {
+            logger.error(e.getMessage());
+            e.printStackTrace();
+        } finally{
             sqlSession.close();
         }
 
@@ -99,22 +104,26 @@ public class RSDataListener implements IDataListener {
                 Device dev = devices.get(0);
                 code = dev.getCode();
 
-                Date time = nd.getRecordTime();
+                // 如果为存储数据则为存储时间，实时数据无效
+//                Date time = nd.getRecordTime();
+                Date time = new Date();
                 DeviceData data = new DeviceData();
                 data.setCode(code);
                 data.setParam1(param1);
                 data.setParam2(param2);
                 data.setRecordtime(time);
 
-                Object[] args = {DeviceType.DEVICE_HUMITURE, data};
+                Object[] args = {DeviceType.HUMITURE_DEVICE, data};
 
-                Main.getMainLoop().getMainQueue().offer(new MEvent(
-                        MType.ID_UPDATE_DATA,
+                Main.sendEvent(new MEvent(
+                        MType.ID_UPDATE_DEVICE_DATA,
                         args,
                         new UpdateDeviceDataCallback()));
 
             }
             sqlSession.commit();
+        }catch (Exception e) {
+            e.printStackTrace();
         } finally {
             sqlSession.close();
         }
@@ -154,15 +163,17 @@ public class RSDataListener implements IDataListener {
                 data.setParam2(param2);
                 data.setRecordtime(time);
 
-                Object[] args = {DeviceType.DEVICE_EMETER, data};
+                Object[] args = {DeviceType.EMETER_DEVICE, data};
 
-                Main.getMainLoop().getMainQueue().offer(new MEvent(
-                        MType.ID_UPDATE_DATA,
+                Main.sendEvent(new MEvent(
+                        MType.ID_UPDATE_DEVICE_DATA,
                         args,
                         new UpdateDeviceDataCallback()));
             }
             sqlSession.commit();
-        } finally {
+        } catch(Exception e) {
+            e.printStackTrace();
+        }finally {
             sqlSession.close();
         }
     }
@@ -189,10 +200,10 @@ public class RSDataListener implements IDataListener {
         int status = timmingAck.getStatus();
 
         SqlSessionFactory sqlSessionFactory = MyBatisHelper.getSqlSessionFactory();
-        SqlSession sqlSession = sqlSessionFactory.openSession();
+        SqlSession session = sqlSessionFactory.openSession();
 
         try {
-            DeviceMapper deviceMapper = sqlSession.getMapper(DeviceMapper.class);
+            DeviceMapper deviceMapper = session.getMapper(DeviceMapper.class);
             DeviceExample example = new DeviceExample();
             example.createCriteria().andDeviceIdEqualTo(devId);
 
@@ -200,9 +211,11 @@ public class RSDataListener implements IDataListener {
             dev.setOnlineStatus(status);
             deviceMapper.updateByExample(dev, example);
 
-            sqlSession.commit();
+            session.commit();
+        }catch(Exception e) {
+            e.printStackTrace();
         } finally {
-            sqlSession.close();
+            session.close();
         }
     }
 }

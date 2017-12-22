@@ -3,6 +3,8 @@ package po;
 import java.util.Date;
 
 public class AlarmData {
+    private Integer id;
+
     private Integer code;
 
     private String type;
@@ -12,6 +14,14 @@ public class AlarmData {
     private Date recordtime;
 
     private Integer status;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public Integer getCode() {
         return code;
