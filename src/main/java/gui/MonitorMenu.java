@@ -1,10 +1,6 @@
 package gui;
 
-import action.InfoActionListener;
-import action.SettingActionListener;
-import action.StartActionListener;
-import action.StopActionListener;
-import javafx.beans.Observable;
+import action.*;
 
 import javax.swing.*;
 
@@ -41,13 +37,22 @@ public class MonitorMenu {
         menuBar.add(menu);
         menuItem = new JMenuItem("添加");
         menu.add(menuItem);
+        menuItem.addActionListener(new AddDeviceActionListener());
         addIcon(menuItem, "m_add");
+
+        menuItem = new JMenuItem("修改");
+        menu.add(menuItem);
+        menuItem.addActionListener(new ModifyDeviceActionListener());
+        addIcon(menuItem, "m_modify");
+
+        menuItem = new JMenuItem("删除");
+        menu.add(menuItem);
+        menuItem.addActionListener(new DelDeviceActionListener());
+        addIcon(menuItem, "m_delete");
+
         menuItem = new JMenuItem("扫描");
         menu.add(menuItem);
         addIcon(menuItem, "m_scan");
-        menuItem = new JMenuItem("删除");
-        menu.add(menuItem);
-        addIcon(menuItem, "m_delete");
 
         // help menu
         menu = new JMenu("帮助");

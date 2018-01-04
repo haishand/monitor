@@ -1,0 +1,156 @@
+2017-11-06 09:10:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:0 ] - [ DEBUG ]  Retrieving column information for table "device"
+2017-11-06 09:10:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:148 ] - [ DEBUG ]  Found column "value", data type 4, in table "test..device"
+2017-11-06 09:10:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:150 ] - [ DEBUG ]  Found column "deviceId", data type 4, in table "test..device"
+2017-11-06 09:10:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:150 ] - [ DEBUG ]  Found column "nodeId", data type 4, in table "test..device"
+2017-11-06 09:10:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:151 ] - [ DEBUG ]  Found column "deviceName", data type 12, in table "test..device"
+2017-11-06 09:10:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:151 ] - [ DEBUG ]  Found column "deviceType", data type 4, in table "test..device"
+2017-11-06 09:10:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:152 ] - [ DEBUG ]  Found column "param1Name", data type 12, in table "test..device"
+2017-11-06 09:10:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:152 ] - [ DEBUG ]  Found column "param2Name", data type 12, in table "test..device"
+2017-11-06 09:10:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:153 ] - [ DEBUG ]  Found column "saveInterval", data type 4, in table "test..device"
+2017-11-06 09:10:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:153 ] - [ DEBUG ]  Found column "lowAlarmLimit1", data type 7, in table "test..device"
+2017-11-06 09:10:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:153 ] - [ DEBUG ]  Found column "hiAlarmLimit1", data type 7, in table "test..device"
+2017-11-06 09:10:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:153 ] - [ DEBUG ]  Found column "lowAlarmLimit2", data type 7, in table "test..device"
+2017-11-06 09:10:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:154 ] - [ DEBUG ]  Found column "hiAlarmLimit2", data type 7, in table "test..device"
+2017-11-06 09:10:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:154 ] - [ DEBUG ]  Found column "onlineStatus", data type 4, in table "test..device"
+2017-11-06 09:10:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:161 ] - [ DEBUG ]  Retrieving column information for table "devicedata"
+2017-11-06 09:10:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:224 ] - [ DEBUG ]  Found column "value", data type 4, in table "test..devicedata"
+2017-11-06 09:10:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:227 ] - [ DEBUG ]  Found column "param1", data type 7, in table "test..devicedata"
+2017-11-06 09:10:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:228 ] - [ DEBUG ]  Found column "param2", data type 7, in table "test..devicedata"
+2017-11-06 09:10:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:228 ] - [ DEBUG ]  Found column "recordTime", data type 93, in table "test..devicedata"
+2017-11-06 09:11:17  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:0 ] - [ DEBUG ]  Retrieving column information for table "device"
+2017-11-06 09:11:17  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:26 ] - [ DEBUG ]  Found column "value", data type 4, in table "test..device"
+2017-11-06 09:11:17  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:27 ] - [ DEBUG ]  Found column "deviceId", data type 4, in table "test..device"
+2017-11-06 09:11:17  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:27 ] - [ DEBUG ]  Found column "nodeId", data type 4, in table "test..device"
+2017-11-06 09:11:17  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:27 ] - [ DEBUG ]  Found column "deviceName", data type 12, in table "test..device"
+2017-11-06 09:11:17  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:27 ] - [ DEBUG ]  Found column "deviceType", data type 4, in table "test..device"
+2017-11-06 09:11:17  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:28 ] - [ DEBUG ]  Found column "param1Name", data type 12, in table "test..device"
+2017-11-06 09:11:17  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:28 ] - [ DEBUG ]  Found column "param2Name", data type 12, in table "test..device"
+2017-11-06 09:11:17  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:28 ] - [ DEBUG ]  Found column "saveInterval", data type 4, in table "test..device"
+2017-11-06 09:11:17  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:28 ] - [ DEBUG ]  Found column "lowAlarmLimit1", data type 7, in table "test..device"
+2017-11-06 09:11:17  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:28 ] - [ DEBUG ]  Found column "hiAlarmLimit1", data type 7, in table "test..device"
+2017-11-06 09:11:17  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:29 ] - [ DEBUG ]  Found column "lowAlarmLimit2", data type 7, in table "test..device"
+2017-11-06 09:11:17  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:29 ] - [ DEBUG ]  Found column "hiAlarmLimit2", data type 7, in table "test..device"
+2017-11-06 09:11:17  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:29 ] - [ DEBUG ]  Found column "onlineStatus", data type 4, in table "test..device"
+2017-11-06 09:11:17  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:37 ] - [ DEBUG ]  Retrieving column information for table "devicedata"
+2017-11-06 09:11:17  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:49 ] - [ DEBUG ]  Found column "value", data type 4, in table "test..devicedata"
+2017-11-06 09:11:17  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:50 ] - [ DEBUG ]  Found column "param1", data type 7, in table "test..devicedata"
+2017-11-06 09:11:17  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:51 ] - [ DEBUG ]  Found column "param2", data type 7, in table "test..devicedata"
+2017-11-06 09:11:17  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:51 ] - [ DEBUG ]  Found column "recordTime", data type 93, in table "test..devicedata"
+2017-11-06 10:00:49  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-06 10:00:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:327 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-06 10:00:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:330 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-06 10:00:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:331 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-06 10:00:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:331 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-06 10:01:43  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-06 10:01:43  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:181 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-06 10:01:43  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:182 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-06 10:01:43  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:182 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-06 10:01:43  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:182 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-06 10:02:33  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-06 10:02:33  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:127 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-06 10:02:33  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:129 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-06 10:02:33  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:129 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-06 10:02:33  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:130 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-06 10:03:50  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-06 10:03:50  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:228 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-06 10:03:50  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:230 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-06 10:03:50  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:230 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-06 10:03:50  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:230 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-06 10:05:52  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-06 10:05:52  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:200 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-06 10:05:52  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:203 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-06 10:05:52  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:203 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-06 10:05:52  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:203 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-06 10:06:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:0 ] - [ DEBUG ]  Retrieving column information for table "device"
+2017-11-06 10:06:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:25 ] - [ DEBUG ]  Found column "value", data type 4, in table "test..device"
+2017-11-06 10:06:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:27 ] - [ DEBUG ]  Found column "deviceId", data type 4, in table "test..device"
+2017-11-06 10:06:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:27 ] - [ DEBUG ]  Found column "nodeId", data type 4, in table "test..device"
+2017-11-06 10:06:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:28 ] - [ DEBUG ]  Found column "deviceName", data type 12, in table "test..device"
+2017-11-06 10:06:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:28 ] - [ DEBUG ]  Found column "deviceType", data type 4, in table "test..device"
+2017-11-06 10:06:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:28 ] - [ DEBUG ]  Found column "param1Name", data type 12, in table "test..device"
+2017-11-06 10:06:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:28 ] - [ DEBUG ]  Found column "param2Name", data type 12, in table "test..device"
+2017-11-06 10:06:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:28 ] - [ DEBUG ]  Found column "saveInterval", data type 4, in table "test..device"
+2017-11-06 10:06:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:29 ] - [ DEBUG ]  Found column "lowAlarmLimit1", data type 7, in table "test..device"
+2017-11-06 10:06:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:29 ] - [ DEBUG ]  Found column "hiAlarmLimit1", data type 7, in table "test..device"
+2017-11-06 10:06:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:29 ] - [ DEBUG ]  Found column "lowAlarmLimit2", data type 7, in table "test..device"
+2017-11-06 10:06:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:29 ] - [ DEBUG ]  Found column "hiAlarmLimit2", data type 7, in table "test..device"
+2017-11-06 10:06:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:30 ] - [ DEBUG ]  Found column "onlineStatus", data type 4, in table "test..device"
+2017-11-06 10:06:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:36 ] - [ DEBUG ]  Retrieving column information for table "devicedata"
+2017-11-06 10:06:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:48 ] - [ DEBUG ]  Found column "value", data type 4, in table "test..devicedata"
+2017-11-06 10:06:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:49 ] - [ DEBUG ]  Found column "param1", data type 7, in table "test..devicedata"
+2017-11-06 10:06:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:50 ] - [ DEBUG ]  Found column "param2", data type 7, in table "test..devicedata"
+2017-11-06 10:06:10  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:50 ] - [ DEBUG ]  Found column "recordTime", data type 93, in table "test..devicedata"
+2017-11-06 10:07:12  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:0 ] - [ DEBUG ]  Retrieving column information for table "device"
+2017-11-06 10:07:12  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:25 ] - [ DEBUG ]  Found column "value", data type 4, in table "test..device"
+2017-11-06 10:07:12  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:27 ] - [ DEBUG ]  Found column "deviceId", data type 4, in table "test..device"
+2017-11-06 10:07:12  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:27 ] - [ DEBUG ]  Found column "nodeId", data type 4, in table "test..device"
+2017-11-06 10:07:12  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:28 ] - [ DEBUG ]  Found column "deviceName", data type 12, in table "test..device"
+2017-11-06 10:07:12  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:28 ] - [ DEBUG ]  Found column "deviceType", data type 4, in table "test..device"
+2017-11-06 10:07:12  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:28 ] - [ DEBUG ]  Found column "param1Name", data type 12, in table "test..device"
+2017-11-06 10:07:12  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:28 ] - [ DEBUG ]  Found column "param2Name", data type 12, in table "test..device"
+2017-11-06 10:07:12  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:29 ] - [ DEBUG ]  Found column "saveInterval", data type 4, in table "test..device"
+2017-11-06 10:07:12  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:29 ] - [ DEBUG ]  Found column "lowAlarmLimit1", data type 7, in table "test..device"
+2017-11-06 10:07:12  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:29 ] - [ DEBUG ]  Found column "hiAlarmLimit1", data type 7, in table "test..device"
+2017-11-06 10:07:12  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:30 ] - [ DEBUG ]  Found column "lowAlarmLimit2", data type 7, in table "test..device"
+2017-11-06 10:07:12  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:30 ] - [ DEBUG ]  Found column "hiAlarmLimit2", data type 7, in table "test..device"
+2017-11-06 10:07:12  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:30 ] - [ DEBUG ]  Found column "onlineStatus", data type 4, in table "test..device"
+2017-11-06 10:07:12  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:37 ] - [ DEBUG ]  Retrieving column information for table "devicedata"
+2017-11-06 10:07:12  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:60 ] - [ DEBUG ]  Found column "value", data type 4, in table "test..devicedata"
+2017-11-06 10:07:12  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:61 ] - [ DEBUG ]  Found column "param1", data type 7, in table "test..devicedata"
+2017-11-06 10:07:12  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:62 ] - [ DEBUG ]  Found column "param2", data type 7, in table "test..devicedata"
+2017-11-06 10:07:12  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:62 ] - [ DEBUG ]  Found column "recordTime", data type 93, in table "test..devicedata"
+2017-11-06 10:10:34  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:0 ] - [ DEBUG ]  Retrieving column information for table "device"
+2017-11-06 10:10:34  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:28 ] - [ DEBUG ]  Found column "value", data type 4, in table "test..device"
+2017-11-06 10:10:34  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:29 ] - [ DEBUG ]  Found column "deviceId", data type 4, in table "test..device"
+2017-11-06 10:10:34  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:30 ] - [ DEBUG ]  Found column "nodeId", data type 4, in table "test..device"
+2017-11-06 10:10:34  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:30 ] - [ DEBUG ]  Found column "deviceName", data type 12, in table "test..device"
+2017-11-06 10:10:34  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:30 ] - [ DEBUG ]  Found column "deviceType", data type 4, in table "test..device"
+2017-11-06 10:10:34  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:30 ] - [ DEBUG ]  Found column "param1Name", data type 12, in table "test..device"
+2017-11-06 10:10:34  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:31 ] - [ DEBUG ]  Found column "param2Name", data type 12, in table "test..device"
+2017-11-06 10:10:34  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:31 ] - [ DEBUG ]  Found column "saveInterval", data type 4, in table "test..device"
+2017-11-06 10:10:34  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:31 ] - [ DEBUG ]  Found column "lowAlarmLimit1", data type 7, in table "test..device"
+2017-11-06 10:10:34  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:31 ] - [ DEBUG ]  Found column "hiAlarmLimit1", data type 7, in table "test..device"
+2017-11-06 10:10:34  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:31 ] - [ DEBUG ]  Found column "lowAlarmLimit2", data type 7, in table "test..device"
+2017-11-06 10:10:34  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:32 ] - [ DEBUG ]  Found column "hiAlarmLimit2", data type 7, in table "test..device"
+2017-11-06 10:10:34  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:32 ] - [ DEBUG ]  Found column "onlineStatus", data type 4, in table "test..device"
+2017-11-06 10:10:34  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:38 ] - [ DEBUG ]  Retrieving column information for table "devicedata"
+2017-11-06 10:10:34  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:49 ] - [ DEBUG ]  Found column "value", data type 4, in table "test..devicedata"
+2017-11-06 10:10:34  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:51 ] - [ DEBUG ]  Found column "param1", data type 7, in table "test..devicedata"
+2017-11-06 10:10:34  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:51 ] - [ DEBUG ]  Found column "param2", data type 7, in table "test..devicedata"
+2017-11-06 10:10:34  [ org.mybatis.generator.internal.db.DatabaseIntrospector:main:52 ] - [ DEBUG ]  Found column "recordTime", data type 93, in table "test..devicedata"
+2017-11-06 10:17:43  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-06 10:17:43  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:144 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-06 10:17:43  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:145 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-06 10:17:43  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:145 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-06 10:17:43  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:145 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-06 10:17:44  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:437 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-06 10:17:44  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:744 ] - [ DEBUG ]  Created connection 8350604.
+2017-11-06 10:17:44  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:745 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7f6b8c]
+2017-11-06 10:17:44  [ mapper.DeviceMapper.countByExample:main:747 ] - [ DEBUG ]  ==>  Preparing: select count(*) from device WHERE ( deviceId = ? ) 
+2017-11-06 10:17:44  [ mapper.DeviceMapper.countByExample:main:776 ] - [ DEBUG ]  ==> Parameters: 1(Integer)
+2017-11-06 10:17:44  [ mapper.DeviceMapper.countByExample:main:812 ] - [ DEBUG ]  <==      Total: 1
+2017-11-06 10:18:04  [ org.apache.ibatis.logging.LogFactory:main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-06 10:18:04  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:124 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-06 10:18:04  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:125 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-06 10:18:04  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:125 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-06 10:18:04  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:125 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-06 10:18:04  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:323 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-06 10:18:04  [ org.apache.ibatis.datasource.pooled.PooledDataSource:main:573 ] - [ DEBUG ]  Created connection 8350604.
+2017-11-06 10:18:04  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:main:574 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7f6b8c]
+2017-11-06 10:18:04  [ mapper.DeviceMapper.countByExample:main:576 ] - [ DEBUG ]  ==>  Preparing: select count(*) from device WHERE ( deviceId = ? ) 
+2017-11-06 10:18:04  [ mapper.DeviceMapper.countByExample:main:615 ] - [ DEBUG ]  ==> Parameters: 1(Integer)
+2017-11-06 10:18:04  [ mapper.DeviceMapper.countByExample:main:630 ] - [ DEBUG ]  <==      Total: 1
+2017-11-06 14:46:48  [ org.apache.ibatis.logging.LogFactory:SwingWorker-pool-1-thread-1:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2017-11-06 14:46:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:1016 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-06 14:46:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:1017 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-06 14:46:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:1017 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-06 14:46:49  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:1017 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2017-11-06 14:46:49  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:1470 ] - [ DEBUG ]  Opening JDBC Connection
+2017-11-06 14:46:50  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:2223 ] - [ DEBUG ]  Created connection 26175164.
+2017-11-06 14:46:50  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:2223 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@18f66bc]
+2017-11-06 14:46:50  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:2226 ] - [ DEBUG ]  ==>  Preparing: select * from device; 
+2017-11-06 14:46:50  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:2251 ] - [ DEBUG ]  ==> Parameters: 
+2017-11-06 14:46:50  [ com.domain.Device.select:SwingWorker-pool-1-thread-1:2324 ] - [ DEBUG ]  <==      Total: 3
+2017-11-06 14:46:50  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:2324 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@18f66bc]
+2017-11-06 14:46:50  [ org.apache.ibatis.transaction.jdbc.JdbcTransaction:SwingWorker-pool-1-thread-1:2326 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@18f66bc]
+2017-11-06 14:46:50  [ org.apache.ibatis.datasource.pooled.PooledDataSource:SwingWorker-pool-1-thread-1:2326 ] - [ DEBUG ]  Returned connection 26175164 to pool.

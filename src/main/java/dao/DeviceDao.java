@@ -3,7 +3,7 @@ package dao;
 import domain.Device;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
-import util.MyBatisUtil;
+import util.MyBatisHelper;
 
 import java.util.List;
 
@@ -37,7 +37,7 @@ public class DeviceDao {
     }
 
     public static void main(String[] args) {
-        DeviceDao devDao = new DeviceDao(MyBatisUtil.getSqlSessionFactory());
+        DeviceDao devDao = new DeviceDao(MyBatisHelper.getSqlSessionFactory());
         Device dev = new Device(0, 1, 1, "test1", 10,
                 "有功", "无", 10,
                 10, 100, 10, 100,

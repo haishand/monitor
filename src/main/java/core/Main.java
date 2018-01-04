@@ -1,23 +1,20 @@
 package core;
 
 import com.jnrsmcu.sdk.netdevice.RSServer;
+import core.event.MEvent;
+import core.event.MType;
 import core.event.MainLoop;
-import dao.DeviceDao;
-import domain.Device;
 import gui.AlarmTable;
 import gui.MonitorMenu;
 import gui.DeviceTable;
 import gui.MonitorToolBar;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
-import util.MyBatisUtil;
 import util.PropertiesUtil;
 
 import javax.swing.*;
+import javax.swing.border.EtchedBorder;
 import java.awt.*;
-import java.util.List;
-import java.util.Vector;
-import java.util.concurrent.ExecutionException;
 
 /**
  * @author haishand
@@ -28,12 +25,16 @@ public class Main {
     private static JFrame mainWindow = null;
     private static RSServer rsServer = null;
     private static MainLoop mainLoop = null;
+    public static JLabel statusBar;
 
     public static void main(String[] args) {
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         } catch (Exception e) {
         }
+
+        // initialize app
+        init();
 
         SwingUtilities.invokeLater(new Runnable() {
             @Override
@@ -42,15 +43,10 @@ public class Main {
             }
         });
 
-        init();
-
-        // main mainLoop
-        new Thread(mainLoop).start();
-
     }
 
     private static void createAndShowGUI() {
-        JFrame frame = new JFrame("监控服务器");
+        JFrame frame = new JFrame("智能制造感知数据采集平台v0.1");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setIconImage(Toolkit.getDefaultToolkit().getImage("images/icon.png"));
 
@@ -58,12 +54,24 @@ public class Main {
         mainPane.setLayout(new BorderLayout());
         mainPane.add(MonitorToolBar.createToolBar(), BorderLayout.NORTH);
 
+        /*
+        JPanel pane = new JPanel();
+        pane.setLayout(new BorderLayout());
+        pane.add(DeviceTable.getInstance());
+        mainPane.add(pane, BorderLayout.CENTER);
+        */
+
         JSplitPane splitPane = new JSplitPane();
         splitPane.setDividerLocation(Toolkit.getDefaultToolkit().getScreenSize().width);
         splitPane.setLeftComponent(DeviceTable.getInstance());
         splitPane.setRightComponent(AlarmTable.getInstance());
 
         mainPane.add(splitPane, BorderLayout.CENTER);
+
+        statusBar = new JLabel("青岛职业技术学院信息学院版权所有");
+        statusBar.setBorder(BorderFactory.createEtchedBorder(EtchedBorder.RAISED));
+        statusBar.setHorizontalAlignment(SwingConstants.RIGHT);
+        mainPane.add(statusBar, BorderLayout.SOUTH);
 
         frame.setContentPane(mainPane);
         frame.setJMenuBar(MonitorMenu.createMenuBar());
@@ -77,66 +85,40 @@ public class Main {
     }
 
     private static void init() {
+        startMainLoop();
+
         initCfg();
-        updateData();
+
+        startTimers();
+
+        registerShutdownHook();
+
     }
 
-/*    private static void loadData() {
-        mainLoop.getMainQueue().add(new MEvent(MType.ID_UPDATE_DATA, null, null));
-    }*/
+    private static void startMainLoop() {
+        mainLoop = new MainLoop();
+        new Thread(mainLoop).start();
+    }
 
-    public static void updateData() {
-        new SwingWorker() {
+    public static void sendEvent(MEvent event) {
+        mainLoop.getMainQueue().offer(event);
+    }
 
-            @Override
-            protected Vector<Vector<Object>> doInBackground() throws Exception {
-                DeviceDao devDao = new DeviceDao(MyBatisUtil.getSqlSessionFactory());
-                List<Device> devList = devDao.select();
-                Vector<Vector<Object>> rows = new Vector<Vector<Object>>();
-                for(Device dev : devList) {
-                    Vector<Object> row = new Vector<Object>();
-                    row.add(dev.getDeviceId());
-                    row.add(dev.getNodeId());
-                    row.add(dev.getDeviceName());
-                    row.add(dev.getParam1Name());
-                    row.add(dev.getParam2Name());
-                    row.add(dev.getSaveInterval());
-                    row.add(dev.getLowAlarmLimit1());
-                    row.add(dev.getHiAlarmLimit1());
-                    row.add(dev.getLowAlarmLimit2());
-                    row.add(dev.getHiAlarmLimit2());
-                    row.add(dev.getOnlineStatus());
-                    rows.add(row);
-                }
+    private static void startTimers() {
+        sendEvent(new MEvent(MType.ID_START_DATA_CHECK_TIMER, null, null));
+        sendEvent(new MEvent(MType.ID_START_ALARM_CHECK_TIMER, null, null));
+        sendEvent(new MEvent(MType.ID_START_UPDATE_GUI_TIMER, null, null));
+    }
 
-                return rows;
-            }
-
-            @Override
-            protected void done() {
-                Vector<Vector<Object>> rows = null;
-                try {
-                    rows = (Vector) get();
-                    DeviceTable.setModel(rows);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                } catch (ExecutionException e) {
-                    e.printStackTrace();
-                }
-
-            }
-        }.execute();
+    public static void updateGUI() {
+        DeviceTable.updateDeviceData();
+        AlarmTable.updateAlarmData();
     }
 
     private static void initCfg() {
         PropertiesUtil.getInstance().load();
 
     }
-
-/*    public static void repaint() {
-        getMainWindow().repaint();
-    }*/
-
 
     public static JFrame getMainWindow() {
         return mainWindow;
@@ -156,5 +138,14 @@ public class Main {
 
     public static void setRsServer(RSServer rsServer) {
         Main.rsServer = rsServer;
+    }
+
+    private static void registerShutdownHook() {
+        Runtime.getRuntime().addShutdownHook(new Thread() {
+            @Override
+            public void run() {
+                // TODO
+            }
+        });
     }
 }

@@ -10,12 +10,6 @@ import java.awt.event.ActionListener;
 public class StartActionListener implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
-        Object obj = e.getSource();
-        if(obj instanceof JButton) {
-            ((JButton) obj).setEnabled(!((JButton) obj).isEnabled());
-            System.out.println("ddd");
-        }else if(obj instanceof JMenuItem) {
-        }
         RSServerUtil.start();
     }
 }

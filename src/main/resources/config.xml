@@ -42,7 +42,9 @@
 
 
     <mappers>
-        <mapper resource="mapper/device.xml"/>
-        <mapper resource="mapper/devicedata.xml"/>
+        <mapper resource="mybatis/mapper/DeviceMapper.xml"/>
+        <mapper resource="mybatis/mapper/DeviceDataMapper.xml"/>
+        <mapper resource="mybatis/mapper/AlarmDataMapper.xml"/>
     </mappers>
+
 </configuration>
